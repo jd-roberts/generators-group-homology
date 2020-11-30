@@ -1,4 +1,5 @@
 #GAP code
+LoadPackage("kbmag");
 
 ##############################################
 #Input: Free group, relators, prime p
