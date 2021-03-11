@@ -302,7 +302,7 @@ Free0:=FreeGroup(2);;a0:=Free0.1;;b0:=Free0.2;;
 R0:=[a0^3, b0^2, a0*b0^-1*a0*b0^-1];
 SL_2Z_2:=Free0/R0;
 
-#SL_2(w), w^3=-1
+#SL_2(Z[w]), w^3=-1
 Free1:=FreeGroup(3);;a1:=Free1.1;;b1:=Free1.2;;c1:=Free1.3;;
 R1:=[a1^3*b1^-2, (a1*b1)^2*c1^-3, (c1^-1*a1*b1)^3*c1^3, (c1*b1^-1*a1)^3*c1^3];
 SL_2w:=Free1/R1;
@@ -327,7 +327,7 @@ Free7:=FreeGroup(2);;a7:=Free7.1;;b7:=Free7.2;;
 R7:=[a7^2, b7^3];
 PSL_2Z:=Free7/R7;
 
-#SL_2Zi
+#SL_2(Z[i])
 Free8:=FreeGroup(5);;a8:=Free8.1;;b8:=Free8.2;;c8:=Free8.3;;d8:=Free8.4;;e8:=Free8.5;;
 R8:=[b8*c8*b8^-1*c8^-1, a8^2, d8^3*a8^-1, (b8*d8)^2*a8^-1, (c8*d8)^2*a8^-1, (e8*d8)^2*a8^-1, 
 (b8*e8)*a8^-1, (c8*e8*d8)^3*a8^-1, Comm(a8,b8), Comm(a8,c8), Comm(a8,d8), Comm(a8,e8)];
@@ -349,5 +349,5 @@ S5:=SymmetricGroup(5);
 
 
 
-Print("A5 = Alternating Group on 5; S5 = Symmetric Group on 5; G3 = F3/k3 = casep3; G5 = F5/k5 = casep5; G7 = F7/k7 = casep7; G11 = F11/k11; SL2 = S/rels = SL_2(Z); SL_2w = Free1/R1; SL_2Z_2 = Free0/R0;SL_2Z_3 = Free3/R3; SL_2Z_5 = Free5/R5; GL_2Z = Free6/R6; PSL_2Z = Free7/R7;SL_2Zi = Free8/R8; SL_2Zneg5 = Free9/R9", "\n");
+Print("A5 = Alternating Group on 5; S5 = Symmetric Group on 5; G3 = F3/k3 = casep3; G5 = F5/k5 = casep5; G7 = F7/k7 = casep7; G11 = F11/k11; SL2 = S/rels = SL_2(Z); SL_2Zw = Free1/R1; SL_2Z_2 = Free0/R0;SL_2Z_3 = Free3/R3; SL_2Z_5 = Free5/R5; GL_2Z = Free6/R6; PSL_2Z = Free7/R7;SL_2Zi = Free8/R8; SL_2Zneg5 = Free9/R9", "\n");
 
