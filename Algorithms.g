@@ -39,10 +39,10 @@ return[iso,Group,Freegroup,Relators];
 end;;
 
 ##############################################
-#Input: Free group, relators, prime p 
+#Input: Free group, relators, prime p
 #Output: Dimension of H_1(F/R,F_p) <=> F/R \otimes F_p provided F/R is abelian
 
-FirstHomologyCoefficicents:=function(Freegroup,Relators,Prime)
+FirstHomologyCoefficients:=function(Freegroup,Relators,Prime)
 local AbelInv, list, x;
 AbelInv:=AbelianInvariants(Freegroup/Relators);
 list:=[];
@@ -91,7 +91,7 @@ for x in list1 do
      if x mod Prime = 0 then Add(list2,PadicValuation(x,Prime));
      fi;
 	     od;
-return Sum(list2);	
+return Sum(list2);
 end;;
 
 ###############################################
@@ -120,10 +120,10 @@ end;;
 #Output: List of generators
 
 FindBasis:=function(Freegroup,Relators,Prime,Sublist)
-local Gen,TestWord,x,list; 
+local Gen,TestWord,x,list;
 Gen:=Sublist;
 list:=[];
-for x in Sublist do 
+for x in Sublist do
      TestWord:=Reduce_Word(Freegroup,Relators,x,Difference(Gen,[x]),Prime);
 		Add(list,TestWord);
         if IsOne(TestWord)=true then Gen:=Difference(Gen,[x]);
@@ -181,7 +181,7 @@ end;;
 
 FindBasis2ndHom_large:=function(Freegroup,Relators,Prime,Sublist)
 
-local Gen,TestWord,x,set1; 
+local Gen,TestWord,x,set1;
 
 set1:=[];
 Gen:=Sublist;
