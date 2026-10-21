@@ -1,4 +1,6 @@
 # Reproduce all 36 H1 values in undergrad-research/Capture2.JPG.
+# This checks stored presentations, not the table's group identifications.
+# In particular, see tests/presentation-sanity.g for the case-5 label defect.
 if LoadPackage("kbmag") <> true then Error("KBMAG is required"); fi;
 Read("Algorithms.g");; Read("Library-of-groups.g");;
 HistoricalRows := [

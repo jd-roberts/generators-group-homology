@@ -3,19 +3,22 @@
 set -euo pipefail
 cd "$(dirname "${BASH_SOURCE[0]}")/.."
 if [[ $# -lt 2 || $# -gt 4 ]]; then
-  echo "Usage: bash scripts/reproduce-h2.sh CASE PRIME [SECONDS=120] [standard|large]" >&2
+  echo "Usage: bash scripts/reproduce-h2.sh CASE PRIME [SECONDS=5, maximum 30] [standard|large]" >&2
   exit 2
 fi
 research_case=$1
 research_prime=$2
-research_seconds=${3:-120}
+research_seconds=${3:-5}
 research_mode=${4:-standard}
 case "$research_case" in
-  G3|G5|G7|G11|GL2Z|SL2Z|SL2F2|SL2F3|SL2F5|SL2Zi|SL2w|SL2Zneg5|PSL2Z) ;;
-  *) echo "Unknown presentation: $research_case" >&2; exit 2 ;;
+  SL2F2|SL2F3|SL2F5) ;;
+  *) echo "Full H2 runs are deferred outside the small finite-group whitelist; use benchmarks/run.py --task abelian or construction" >&2; exit 2 ;;
 esac
 [[ $research_prime =~ ^[1-9][0-9]*$ && $research_seconds =~ ^[1-9][0-9]*$ ]] || {
   echo "PRIME and SECONDS must be positive integers" >&2; exit 2;
+}
+[[ $research_seconds =~ ^([1-9]|[12][0-9]|30)$ ]] || {
+  echo "Quick-baseline runs are capped at 30 seconds" >&2; exit 2;
 }
 case "$research_mode" in
   standard) research_large=false ;;

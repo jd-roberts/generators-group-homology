@@ -6,6 +6,13 @@ KBMAG 1.6.1 at `82d1c1bea633485d2415df73b6d93ddddb97f721`, Debian 13 x86_64.
 This change documents and tests the original implementation; it does not
 alter algorithms, presentations, archived results, or theorem statements.
 
+**Follow-up:** [the measured quick baseline](BASELINE.md) records the latest
+scope, component measurements, and a confirmed identification defect:
+the stored `SL_2Z_5` is C5, not SL(2,5). Counts below reproduce the stored
+presentations and do not validate all historical group labels. Full expensive
+computations are deferred; the short timeout sweep below is a prior audit,
+not the current recommended workflow.
+
 ## What reproduced
 
 - All 36 H1 entries in `undergrad-research/Capture2.JPG` agree with the

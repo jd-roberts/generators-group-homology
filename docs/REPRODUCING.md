@@ -3,6 +3,13 @@
 Run commands from the repository root. Use the existing checkout on the
 development branch; `main` and the original research artifacts are unchanged.
 
+**Current scope:** use the whitelisted quick checks in
+[the measured baseline](BASELINE.md). Do not launch full arithmetic-family
+computations; original runs can take days. The runners now reject expensive
+H2 cases and cap quick runs at 30 seconds (default five).
+The stored case labelled `SL_2Z_5` is C5, not SL(2,5); reproducing its table
+values does not verify the group identification.
+
 ## Runtime and installation
 
 | Component | Role | Status in this review |
@@ -59,6 +66,7 @@ or network service is required for computations once dependencies are installed.
 ```sh
 gap -q -b --quitonbreak tests/smoke.g
 gap -q -b --quitonbreak tests/historical-h1.g
+gap -q -b --quitonbreak tests/presentation-sanity.g
 ```
 
 The smoke file performs 16 checks: free versus torsion contributions in
@@ -112,17 +120,19 @@ and **all** defining relators, rather than a recovered author script.
 For the fp simplification helper instead use fields 3 and 4, and retain its
 field-1 isomorphism. Simplified presentations change experimental provenance.
 
+The runner key `SL2F5` is retained for compatibility, but the stored group
+is cyclic of order 5. GAP verifies isomorphism with the indicated matrix groups
+for the stored cases at 2 and 3; the case at 5 is a confirmed identification
+defect requiring a separate research change, not a setup fix.
+
 ## Bounded H2 reconstruction
 
 ```sh
 # Historical table example: coefficient field F3, presentation SL_2(F3).
-bash scripts/reproduce-h2.sh SL2F3 3 120
-
-# Arithmetic family label and coefficient prime are separate inputs.
-bash scripts/reproduce-h2.sh G3 3 120
+bash scripts/reproduce-h2.sh SL2F3 3 5
 
 # Explicitly select the existing large equation-cap variant.
-bash scripts/reproduce-h2.sh SL2F3 3 120 large
+bash scripts/reproduce-h2.sh SL2F3 3 5 large
 ```
 
 Set `GAP_BIN=/absolute/path/to/gap` if needed. `PRIME` must be a prime;
@@ -160,12 +170,12 @@ Using `S=L` ensures the initial candidate images span the relation quotient.
 Do not replace the last argument by an arbitrary short list or the library's
 global `comm` without establishing the spanning requirement.
 
-To reconstruct all second-table inputs (potentially expensive):
+To repeat just the inexpensive stored presentations:
 
 ```sh
-for name in GL2Z SL2Z SL2F2 SL2F3 SL2F5 SL2Zi SL2w SL2Zneg5 PSL2Z; do
+for name in SL2F2 SL2F3 SL2F5; do
   for prime in 2 3 5 7; do
-    if bash scripts/reproduce-h2.sh "$name" "$prime" 120; then
+    if bash scripts/reproduce-h2.sh "$name" "$prime" 5; then
       :
     else
       status=$?
@@ -175,8 +185,10 @@ for name in GL2Z SL2Z SL2F2 SL2F3 SL2F5 SL2Zi SL2w SL2Zneg5 PSL2Z; do
 done
 ```
 
-This 120-second matrix is an instruction, not a claim that all runs completed.
-The measured shorter audit is recorded in [the review](RESEARCH-REVIEW.md).
+The previous broad timeout audit is recorded in [the review](RESEARCH-REVIEW.md).
+It is not a recommendation to launch the expensive cases. Use
+`benchmarks/run.py --task abelian` or `--task construction` for isolated
+components of those presentations, as described in the baseline.
 
 ## Protecting the research record
 
