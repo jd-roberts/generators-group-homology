@@ -12,6 +12,8 @@ For a brief discussion of finitely-presented groups and using them in GAP have a
 - [Dependencies and reproduction](docs/REPRODUCING.md): GAP/KBMAG setup, tests, and bounded runs against the archived tables.
 - [Research review](docs/RESEARCH-REVIEW.md): presentation audit, performance bottlenecks, limitations, and proposed improvements.
 - [Measured quick baseline](docs/BASELINE.md): safe small cases, component benchmarks, profiling, and verification limits.
+- [Presentation provenance and impact](docs/PRESENTATION-PROVENANCE.md): Git history, affected finite-group claims, arithmetic-group distinctions, and pending paper-source checks.
+- [Prioritized optimization plan](docs/OPTIMIZATION-PLAN.md): mathematical stop criteria and small-case validation gates before expensive arithmetic experiments.
 
 With GAP and compiled KBMAG installed, run from this directory:
 

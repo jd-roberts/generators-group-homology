@@ -25,6 +25,9 @@ The original presentation and archived values are preserved for investigation.
 Reproducing its values verifies C5 computations, not results for SL(2,5).
 The affected input is `Free5/R5`; the arithmetic case `G5` uses the distinct
 presentation `F5/k5`.
+The [provenance and impact report](PRESENTATION-PROVENANCE.md) traces the Git
+history and distinguishes an incorrect equality from a merely loose upper
+bound. Its paper-specific dependency verdict remains pending source access.
 
 `G3/G5/G7/G11` are the arithmetic-family labels; the digit in a label and the
 coefficient prime are different inputs. These cases, and the infinite-group
@@ -219,6 +222,10 @@ bound: the survivor count remains uncomputed. The G11 provenance issue also
 prevents identifying its stored output with the intended arithmetic group.
 
 ## Efficiency work to propose separately
+
+The [prioritized optimization plan](OPTIMIZATION-PLAN.md) develops explicit
+small-test gates, including early stopping when upper and lower homology
+bounds meet and sufficient linear certificates before word completion.
 
 Static analysis locates the repeated completion calls in `FindBasis` and
 `Reduce_Word`. Each candidate rebuilds a quotient and invokes KBMAG again.
