@@ -81,12 +81,17 @@ class BenchmarkTests(unittest.TestCase):
             path = Path(d)/'process.trace'
             path.write_text('10 100.100 execve("/bin/kbprog", [], 0x0) = 0 <0.001>\n'
                             '10 100.350 exit_group(0) = ?\n'
-                            '11 100.400 execve("/bin/kbprog", [], 0x0) = 0 <0.001>\n')
+                            '11 100.400 execve("/bin/kbprog", [], 0x0) = 0 <0.001>\n'
+                            '12 100.500 execve("/bin/kbprog", [], 0x0 <unfinished ...>\n'
+                            '12 100.510 <... execve resumed>) = 0 <0.01>\n'
+                            '12 100.600 exit_group(0) = ?\n')
             rows = benchmark.process_trace(path)
             self.assertEqual(rows[0]['elapsed_seconds'],.25)
             self.assertTrue(rows[0]['completed'])
             self.assertFalse(rows[1]['completed'])
             self.assertNotIn('elapsed_seconds',rows[1])
+            self.assertEqual(rows[2]['elapsed_seconds'],.1)
+            self.assertTrue(rows[2]['completed'])
 
 
 if __name__ == '__main__':

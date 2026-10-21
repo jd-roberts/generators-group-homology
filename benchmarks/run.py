@@ -37,6 +37,7 @@ def digest(path):
 def process_trace(path):
     """Elapsed exec-to-exit intervals, not CPU profiles of the C routines."""
     processes = {}
+    pending_exec = {}
     if not path.exists():
         return []
     for line in path.read_text().splitlines():
@@ -45,9 +46,17 @@ def process_trace(path):
             continue
         pid, timestamp, text = int(event[1]), float(event[2]), event[3]
         executable = re.search(r'execve\("([^"]+)"', text)
-        if executable and "= 0" in text:
-            processes[pid] = {"pid":pid, "executable":Path(executable[1]).name,
-                              "exec_timestamp":timestamp, "completed":False}
+        if executable:
+            candidate = {"pid":pid, "executable":Path(executable[1]).name,
+                         "exec_timestamp":timestamp, "completed":False}
+            if "= 0" in text:
+                processes[pid] = candidate
+            elif "<unfinished ...>" in text:
+                pending_exec[pid] = candidate
+        if "<... execve resumed>" in text and pid in pending_exec:
+            if "= 0" in text:
+                processes[pid] = pending_exec[pid]
+            del pending_exec[pid]
         if pid in processes and ("exit_group(" in text or "+++ killed by" in text):
             processes[pid].update(elapsed_seconds=round(timestamp-processes[pid]["exec_timestamp"],6),
                                   completed="exit_group(" in text, exit_event=text)

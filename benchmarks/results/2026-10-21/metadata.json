@@ -1,0 +1,217 @@
+{
+  "collected_utc": "2026-10-21T20:09:40.831844+00:00",
+  "suite_metadata": {
+    "small": {
+      "created_utc": "2026-10-21T20:07:16.750441+00:00",
+      "git_commit": "86a99c67d612e2664657778a94b027376da3fec7",
+      "git_status": "",
+      "original_sha256": {
+        "Algorithms.g": "dc95646bc1779d5fc0754b3a4a9aa765d4b1e2b69dc8d9038d68c1bf69918523",
+        "Library-of-groups.g": "dcad77ea0bedc2cadf0418f3f4e9d991d124d735516b73cc96832cdac445c9de"
+      },
+      "driver_sha256": {
+        "tests/reproduce-h2.g": "943960953089413f41f57f4deb340f9650382d3be0e859ade88421b50e3e9b73",
+        "tests/cases.g": "796e1c7bbe83ac6fd31d64f49bc483108e3a26515b005a380c0ab633080a5c70",
+        "benchmarks/abelian.g": "8ae10a7b597dc108f3754e1cf2900a672f5660e7e80d3e5fb9e37c173b3b9f9a",
+        "benchmarks/construction.g": "a70c790d6044607b7c082eaaf1ef02b51a245152be3d5c1e40a8a6c90bd58c61",
+        "benchmarks/run.py": "9a0dc76e81639c68a2a9708e56d12908f04f5e02c57b3192f5943d74411fd0a1"
+      },
+      "platform": {
+        "uname": [
+          "Linux",
+          "190644a07fd6",
+          "6.18.55",
+          "#1 SMP Wed Oct 14 19:45:18 UTC 2026",
+          "x86_64"
+        ],
+        "cpu_count": 5,
+        "cpu_max": "400000 100000",
+        "memory_max": "34359738368"
+      },
+      "arguments": {
+        "case": null,
+        "suite": "small",
+        "prime": null,
+        "timeout": 5.0,
+        "repeat": 3,
+        "mode": "standard",
+        "task": "h2",
+        "diagnostics": false,
+        "trace": false,
+        "gap": "/workspace/.local/bin/gap",
+        "output": "/workspace/scratch/homology-baseline/recorded/small"
+      },
+      "measurement_notes": "Linux wait4 CPU includes waited-for children plus adopted descendants reaped by the subreaper. RSS is the maximum, not sum of concurrent RSS. /proc samples at ~50ms can miss short processes; RSS sums include shared pages. Traced/profiled runs add overhead. Timings include GAP startup."
+    },
+    "abelian": {
+      "created_utc": "2026-10-21T20:07:44.601725+00:00",
+      "git_commit": "86a99c67d612e2664657778a94b027376da3fec7",
+      "git_status": "",
+      "original_sha256": {
+        "Algorithms.g": "dc95646bc1779d5fc0754b3a4a9aa765d4b1e2b69dc8d9038d68c1bf69918523",
+        "Library-of-groups.g": "dcad77ea0bedc2cadf0418f3f4e9d991d124d735516b73cc96832cdac445c9de"
+      },
+      "driver_sha256": {
+        "tests/reproduce-h2.g": "943960953089413f41f57f4deb340f9650382d3be0e859ade88421b50e3e9b73",
+        "tests/cases.g": "796e1c7bbe83ac6fd31d64f49bc483108e3a26515b005a380c0ab633080a5c70",
+        "benchmarks/abelian.g": "8ae10a7b597dc108f3754e1cf2900a672f5660e7e80d3e5fb9e37c173b3b9f9a",
+        "benchmarks/construction.g": "a70c790d6044607b7c082eaaf1ef02b51a245152be3d5c1e40a8a6c90bd58c61",
+        "benchmarks/run.py": "9a0dc76e81639c68a2a9708e56d12908f04f5e02c57b3192f5943d74411fd0a1"
+      },
+      "platform": {
+        "uname": [
+          "Linux",
+          "190644a07fd6",
+          "6.18.55",
+          "#1 SMP Wed Oct 14 19:45:18 UTC 2026",
+          "x86_64"
+        ],
+        "cpu_count": 5,
+        "cpu_max": "400000 100000",
+        "memory_max": "34359738368"
+      },
+      "arguments": {
+        "case": null,
+        "suite": "arithmetic-components",
+        "prime": null,
+        "timeout": 5.0,
+        "repeat": 3,
+        "mode": "standard",
+        "task": "abelian",
+        "diagnostics": false,
+        "trace": false,
+        "gap": "/workspace/.local/bin/gap",
+        "output": "/workspace/scratch/homology-baseline/recorded/abelian"
+      },
+      "measurement_notes": "Linux wait4 CPU includes waited-for children plus adopted descendants reaped by the subreaper. RSS is the maximum, not sum of concurrent RSS. /proc samples at ~50ms can miss short processes; RSS sums include shared pages. Traced/profiled runs add overhead. Timings include GAP startup."
+    },
+    "construction": {
+      "created_utc": "2026-10-21T20:07:54.093308+00:00",
+      "git_commit": "86a99c67d612e2664657778a94b027376da3fec7",
+      "git_status": "",
+      "original_sha256": {
+        "Algorithms.g": "dc95646bc1779d5fc0754b3a4a9aa765d4b1e2b69dc8d9038d68c1bf69918523",
+        "Library-of-groups.g": "dcad77ea0bedc2cadf0418f3f4e9d991d124d735516b73cc96832cdac445c9de"
+      },
+      "driver_sha256": {
+        "tests/reproduce-h2.g": "943960953089413f41f57f4deb340f9650382d3be0e859ade88421b50e3e9b73",
+        "tests/cases.g": "796e1c7bbe83ac6fd31d64f49bc483108e3a26515b005a380c0ab633080a5c70",
+        "benchmarks/abelian.g": "8ae10a7b597dc108f3754e1cf2900a672f5660e7e80d3e5fb9e37c173b3b9f9a",
+        "benchmarks/construction.g": "a70c790d6044607b7c082eaaf1ef02b51a245152be3d5c1e40a8a6c90bd58c61",
+        "benchmarks/run.py": "9a0dc76e81639c68a2a9708e56d12908f04f5e02c57b3192f5943d74411fd0a1"
+      },
+      "platform": {
+        "uname": [
+          "Linux",
+          "190644a07fd6",
+          "6.18.55",
+          "#1 SMP Wed Oct 14 19:45:18 UTC 2026",
+          "x86_64"
+        ],
+        "cpu_count": 5,
+        "cpu_max": "400000 100000",
+        "memory_max": "34359738368"
+      },
+      "arguments": {
+        "case": null,
+        "suite": "arithmetic-components",
+        "prime": null,
+        "timeout": 5.0,
+        "repeat": 3,
+        "mode": "standard",
+        "task": "construction",
+        "diagnostics": false,
+        "trace": false,
+        "gap": "/workspace/.local/bin/gap",
+        "output": "/workspace/scratch/homology-baseline/recorded/construction"
+      },
+      "measurement_notes": "Linux wait4 CPU includes waited-for children plus adopted descendants reaped by the subreaper. RSS is the maximum, not sum of concurrent RSS. /proc samples at ~50ms can miss short processes; RSS sums include shared pages. Traced/profiled runs add overhead. Timings include GAP startup."
+    },
+    "diagnostics": {
+      "created_utc": "2026-10-21T20:08:03.716533+00:00",
+      "git_commit": "86a99c67d612e2664657778a94b027376da3fec7",
+      "git_status": "",
+      "original_sha256": {
+        "Algorithms.g": "dc95646bc1779d5fc0754b3a4a9aa765d4b1e2b69dc8d9038d68c1bf69918523",
+        "Library-of-groups.g": "dcad77ea0bedc2cadf0418f3f4e9d991d124d735516b73cc96832cdac445c9de"
+      },
+      "driver_sha256": {
+        "tests/reproduce-h2.g": "943960953089413f41f57f4deb340f9650382d3be0e859ade88421b50e3e9b73",
+        "tests/cases.g": "796e1c7bbe83ac6fd31d64f49bc483108e3a26515b005a380c0ab633080a5c70",
+        "benchmarks/abelian.g": "8ae10a7b597dc108f3754e1cf2900a672f5660e7e80d3e5fb9e37c173b3b9f9a",
+        "benchmarks/construction.g": "a70c790d6044607b7c082eaaf1ef02b51a245152be3d5c1e40a8a6c90bd58c61",
+        "benchmarks/run.py": "9a0dc76e81639c68a2a9708e56d12908f04f5e02c57b3192f5943d74411fd0a1"
+      },
+      "platform": {
+        "uname": [
+          "Linux",
+          "190644a07fd6",
+          "6.18.55",
+          "#1 SMP Wed Oct 14 19:45:18 UTC 2026",
+          "x86_64"
+        ],
+        "cpu_count": 5,
+        "cpu_max": "400000 100000",
+        "memory_max": "34359738368"
+      },
+      "arguments": {
+        "case": null,
+        "suite": "small",
+        "prime": null,
+        "timeout": 5.0,
+        "repeat": 1,
+        "mode": "standard",
+        "task": "h2",
+        "diagnostics": true,
+        "trace": true,
+        "gap": "/workspace/.local/bin/gap",
+        "output": "/workspace/scratch/homology-baseline/recorded/diagnostics"
+      },
+      "measurement_notes": "Linux wait4 CPU includes waited-for children plus adopted descendants reaped by the subreaper. RSS is the maximum, not sum of concurrent RSS. /proc samples at ~50ms can miss short processes; RSS sums include shared pages. Traced/profiled runs add overhead. Timings include GAP startup."
+    },
+    "extra-primes": {
+      "created_utc": "2026-10-21T20:08:15.482205+00:00",
+      "git_commit": "86a99c67d612e2664657778a94b027376da3fec7",
+      "git_status": "",
+      "original_sha256": {
+        "Algorithms.g": "dc95646bc1779d5fc0754b3a4a9aa765d4b1e2b69dc8d9038d68c1bf69918523",
+        "Library-of-groups.g": "dcad77ea0bedc2cadf0418f3f4e9d991d124d735516b73cc96832cdac445c9de"
+      },
+      "driver_sha256": {
+        "tests/reproduce-h2.g": "943960953089413f41f57f4deb340f9650382d3be0e859ade88421b50e3e9b73",
+        "tests/cases.g": "796e1c7bbe83ac6fd31d64f49bc483108e3a26515b005a380c0ab633080a5c70",
+        "benchmarks/abelian.g": "8ae10a7b597dc108f3754e1cf2900a672f5660e7e80d3e5fb9e37c173b3b9f9a",
+        "benchmarks/construction.g": "a70c790d6044607b7c082eaaf1ef02b51a245152be3d5c1e40a8a6c90bd58c61",
+        "benchmarks/run.py": "9a0dc76e81639c68a2a9708e56d12908f04f5e02c57b3192f5943d74411fd0a1"
+      },
+      "platform": {
+        "uname": [
+          "Linux",
+          "190644a07fd6",
+          "6.18.55",
+          "#1 SMP Wed Oct 14 19:45:18 UTC 2026",
+          "x86_64"
+        ],
+        "cpu_count": 5,
+        "cpu_max": "400000 100000",
+        "memory_max": "34359738368"
+      },
+      "arguments": {
+        "case": null,
+        "suite": "extra-primes",
+        "prime": null,
+        "timeout": 5.0,
+        "repeat": 1,
+        "mode": "standard",
+        "task": "h2",
+        "diagnostics": true,
+        "trace": true,
+        "gap": "/workspace/.local/bin/gap",
+        "output": "/workspace/scratch/homology-baseline/recorded/extra-primes"
+      },
+      "measurement_notes": "Linux wait4 CPU includes waited-for children plus adopted descendants reaped by the subreaper. RSS is the maximum, not sum of concurrent RSS. /proc samples at ~50ms can miss short processes; RSS sums include shared pages. Traced/profiled runs add overhead. Timings include GAP startup."
+    }
+  },
+  "trace_parser_sha256": "393906b2252aeeb82978f60c7bca60f4cea143a5914a6fdae6faaf5f7d840b10",
+  "postprocessing_note": "Trace intervals reparsed from raw strace, including split execve/resumed events. Numerical GAP outputs and original timing samples are unchanged."
+}

@@ -23,6 +23,8 @@ with `b=a^3`, satisfies both relators. This proves the identification without
 relying only on matching invariants. GAP also checks it is cyclic of order 5.
 The original presentation and archived values are preserved for investigation.
 Reproducing its values verifies C5 computations, not results for SL(2,5).
+The affected input is `Free5/R5`; the arithmetic case `G5` uses the distinct
+presentation `F5/k5`.
 
 `G3/G5/G7/G11` are the arithmetic-family labels; the digit in a label and the
 coefficient prime are different inputs. These cases, and the infinite-group
@@ -56,6 +58,83 @@ that every archived group label is correct. The third verifies the finite
 identifications above and preserves the known case-5 mismatch explicitly.
 Python tests exercise subprocess failure, timeout/descendant cleanup, and
 the guard preventing accidental expensive H2 execution.
+
+## Recorded results and runtimes
+
+The committed evidence is in [the baseline data directory](../benchmarks/results/2026-10-21/README.md):
+78 invocations from source commit `86a99c67d612e2664657778a94b027376da3fec7`, all normally completed within
+the five-second per-invocation limits. These comprise 36 uninstrumented
+small H2 replays, 18 diagnostic H2 runs, and 24 cheap component runs. No
+unexpected solver errors, timeouts, or nonconfluent systems occurred in this
+recorded batch. Intentional failure/timeout fixtures are separate harness tests.
+
+All 16 smoke checks, 36 historical H1 comparisons, presentation sanity checks,
+and six Python harness tests pass. Exact raw outputs, all individual recorded
+durations, CPU/RSS observations, profiles, and traces are archived. Times below
+are rounded medians of three fresh processes, including GAP startup. Linux
+process polling adds up to roughly 50 ms of observation latency; GAP stage
+times have millisecond granularity, so zero does not mean no work. The machine
+exposes five CPUs, a four-CPU quota, and 32 GiB memory. These are cloud
+measurements, not portable performance guarantees or evidence of small speedups.
+
+| Stored case | Coefficient prime | H2 result for stored group | Median wall seconds | Observed wall range, seconds |
+| --- | --- | --- | --- | --- |
+| SL2F2 | 2 | 1 | 0.720 | 0.669–0.771 |
+| SL2F2 | 3 | 0 | 0.718 | 0.718–0.721 |
+| SL2F2 | 5 | 0 | 0.720 | 0.719–0.723 |
+| SL2F2 | 7 | 0 | 0.721 | 0.720–0.725 |
+| SL2F3 | 2 | 0 | 0.719 | 0.719–0.773 |
+| SL2F3 | 3 | 1 | 0.772 | 0.772–0.774 |
+| SL2F3 | 5 | 0 | 0.772 | 0.772–0.874 |
+| SL2F3 | 7 | 0 | 0.771 | 0.721–0.821 |
+| SL2F5 | 2 | 0 | 0.824 | 0.773–0.825 |
+| SL2F5 | 3 | 0 | 0.822 | 0.774–0.828 |
+| SL2F5 | 5 | 1 | 0.928 | 0.825–0.931 |
+| SL2F5 | 7 | 0 | 0.773 | 0.719–0.825 |
+
+The positive bounds are 1 and the corresponding Tor term is also 1, giving
+a matching lower bound by the universal coefficient theorem. The zero bounds
+are exact by nonnegativity. Thus these pin down H2 dimensions for the **stored
+groups**, with the case-5 identification caveat above. At coefficient primes
+11 and 13 all six additional small-case results are zero; their group orders
+are coprime to those primes, consistent with the independent finite-group
+transfer argument. This extends coefficient checks only, not the arithmetic
+family of presentations.
+
+The 18 separate diagnostic runs observe 42 confluent systems, zero
+nonconfluent systems, and 42 traced `kbprog` processes exiting with status 0.
+For example, `SL2F3` at coefficient 3 has two external exec-to-exit intervals
+of 0.004953 and 0.005327 seconds; GAP profiles the unchanged H2 call at 4 ms
+of GAP CPU. These are different measurements, not times to add or substitute
+for each other. They show the small case is quick, not where a day-scale
+arithmetic run spends its time. No internal-C hotspot profile was collected.
+
+### Arithmetic components, without completion
+
+Each component suite has three repeats per stored case. The scalar values
+are `a=Tor`, `b` and `c` from the original H2 formula. The survivor count `e`
+is **not computed**, so the displayed expression is a formula, not an H2 answer.
+
+| Stored case / coefficient | a,b,c | Formula still requiring e | Median CPU ms for a,b,c |
+| --- | --- | --- | --- |
+| G3 / 3 | 0, 0, 8 | e − 8 | 0, 1, 1 |
+| G5 / 5 | 0, 0, 11 | e − 11 | 1, 1, 1 |
+| G7 / 7 | 0, 0, 14 | e − 14 | 1, 2, 3 |
+| G11 / 11 | 0, 0, 19 | e − 19 | 2, 7, 8 |
+
+| Stored case | First-test relations / word length | Median CPU ms: relation lists / quotient / constructor / serialization | Median full invocation wall seconds |
+| --- | --- | --- | --- |
+| G3 | 209 / 2541 | 0 / 0 / 2 / 3 | 0.719 |
+| G5 | 506 / 7999 | 1 / 0 / 6 / 11 | 0.773 |
+| G7 | 1023 / 19031 | 2 / 0 / 11 / 28 | 0.824 |
+| G11 | 2705 / 90577 | 4 / 0 / 38 / 110 | 0.924 |
+
+This establishes that these particular scalar and first-input setup stages
+are inexpensive on this machine. Static analysis identifies repeated
+Knuth–Bendix completion and potential equation/overlap growth as the expensive
+research targets, but the day-scale completion itself was deliberately not
+profiled or run. No overall speedup percentage can be inferred from these
+component measurements.
 
 ## Measured-run commands
 
@@ -147,6 +226,8 @@ Large derived presentations and overlap growth, rather than the cheap scalar
 formula alone, are the main targets for investigation. Small-group profiles
 cannot establish the distribution of time in a multi-day run, and no such
 distribution or speedup factor is asserted here.
+KBMAG was already compiled with `-O2 -g`; compiler tuning alone is not an
+established route to eliminating the day-scale search cost.
 
 1. Record effective options, confluence and candidate-level resources before
    tuning. The existing `tindyint` spelling is ignored by KBMAG; a separate

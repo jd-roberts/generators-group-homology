@@ -1,0 +1,44 @@
+=== harness-tests.log ===
+test_expensive_h2_rejected_before_execution (test_benchmark.BenchmarkTests.test_expensive_h2_rejected_before_execution) ... ok
+test_failure_is_not_success (test_benchmark.BenchmarkTests.test_failure_is_not_success) ... ok
+test_interrupt_is_recorded (test_benchmark.BenchmarkTests.test_interrupt_is_recorded) ... ok
+test_success_and_output (test_benchmark.BenchmarkTests.test_success_and_output) ... ok
+test_timeout_reaps_descendants (test_benchmark.BenchmarkTests.test_timeout_reaps_descendants) ... ok
+test_trace_intervals_and_unfinished_process (test_benchmark.BenchmarkTests.test_trace_intervals_and_unfinished_process) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.550s
+
+OK
+
+=== historical-h1.log ===
+A5 = Alternating Group on 5; S5 = Symmetric Group on 5; G3 = F3/k3 = casep3; G\
+5 = F5/k5 = casep5; G7 = F7/k7 = casep7; G11 = F11/k11; SL2 = S/rels = SL_2(Z)\
+; SL_2Zw = Free1/R1; SL_2Z_2 = Free0/R0;SL_2Z_3 = Free3/R3; SL_2Z_5 = Free5/R5\
+; GL_2Z = Free6/R6; PSL_2Z = Free7/R7;SL_2Zi = Free8/R8; SL_2Zneg5 = Free9/R9
+GL2Z [ 2, 0, 0, 0 ]
+SL2Z [ 1, 1, 0, 0 ]
+SL2F2 [ 1, 0, 0, 0 ]
+SL2F3 [ 0, 1, 0, 0 ]
+SL2F5 [ 0, 0, 1, 0 ]
+SL2Zi [ 1, 0, 0, 0 ]
+SL2w [ 0, 1, 0, 0 ]
+SL2Zneg5 [ 3, 2, 1, 1 ]
+PSL2Z [ 1, 1, 0, 0 ]
+PASS: 36 archived H1 entries (primes 2,3,5,7)
+
+=== presentation-sanity.log ===
+A5 = Alternating Group on 5; S5 = Symmetric Group on 5; G3 = F3/k3 = casep3; G\
+5 = F5/k5 = casep5; G7 = F7/k7 = casep7; G11 = F11/k11; SL2 = S/rels = SL_2(Z)\
+; SL_2Zw = Free1/R1; SL_2Z_2 = Free0/R0;SL_2Z_3 = Free3/R3; SL_2Z_5 = Free5/R5\
+; GL_2Z = Free6/R6; PSL_2Z = Free7/R7;SL_2Zi = Free8/R8; SL_2Zneg5 = Free9/R9
+VERIFIED: stored presentation is isomorphic to matrix group of order 6
+VERIFIED: stored presentation is isomorphic to matrix group of order 24
+KNOWN IDENTIFICATION DEFECT: stored SL_2Z_5 is C5, not SL(2,5); original file \
+preserved
+PASS: presentation sanity checks (the known label defect remains unresolved)
+
+=== smoke.log ===
+GAP 4.14.0; KBMAG 1.6.1
+#I  there are 2 generators and 4 relators of total length 20
+PASS: 16 research smoke checks

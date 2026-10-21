@@ -1,0 +1,128 @@
+[
+  {
+    "status": "completed",
+    "exit_status": 0,
+    "raw_returncode": 0,
+    "wall_seconds": 0.829845,
+    "waited_user_seconds": 0.762147,
+    "waited_system_seconds": 0.055437,
+    "waited_max_rss_kib": 140416,
+    "sampled_peak_group_rss_kib": 140416,
+    "sampled_processes": [
+      {
+        "pid": 3141,
+        "executable": "gap",
+        "cpu_seconds": 0.77,
+        "peak_rss_kib": 140416
+      },
+      {
+        "pid": 3143,
+        "executable": "kbprog",
+        "cpu_seconds": 0,
+        "peak_rss_kib": 0
+      }
+    ],
+    "name": "smoke",
+    "command": [
+      "/workspace/.local/bin/gap",
+      "-q",
+      "-b",
+      "--quitonbreak",
+      "tests/smoke.g"
+    ]
+  },
+  {
+    "status": "completed",
+    "exit_status": 0,
+    "raw_returncode": 0,
+    "wall_seconds": 0.771334,
+    "waited_user_seconds": 0.715802,
+    "waited_system_seconds": 0.049059,
+    "waited_max_rss_kib": 140416,
+    "sampled_peak_group_rss_kib": 140288,
+    "sampled_processes": [
+      {
+        "pid": 3151,
+        "executable": "gap",
+        "cpu_seconds": 0.71,
+        "peak_rss_kib": 140288
+      }
+    ],
+    "name": "historical-h1",
+    "command": [
+      "/workspace/.local/bin/gap",
+      "-q",
+      "-b",
+      "--quitonbreak",
+      "tests/historical-h1.g"
+    ]
+  },
+  {
+    "status": "completed",
+    "exit_status": 0,
+    "raw_returncode": 0,
+    "wall_seconds": 0.927379,
+    "waited_user_seconds": 0.840808,
+    "waited_system_seconds": 0.043576,
+    "waited_max_rss_kib": 140672,
+    "sampled_peak_group_rss_kib": 140672,
+    "sampled_processes": [
+      {
+        "pid": 3152,
+        "executable": "gap",
+        "cpu_seconds": 0.87,
+        "peak_rss_kib": 140672
+      }
+    ],
+    "name": "presentation-sanity",
+    "command": [
+      "/workspace/.local/bin/gap",
+      "-q",
+      "-b",
+      "--quitonbreak",
+      "tests/presentation-sanity.g"
+    ]
+  },
+  {
+    "status": "completed",
+    "exit_status": 0,
+    "raw_returncode": 0,
+    "wall_seconds": 0.67244,
+    "waited_user_seconds": 0.182029,
+    "waited_system_seconds": 0.052199,
+    "waited_max_rss_kib": 15104,
+    "sampled_peak_group_rss_kib": 26368,
+    "sampled_processes": [
+      {
+        "pid": 3153,
+        "executable": "python3.12",
+        "cpu_seconds": 0.09,
+        "peak_rss_kib": 14976
+      },
+      {
+        "pid": 3154,
+        "executable": "python3.12",
+        "cpu_seconds": 0.01,
+        "peak_rss_kib": 11008
+      },
+      {
+        "pid": 3156,
+        "executable": "python3.12",
+        "cpu_seconds": 0.02,
+        "peak_rss_kib": 11392
+      }
+    ],
+    "name": "harness-tests",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_benchmark.py",
+      "-v"
+    ]
+  }
+]
