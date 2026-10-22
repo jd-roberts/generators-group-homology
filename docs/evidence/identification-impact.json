@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "exit_status": 0,
+  "raw_returncode": 0,
+  "wall_seconds": 0.718523,
+  "waited_user_seconds": 0.635024,
+  "waited_system_seconds": 0.041315,
+  "waited_max_rss_kib": 140544,
+  "sampled_peak_group_rss_kib": 140544,
+  "sampled_processes": [
+    {
+      "pid": 1414,
+      "executable": "gap",
+      "cpu_seconds": 0.65,
+      "peak_rss_kib": 140544
+    }
+  ],
+  "repository_base_commit": "bacef01d9d102465ae0dd4727c2c899ba19c347b",
+  "recorded_utc": "2026-10-21T20:57:54.737520+00:00",
+  "command": [
+    "/workspace/.local/bin/gap",
+    "-q",
+    "-b",
+    "--quitonbreak",
+    "tests/identification-impact.g"
+  ],
+  "timeout_seconds": 5,
+  "method": "GAP core matrix-group construction and integral Schur multiplier; no KBMAG",
+  "sha256": {
+    "tests/identification-impact.g": "3d8a47db6178fd3ac6824334b5a200328819b2ff7be8463b2597a12a062d978f",
+    "Algorithms.g": "dc95646bc1779d5fc0754b3a4a9aa765d4b1e2b69dc8d9038d68c1bf69918523",
+    "Library-of-groups.g": "dcad77ea0bedc2cadf0418f3f4e9d991d124d735516b73cc96832cdac445c9de"
+  },
+  "gap_version": "4.14.0"
+}

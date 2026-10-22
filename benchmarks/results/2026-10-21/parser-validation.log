@@ -1,0 +1,11 @@
+test_expensive_h2_rejected_before_execution (test_benchmark.BenchmarkTests.test_expensive_h2_rejected_before_execution) ... ok
+test_failure_is_not_success (test_benchmark.BenchmarkTests.test_failure_is_not_success) ... ok
+test_interrupt_is_recorded (test_benchmark.BenchmarkTests.test_interrupt_is_recorded) ... ok
+test_success_and_output (test_benchmark.BenchmarkTests.test_success_and_output) ... ok
+test_timeout_reaps_descendants (test_benchmark.BenchmarkTests.test_timeout_reaps_descendants) ... ok
+test_trace_intervals_and_unfinished_process (test_benchmark.BenchmarkTests.test_trace_intervals_and_unfinished_process) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.546s
+
+OK

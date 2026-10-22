@@ -6,3 +6,28 @@ In the folders above we give a library of finitely-presented groups by presentat
 
 For a brief discussion of finitely-presented groups and using them in GAP have a look at [this page]( https://jd-roberts.github.io/generators-group-homology/finitely-presented-groups.html).
 
+## Research development
+
+- [How the algorithms work](docs/ALGORITHMS.md): mathematical interpretation, function inputs and outputs, and when an answer is only an upper bound.
+- [Dependencies and reproduction](docs/REPRODUCING.md): GAP/KBMAG setup, tests, and bounded runs against the archived tables.
+- [Research review](docs/RESEARCH-REVIEW.md): presentation audit, performance bottlenecks, limitations, and proposed improvements.
+- [Measured quick baseline](docs/BASELINE.md): safe small cases, component benchmarks, profiling, and verification limits.
+- [Presentation provenance and impact](docs/PRESENTATION-PROVENANCE.md): Git history, affected finite-group claims, arithmetic-group distinctions, and pending paper-source checks.
+- [Prioritized optimization plan](docs/OPTIMIZATION-PLAN.md): mathematical stop criteria and small-case validation gates before expensive arithmetic experiments.
+
+With GAP and compiled KBMAG installed, run from this directory:
+
+```sh
+gap -q -b --quitonbreak tests/smoke.g
+gap -q -b --quitonbreak tests/historical-h1.g
+bash scripts/reproduce-h2.sh SL2F3 3 5
+```
+
+The original algorithms, presentations, notebook, HTML, and result images are
+preserved. The new runner uses all defining relators as candidates and writes
+logs outside the checkout; a timeout is an unfinished run, not a homology value.
+Full H2 runs are currently restricted to three small stored presentations.
+The one labelled `SL_2Z_5` actually defines C5; see the baseline before
+interpreting the archived table as results for matrix groups. The expensive
+Anton-family computations are deferred.
+
