@@ -67,6 +67,7 @@ or network service is required for computations once dependencies are installed.
 gap -q -b --quitonbreak tests/smoke.g
 gap -q -b --quitonbreak tests/historical-h1.g
 gap -q -b --quitonbreak tests/presentation-sanity.g
+timeout --kill-after=2 5 gap -q -b --quitonbreak tests/paper-provenance.g
 ```
 
 The smoke file performs 16 checks: free versus torsion contributions in
@@ -94,6 +95,10 @@ arithmetic presentation identities, or the historical H2 table.
 | Original README | Links to the Anton and Roberts papers | Complete experimental transcripts |
 
 Exact historical execution cannot be recovered solely from this checkout.
+The subsequent [uploaded-paper audit](PAPER-AUDIT.md) does recover explicit
+arithmetic prime-3/5 source relators and Anton's eleven-word prime-5 list.
+The new source test checks those words and cheap image/partition properties;
+it deliberately does not execute the expensive complement reductions.
 In particular, a table's sharper bound may have used a different presentation,
 a certified smaller spanning list, a different candidate order, or more
 completion time. Do not infer any of these undocumented choices as fact.

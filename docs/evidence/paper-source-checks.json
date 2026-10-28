@@ -1,0 +1,39 @@
+{
+  "status": "completed",
+  "exit_status": 0,
+  "raw_returncode": 0,
+  "wall_seconds": 1.041523,
+  "waited_user_seconds": 0.904501,
+  "waited_system_seconds": 0.094058,
+  "waited_max_rss_kib": 140544,
+  "sampled_peak_group_rss_kib": 140544,
+  "sampled_processes": [
+    {
+      "pid": 2177,
+      "executable": "gap",
+      "cpu_seconds": 0.98,
+      "peak_rss_kib": 140544
+    }
+  ],
+  "repository_base_commit": "08120d180c3d6d2936ce7e7b2304eb582d26b1cf",
+  "recorded_utc": "2026-10-28T13:13:14.547499+00:00",
+  "timeout_seconds": 5,
+  "command": [
+    "/workspace/.local/bin/gap",
+    "-q",
+    "-b",
+    "--quitonbreak",
+    "tests/paper-provenance.g"
+  ],
+  "gap_version": "4.14.0",
+  "scope": "GAP core only: free words, abelian invariants, finite symmetric-group multiplier, finite-field matrix rank; no arithmetic completion",
+  "sha256": {
+    "tests/paper-provenance.g": "0af4ec6b0de93e3d4863e69f0043d26aaf5733d408f3120569c7d934573e9c46",
+    "tests/fixtures/anton-v1-relators.g": "b55a6b4bfdec00af0ab31ca285377bfaa4ff2c556574de1486c826836ffdf606",
+    "Algorithms.g": "dc95646bc1779d5fc0754b3a4a9aa765d4b1e2b69dc8d9038d68c1bf69918523",
+    "Library-of-groups.g": "dcad77ea0bedc2cadf0418f3f4e9d991d124d735516b73cc96832cdac445c9de",
+    "docs/evidence/paper-sources.json": "f3072414c4ac4f2735c85d0b2886ff8344826688e6904db715a647a3186f8152"
+  },
+  "stdout": "A5 = Alternating Group on 5; S5 = Symmetric Group on 5; G3 = F3/k3 = casep3; G\\\n5 = F5/k5 = casep5; G7 = F7/k7 = casep7; G11 = F11/k11; SL2 = S/rels = SL_2(Z)\\\n; SL_2Zw = Free1/R1; SL_2Z_2 = Free0/R0;SL_2Z_3 = Free3/R3; SL_2Z_5 = Free5/R5\\\n; GL_2Z = Free6/R6; PSL_2Z = Free7/R7;SL_2Zi = Free8/R8; SL_2Zneg5 = Free9/R9\nVERIFIED Roberts 2009 finite control: Sigma5 has integral H1=C2 and H2=C2, so \\\nmod-2 H2 dimension is 2\nVERIFIED Anton relator comparison: 57 literal matches and \n3 explicit commutator conjugacies\nVERIFIED Anton Lemma 7.4 linear portion: e has 11 words, complement 28, rank m\\\nod 5 = 11\nNOT RUN: the 28 complement-word reductions needed to prove e spans the relatio\\\nn quotient\nSOURCE CAUTION: 2020 v1 displayed six images have formal rank 3, so cannot be \\\na six-element basis\nSOURCE CAUTION: stored G11 is not perfect, unlike Anton's SE2 in Lemma 7.2\nPASS: source comparisons and cheap linear checks; no arithmetic completion exe\\\ncuted\n",
+  "text_transcript_note": "Readable .txt copy strips trailing line whitespace; this stdout field preserves captured output exactly."
+}

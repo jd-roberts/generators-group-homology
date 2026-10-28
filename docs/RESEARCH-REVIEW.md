@@ -13,6 +13,13 @@ presentations and do not validate all historical group labels. Full expensive
 computations are deferred; the short timeout sweep below is a prior audit,
 not the current recommended workflow.
 
+The subsequent [uploaded-paper audit](PAPER-AUDIT.md) confirms the exact
+finite case-5 table claim in Roberts 2020 v1, identifies Anton's distinct
+SE2 presentation and prime-5 proof, and records separate prime-7 source-data
+issues. In particular, the nonperfect stored G11 cannot realize the perfect
+SE2 of Anton's Lemma 7.2. The initial observations below remain a record of
+the earlier computational audit, not a replacement for those source checks.
+
 ## What reproduced
 
 - All 36 H1 entries in `undergrad-research/Capture2.JPG` agree with the

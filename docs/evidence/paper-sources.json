@@ -1,0 +1,36 @@
+{
+  "sources": [
+    {
+      "arxiv_version": "0804.3553v1",
+      "filename": "0804.3553v1.pdf",
+      "header_date": "2008-04-22",
+      "pdf_pages": 23,
+      "sha256": "47aa5ce2ac126f52e751992d17aeafab7a8680e6cd92bf62b90293d98569a1b7",
+      "bytes": 308902,
+      "source": "user-uploaded PDF; no assertion about other versions",
+      "citation_url": "https://arxiv.org/pdf/0804.3553v1"
+    },
+    {
+      "arxiv_version": "0901.2610v3",
+      "filename": "0901.2610v3.pdf",
+      "header_date": "2009-09-30",
+      "pdf_pages": 12,
+      "sha256": "c679e5c0b9dd1cfb0eb88375fa8ca47365d34f2cd547a1f18e44626730423c04",
+      "bytes": 167425,
+      "source": "user-uploaded PDF; no assertion about other versions",
+      "citation_url": "https://arxiv.org/pdf/0901.2610v3"
+    },
+    {
+      "arxiv_version": "2009.04069v1",
+      "filename": "2009.04069v1.pdf",
+      "header_date": "2020-09-09",
+      "pdf_pages": 13,
+      "sha256": "f7bea5fd084b047f6335b322ad85f3b97d0243221dbcf42c9686b00380313ee5",
+      "bytes": 335276,
+      "source": "user-uploaded PDF; no assertion about other versions",
+      "citation_url": "https://arxiv.org/pdf/2009.04069v1"
+    }
+  ],
+  "page_numbering": "PDF pages equal printed page numbers in all three supplied copies",
+  "method": "pdftotext -layout; critical 2020 p.10-11 and Anton p.13 displays also rendered for visual verification; no document instructions executed"
+}
