@@ -206,6 +206,12 @@ The three supplied versions have now been read. The
   identity reductions and explicit homology representatives. The intended
   spanning argument does not require independent homology classes.
 
+The subsequent [presentation certificates](PRIME7-PRESENTATION-CERTIFICATES.md)
+now verify the maps in both directions, distinguish the b1 and b0 source-word
+conventions by exact normal-closure certificates, and provide separate valid
+kernel words under the b0 interpretation. The expensive spanning premise
+remains unverified; the earlier b1-interpreted corrected list is not valid.
+
 The source review identifies a concrete error in the uploaded 2020 finite
 example table and traces separate arithmetic proof inputs. It does not
 independently replay multi-day rewriting runs or establish completeness of

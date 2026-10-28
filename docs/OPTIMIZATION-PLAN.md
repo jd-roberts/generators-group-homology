@@ -35,11 +35,16 @@ and explicit cycle representatives before using its final six words as a
 certified spanning set. The [proof reexamination](PRIME7-PROOF-REEXAMINATION.md)
 confirms that the literal last-six auxiliary images have rank six; no
 independence of the six homology classes is required.
-The [explicit correction calculation](PRIME7-CORRECTED-REPRESENTATIVES.md)
-now supplies alternative kernel words and a conditional spanning proof.
-They do not bypass the need to verify the twelve-word source certificate
-and presentation identification before treating them as a certified spanning list
-for further computations; no independence of these new words is asserted.
+The [earlier formal correction calculation](PRIME7-CORRECTED-REPRESENTATIVES.md)
+supplies matrices and a conditional proof. Its failed membership premise
+is resolved below; those earlier words must not be treated as kernel classes.
+
+**Membership gate update:** [exact certificates](PRIME7-PRESENTATION-CERTIFICATES.md)
+now verify the presentation maps, but disprove the earlier list's membership
+premise under `f7=b1`. Use neither that list nor its conditional spanning
+claim as a baseline. A separate b0-interpreted list has positively certified
+membership and defines valid classes; its twelve-word spanning premise is
+still unverified. This validation precedes any optimization work.
 
 **Small tests:** existing presentation sanity checks, the new independent
 matrix-group multiplier check, cyclic groups, C2 x C2, and SL(2,3).

@@ -14,7 +14,8 @@ For a brief discussion of finitely-presented groups and using them in GAP have a
 - [Measured quick baseline](docs/BASELINE.md): safe small cases, component benchmarks, profiling, and verification limits.
 - [Presentation provenance and impact](docs/PRESENTATION-PROVENANCE.md): Git history, affected finite-group claims, arithmetic-group distinctions, and versioned paper-source findings.
 - [Uploaded-paper audit](docs/PAPER-AUDIT.md): exact versions and page citations, affected finite-table claims, and separate arithmetic reproduction issues.
-- [Explicit prime-7 corrections](docs/PRIME7-CORRECTED-REPRESENTATIVES.md): free words, correction matrices, direct verification, and the conditional spanning proof.
+- [Earlier prime-7 correction calculation](docs/PRIME7-CORRECTED-REPRESENTATIVES.md): verified matrices and free words; see the subsequent membership findings before interpreting them as homology classes.
+- [Prime-7 presentation and membership certificates](docs/PRIME7-PRESENTATION-CERTIFICATES.md): verified maps, the failed membership premise of the earlier words, and separate valid variants with spanning still unverified.
 - [Prioritized optimization plan](docs/OPTIMIZATION-PLAN.md): mathematical stop criteria and small-case validation gates before expensive arithmetic experiments.
 
 With GAP and compiled KBMAG installed, run from this directory:

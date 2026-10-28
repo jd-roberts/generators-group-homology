@@ -1,5 +1,14 @@
 # Explicit prime-7 kernel representatives from the twelve printed words
 
+**Membership update:** the subsequent
+[presentation certificates](PRIME7-PRESENTATION-CERTIFICATES.md) prove that
+five of the six words below are outside the reduced normal relation
+subgroup under this note's `f7=b1` convention. They do not define homology
+classes under that convention. Preserve this calculation as a verified
+free-word calculation, not as a valid spanning list. The follow-up gives
+separate, positively certified variants using `f7=b0=z^-3*b1*z^3`;
+their spanning property remains conditional.
+
 This calculation uses the twelve literal words across pp.9–10 of the
 uploaded [Roberts 2020 v1](https://arxiv.org/pdf/2009.04069v1#page=9),
 without changing the source words, presentations, papers or original

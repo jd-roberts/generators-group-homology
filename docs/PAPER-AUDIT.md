@@ -182,6 +182,14 @@ This is neither an arithmetic H2 rerun nor an implemented optimization.
 
 ### R20 prime 7: auxiliary images versus spanning homology classes
 
+**Latest result:** the [presentation certificates](PRIME7-PRESENTATION-CERTIFICATES.md)
+verify the Proposition 3.2 isomorphism, classify all twelve words, and show
+that `f7=b1` gives four nonmembers of the relation subgroup. Five previously
+corrected words are also nonmembers. All twelve words have positive
+membership certificates under `f7=b0=z^-3*b1*z^3`, yielding separate valid
+corrected classes; their spanning property remains unverified. The source
+coordinate distinction is essential when reading the earlier analysis below.
+
 The author's clarification and a more detailed
 [proof reexamination](PRIME7-PROOF-REEXAMINATION.md) supersede the earlier
 assessment of this point. R09 proves only an upper bound six; R20 seeks

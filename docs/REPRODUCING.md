@@ -69,6 +69,7 @@ gap -q -b --quitonbreak tests/historical-h1.g
 gap -q -b --quitonbreak tests/presentation-sanity.g
 timeout --kill-after=2 5 gap -q -b --quitonbreak tests/paper-provenance.g
 python3 scripts/verify-prime7-corrections.py --gap gap
+python3 scripts/verify-prime7-presentation.py --gap gap
 ```
 
 The smoke file performs 16 checks: free versus torsion contributions in
@@ -90,6 +91,15 @@ and their exponent sums with GAP and an independent Python count. Its
 [calculation and proof](PRIME7-CORRECTED-REPRESENTATIVES.md) state precisely
 why spanning for the intended H2 remains conditional on the original
 twelve-word certificate. It does not run KBMAG.
+
+The subsequent presentation verifier establishes the isomorphism by exact
+products of conjugates and checks a finite-matrix nonmembership certificate.
+It proves that five earlier corrected words fail normal-closure membership
+under `f7=b1`; their zero exponent sums do not make them homology classes.
+It also verifies a distinct valid list using `f7=b0=z^-3*b1*z^3`. See the
+[complete status and certificates](PRIME7-PRESENTATION-CERTIFICATES.md).
+The GAP export has a five-second timeout; combined replay is limited to
+ten seconds. No proof search or KBMAG is performed by this verifier.
 
 ## Inventory and original evidence
 

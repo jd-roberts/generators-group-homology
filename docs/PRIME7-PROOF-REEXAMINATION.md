@@ -1,5 +1,12 @@
 # Prime-7 proof reexamination: spanning and auxiliary images
 
+**Follow-up:** [exact presentation and membership certificates](PRIME7-PRESENTATION-CERTIFICATES.md)
+now verify both presentation maps and disprove membership for four of the
+twelve words under `f7=b1`. The conditional premise below is therefore
+false for that naming convention. A distinct `f7=b0` interpretation has
+positive membership certificates for all twelve and yields valid corrected
+classes; spanning has not been established.
+
 This note clarifies the earlier [paper audit](PAPER-AUDIT.md) following the
 author's explanation of the intended result. It examines the uploaded
 [Roberts 2020 v1](https://arxiv.org/pdf/2009.04069v1), Section 3, pp.6–10,
