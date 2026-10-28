@@ -180,30 +180,39 @@ This is neither an arithmetic H2 rerun nor an implemented optimization.
 
 ## 4. Separate reproduction issues that must remain visible
 
-### R20's displayed images cannot be the claimed basis
+### R20 prime 7: auxiliary images versus spanning homology classes
 
-On p.10, the last six displayed abelian images are
+The author's clarification and a more detailed
+[proof reexamination](PRIME7-PROOF-REEXAMINATION.md) supersede the earlier
+assessment of this point. R09 proves only an upper bound six; R20 seeks
+six spanning classes, without claiming their independence or nontriviality.
+The six-dimensional space named on R20 p.10 is the auxiliary B, not H2.
 
-```
-f1^3, f7^-1, f2^-1, f1*f2, f1, f1^-1.
-```
+The p.10 images `f1^3, f7^-1, f2^-1, f1*f2, f1, f1^-1` belong to the
+**last six auxiliary elements** of the twelve-word list, not the proposed
+homology generators. Their displayed rank is at most three. That alone
+does not disprove spanning: dependencies among their lifts might vanish
+in A or already lie in the span of the proposed kernel elements.
 
-The next sentence calls them a basis for a six-dimensional F7 vector space.
-In an abelian target they lie in the span of f1,f2,f7, so their rank is at
-most three. In particular, the last two are negatives of each other. The
-six formal exponent vectors have rank exactly three in the free coordinate
-space; further quotient relations cannot increase that rank. This was
-verified in the rendered PDF as well as the extracted text.
+Crucially, a new direct exponent check of the literal last-six words on
+pp.9–10 gives **rank six**, with determinant 6 modulo 7. Thus the actual
+auxiliary words support the needed basis property; the rank-three
+reduction display does not accurately represent their abelian images.
+This resolves the auxiliary-rank question left open by the earlier audit.
 
-As printed, the basis assertion is impossible, and the inference that the
-first six kernel words generate all H2 does not follow from that display.
-The missing information might be corrected images, different generators or
-a transcription error; the reviewed files do not decide which. This does
-**not** prove that H2 has a different dimension or that the six candidate
-words are not cycles. The paper itself allows any/all candidates to be
-trivial. Completeness of the claimed generating list needs original data or
-a separate proof. This issue is independent of the finite case-5 error and
-does not by itself refute R09's earlier bound.
+A separate necessary cycle check remains: the first literal word
+`f1*f5*f1*f5^-1` has exponent image `2*f1`, not zero. The final printed
+list likewise starts `z*a*z*a^-1`, nonzero in the free mod-7 abelianization.
+The asserted identity reductions and the explicit representatives therefore
+need clarification or an explicit missing change of generators.
+
+If the twelve words span A as reported, their independent last-six images
+allow one to subtract auxiliary combinations from the first six words,
+producing six spanning kernel elements. This requires no independence of
+those kernel elements, but does not identify them with the unadjusted final
+printed list. See the reexamination for the exact argument, source passages
+and bounded checks. No arithmetic spanning certificate has been rerun;
+neither the 2009 bound nor the intended spanning method is refuted here.
 
 ### Reduced arithmetic inputs differ across source descriptions
 
@@ -239,7 +248,8 @@ spanning certificate to reproduce. Their expensive positive reductions
 remain computationally unverified in this environment.
 
 Before optimization, quarantine the nonperfect stored G11 identification
-and the unsupported R20 p.10 basis inference. Preserve the old tables and
+and clarify R20 p.10's explicit representatives as detailed in the
+[prime-7 reexamination](PRIME7-PROOF-REEXAMINATION.md). Preserve the old tables and
 candidate words as evidence, and record clarifications separately. The
 [updated optimization plan](OPTIMIZATION-PLAN.md) prioritizes reproducing a
 fixed-quotient certificate on small cases before any authorized arithmetic

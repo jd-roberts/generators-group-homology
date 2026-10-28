@@ -30,8 +30,11 @@ Use the actual matrix SL(2,F5) as an independent homology reference; retain
 C5 as a separate test with nonzero mod-5 homology. Do not relabel a stored
 input or silently substitute a guessed corrected exponent. Resolve the
 G11 mismatch with Anton's perfect SE2 before optimizing it as that group.
-Recover the prime-7 reduced inputs and resolve R20's displayed-image rank
-problem before using its six kernel words as a certified spanning set.
+Recover the prime-7 reduced inputs and clarify R20's displayed reductions
+and explicit cycle representatives before using its final six words as a
+certified spanning set. The [proof reexamination](PRIME7-PROOF-REEXAMINATION.md)
+confirms that the literal last-six auxiliary images have rank six; no
+independence of the six homology classes is required.
 
 **Small tests:** existing presentation sanity checks, the new independent
 matrix-group multiplier check, cyclic groups, C2 x C2, and SL(2,3).

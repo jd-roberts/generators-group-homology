@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/workspace/.local/bin/gap",
+    "-q",
+    "-b",
+    "tests/prime7-proof-check.g"
+  ],
+  "timeout_seconds": 5,
+  "wall_seconds": 0.834453,
+  "exit_code": 0,
+  "stdout": "Coordinates: f1,f2,f3,f4,f5,f7; exponent sums modulo 7\n1: [ 2, 0, 0, 0, 0, 0 ]\n2: [ 0, 0, 0, 0, 0, 0 ]\n3: [ 0, 2, 0, 0, 0, 0 ]\n4: [ 0, 0, 0, 0, 6, 3 ]\n5: [ 5, 0, 2, 0, 5, 6 ]\n6: [ 1, 0, 0, 2, 5, 6 ]\n7: [ 1, 2, 0, 0, 5, 6 ]\n8: [ 0, 0, 0, 0, 0, 6 ]\n9: [ 5, 0, 0, 0, 5, 0 ]\n10: [ 0, 0, 0, 4, 4, 0 ]\n11: [ 4, 0, 3, 4, 4, 0 ]\n12: [ 5, 3, 3, 3, 4, 0 ]\nVERIFIED: displayed auxiliary-image rank = 3\nVERIFIED: literal last-six auxiliary-word rank = 6; determinant mod 7 = 6\nVERIFIED: literal first-six exponent rank = 5; first word has image 2*f1\nVERIFIED: subtracting last-six image combinations kills first-six images\nNOT VERIFIED: FindBasis spanning certificate or printed H2 representatives\nNO CLAIM: independence, nontriviality, or exact dimension of H2\n",
+  "stderr": "",
+  "source_sha256": {
+    "tests/prime7-proof-check.g": "cc7df7017b536c9123438660c3f8476f1b8377de258d845bb811c2df4aa2df37",
+    "tests/fixtures/roberts-v1-prime7-words.g": "8efcc3b2437f6379178c6f4a3c95accd501c33adf675f8b3af65b8d93c596574"
+  },
+  "scope": "Free words and finite-field linear algebra only; no KBMAG or arithmetic-group completion."
+}

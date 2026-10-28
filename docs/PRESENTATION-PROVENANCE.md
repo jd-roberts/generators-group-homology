@@ -200,8 +200,11 @@ The three supplied versions have now been read. The
   there is no finite SL(2,F5) example or the 2020 table in this version.
 - Roberts 2020 v1, Section 3.1: the arithmetic prime-7 generator calculation
   is separate from Section 4's finite table, but the six displayed abelian
-  images on p. 10 have a distinct rank inconsistency. Their asserted basis
-  property and the subsequent completeness inference require original data.
+  images on p. 10 have a distinct printed-data inconsistency. The
+  [reexamination](PRIME7-PROOF-REEXAMINATION.md) verifies rank six for the
+  literal auxiliary words and distinguishes this from the still-unresolved
+  identity reductions and explicit homology representatives. The intended
+  spanning argument does not require independent homology classes.
 
 The source review identifies a concrete error in the uploaded 2020 finite
 example table and traces separate arithmetic proof inputs. It does not
