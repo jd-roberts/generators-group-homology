@@ -101,6 +101,17 @@ It also verifies a distinct valid list using `f7=b0=z^-3*b1*z^3`. See the
 The GAP export has a five-second timeout; combined replay is limited to
 ten seconds. No proof search or KBMAG is performed by this verifier.
 
+The [spanning preparation](PRIME7-SPANNING-CERTIFICATE-PLAN.md) adds a
+separate, whitelisted small-group test suite and static prime-7 inventory:
+
+```sh
+python3 scripts/test-relation-span.py --gap gap --output /tmp/new-span-tests
+python3 scripts/check-prime7-spanning-inventory.py --gap gap
+```
+
+The latter only replays existing proofs and checks finite-field witnesses;
+it launches no arithmetic search. The planned arithmetic pilot has not run.
+
 ## Inventory and original evidence
 
 | Artifact | What it supplies | What it does not supply |

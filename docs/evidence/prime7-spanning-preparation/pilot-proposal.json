@@ -1,0 +1,58 @@
+{
+  "status": "PROPOSED_ONLY_NOT_LAUNCHED",
+  "quotient_blueprint_sha256": "d33076b1c1b20c9950349645e77c0dbcebe9c8e326ba77dd041b6b696b134a60",
+  "sufficient_future_targets": [
+    1,
+    2,
+    4,
+    6,
+    7,
+    8,
+    10,
+    11,
+    13,
+    14,
+    18,
+    26,
+    28,
+    29,
+    30
+  ],
+  "established_targets": [
+    3,
+    5,
+    9,
+    12,
+    15
+  ],
+  "ready_method": "finite cyclic-split proof search; no completion",
+  "search_limits": {
+    "shared_wall_seconds": 5,
+    "external_worker_wall_seconds": 10,
+    "cpu_seconds": 6,
+    "per_process_address_space_MiB": 512,
+    "max_indexed_rule_instances": 20000,
+    "max_states_per_target": 1000,
+    "max_length_growth": 6,
+    "max_output_MiB": 8
+  },
+  "implementation_before_launch": [
+    "implement and test the additional OS memory/file-size/CPU wrapper on small examples"
+  ],
+  "not_part_of_ready_pilot": {
+    "method": "one shared KBMAG system",
+    "requires": "proof-provenance adapter validated on small examples first",
+    "wall_and_cpu_seconds": 20,
+    "per_process_address_space_MiB": 512,
+    "maxeqns": 5000,
+    "tidyint": 100,
+    "confnum": 100,
+    "maxstoredlen": [
+      512,
+      512
+    ],
+    "maxoverlaplen": 1024
+  },
+  "acceptance": "independent positive certificate replay; no inference from nonidentity output or resource termination",
+  "spanning": "UNVERIFIED"
+}

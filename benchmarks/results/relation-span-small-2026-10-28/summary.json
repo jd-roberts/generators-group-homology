@@ -1,0 +1,456 @@
+{
+  "results": [
+    {
+      "case": "C3_full",
+      "search_wall_seconds": 0.000517,
+      "independent_check_wall_seconds": 6e-05,
+      "fixed_quotient_status": {
+        "certified_targets": [
+          1
+        ],
+        "proved_nonmembers": [],
+        "spanning": "proved"
+      },
+      "candidate_h2_upper_bound": 1,
+      "known_h2": 1,
+      "original_h2_upper_bound": 1,
+      "fixed_rule_count": 144,
+      "rule_index_builds": 1,
+      "unchanged_gap_command": [
+        "/workspace/.local/bin/gap",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "/workspace/generators-group-homology/benchmarks/results/relation-span-small-2026-10-28/C3_full.control.g"
+      ],
+      "unchanged_gap_control_sha256": "77fe8638912c4d0231c7e15f1d175f586a3dbc454f38056f866df4c544e32557",
+      "unchanged_gap_resources": {
+        "status": "completed",
+        "exit_status": 0,
+        "raw_returncode": 0,
+        "wall_seconds": 1.335958,
+        "waited_user_seconds": 0.961181,
+        "waited_system_seconds": 0.345742,
+        "waited_max_rss_kib": 140416,
+        "sampled_peak_group_rss_kib": 140416,
+        "sampled_processes": [
+          {
+            "pid": 2344,
+            "executable": "gap",
+            "cpu_seconds": 1.27,
+            "peak_rss_kib": 140416
+          }
+        ]
+      }
+    },
+    {
+      "case": "C3_power_basis",
+      "search_wall_seconds": 0.000629,
+      "independent_check_wall_seconds": 3.5e-05,
+      "fixed_quotient_status": {
+        "certified_targets": [
+          1
+        ],
+        "proved_nonmembers": [],
+        "spanning": "proved"
+      },
+      "candidate_h2_upper_bound": 1,
+      "known_h2": 1,
+      "original_h2_upper_bound": 1,
+      "fixed_rule_count": 198,
+      "rule_index_builds": 1,
+      "unchanged_gap_command": [
+        "/workspace/.local/bin/gap",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "/workspace/generators-group-homology/benchmarks/results/relation-span-small-2026-10-28/C3_power_basis.control.g"
+      ],
+      "unchanged_gap_control_sha256": "77fe8638912c4d0231c7e15f1d175f586a3dbc454f38056f866df4c544e32557",
+      "unchanged_gap_resources": {
+        "status": "completed",
+        "exit_status": 0,
+        "raw_returncode": 0,
+        "wall_seconds": 1.351451,
+        "waited_user_seconds": 0.95532,
+        "waited_system_seconds": 0.342242,
+        "waited_max_rss_kib": 140416,
+        "sampled_peak_group_rss_kib": 140288,
+        "sampled_processes": [
+          {
+            "pid": 2348,
+            "executable": "gap",
+            "cpu_seconds": 1.23,
+            "peak_rss_kib": 140288
+          }
+        ]
+      }
+    },
+    {
+      "case": "C3_missing_p3",
+      "search_wall_seconds": 0.000371,
+      "independent_check_wall_seconds": 4.2e-05,
+      "fixed_quotient_status": {
+        "certified_targets": [],
+        "proved_nonmembers": [
+          1
+        ],
+        "spanning": "disproved"
+      },
+      "candidate_h2_upper_bound": null,
+      "known_h2": 1,
+      "original_h2_upper_bound": 1,
+      "fixed_rule_count": 126,
+      "rule_index_builds": 1,
+      "unchanged_gap_command": [
+        "/workspace/.local/bin/gap",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "/workspace/generators-group-homology/benchmarks/results/relation-span-small-2026-10-28/C3_missing_p3.control.g"
+      ],
+      "unchanged_gap_control_sha256": "77fe8638912c4d0231c7e15f1d175f586a3dbc454f38056f866df4c544e32557",
+      "unchanged_gap_resources": {
+        "status": "completed",
+        "exit_status": 0,
+        "raw_returncode": 0,
+        "wall_seconds": 1.027357,
+        "waited_user_seconds": 0.872353,
+        "waited_system_seconds": 0.12169,
+        "waited_max_rss_kib": 140416,
+        "sampled_peak_group_rss_kib": 140416,
+        "sampled_processes": [
+          {
+            "pid": 2350,
+            "executable": "gap",
+            "cpu_seconds": 0.96,
+            "peak_rss_kib": 140416
+          }
+        ]
+      }
+    },
+    {
+      "case": "C3_missing_p2",
+      "search_wall_seconds": 0.000225,
+      "independent_check_wall_seconds": 3.4e-05,
+      "fixed_quotient_status": {
+        "certified_targets": [],
+        "proved_nonmembers": [
+          1
+        ],
+        "spanning": "disproved"
+      },
+      "candidate_h2_upper_bound": null,
+      "known_h2": 0,
+      "original_h2_upper_bound": 0,
+      "fixed_rule_count": 72,
+      "rule_index_builds": 1,
+      "unchanged_gap_command": [
+        "/workspace/.local/bin/gap",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "/workspace/generators-group-homology/benchmarks/results/relation-span-small-2026-10-28/C3_missing_p2.control.g"
+      ],
+      "unchanged_gap_control_sha256": "84d64161588cde714b773e79ecf5d8ce396143600ffd30a662ca5c29aae38f33",
+      "unchanged_gap_resources": {
+        "status": "completed",
+        "exit_status": 0,
+        "raw_returncode": 0,
+        "wall_seconds": 1.037435,
+        "waited_user_seconds": 0.906453,
+        "waited_system_seconds": 0.104314,
+        "waited_max_rss_kib": 140416,
+        "sampled_peak_group_rss_kib": 140416,
+        "sampled_processes": [
+          {
+            "pid": 2352,
+            "executable": "gap",
+            "cpu_seconds": 0.97,
+            "peak_rss_kib": 140416
+          }
+        ]
+      }
+    },
+    {
+      "case": "C3_power_basis_p2",
+      "search_wall_seconds": 0.000641,
+      "independent_check_wall_seconds": 3.7e-05,
+      "fixed_quotient_status": {
+        "certified_targets": [
+          1
+        ],
+        "proved_nonmembers": [],
+        "spanning": "proved"
+      },
+      "candidate_h2_upper_bound": 0,
+      "known_h2": 0,
+      "original_h2_upper_bound": 0,
+      "fixed_rule_count": 198,
+      "rule_index_builds": 1,
+      "unchanged_gap_command": [
+        "/workspace/.local/bin/gap",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "/workspace/generators-group-homology/benchmarks/results/relation-span-small-2026-10-28/C3_power_basis_p2.control.g"
+      ],
+      "unchanged_gap_control_sha256": "84d64161588cde714b773e79ecf5d8ce396143600ffd30a662ca5c29aae38f33",
+      "unchanged_gap_resources": {
+        "status": "completed",
+        "exit_status": 0,
+        "raw_returncode": 0,
+        "wall_seconds": 0.820224,
+        "waited_user_seconds": 0.671977,
+        "waited_system_seconds": 0.111778,
+        "waited_max_rss_kib": 140416,
+        "sampled_peak_group_rss_kib": 140416,
+        "sampled_processes": [
+          {
+            "pid": 2354,
+            "executable": "gap",
+            "cpu_seconds": 0.76,
+            "peak_rss_kib": 140416
+          }
+        ]
+      }
+    },
+    {
+      "case": "C3_redundant",
+      "search_wall_seconds": 0.003146,
+      "independent_check_wall_seconds": 3.3e-05,
+      "fixed_quotient_status": {
+        "certified_targets": [
+          1,
+          2
+        ],
+        "proved_nonmembers": [],
+        "spanning": "proved"
+      },
+      "candidate_h2_upper_bound": 1,
+      "known_h2": 1,
+      "original_h2_upper_bound": 1,
+      "fixed_rule_count": 576,
+      "rule_index_builds": 1,
+      "unchanged_gap_command": [
+        "/workspace/.local/bin/gap",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "/workspace/generators-group-homology/benchmarks/results/relation-span-small-2026-10-28/C3_redundant.control.g"
+      ],
+      "unchanged_gap_control_sha256": "4d9ed92dab994c28583b24f7723f1c32f9857245c60b6c06cd1afbb7c14c0845",
+      "unchanged_gap_resources": {
+        "status": "completed",
+        "exit_status": 0,
+        "raw_returncode": 0,
+        "wall_seconds": 1.038659,
+        "waited_user_seconds": 0.911455,
+        "waited_system_seconds": 0.098315,
+        "waited_max_rss_kib": 140416,
+        "sampled_peak_group_rss_kib": 140416,
+        "sampled_processes": [
+          {
+            "pid": 2356,
+            "executable": "gap",
+            "cpu_seconds": 0.97,
+            "peak_rss_kib": 140416
+          }
+        ]
+      }
+    },
+    {
+      "case": "V4_full",
+      "search_wall_seconds": 0.00169,
+      "independent_check_wall_seconds": 3.9e-05,
+      "fixed_quotient_status": {
+        "certified_targets": [
+          1,
+          2,
+          3
+        ],
+        "proved_nonmembers": [],
+        "spanning": "proved"
+      },
+      "candidate_h2_upper_bound": 3,
+      "known_h2": 3,
+      "original_h2_upper_bound": 3,
+      "fixed_rule_count": 622,
+      "rule_index_builds": 1,
+      "unchanged_gap_command": [
+        "/workspace/.local/bin/gap",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "/workspace/generators-group-homology/benchmarks/results/relation-span-small-2026-10-28/V4_full.control.g"
+      ],
+      "unchanged_gap_control_sha256": "c2e268c1a9e883a87ac362ffec3919996b805b2d73e1066762b53296fbe0929e",
+      "unchanged_gap_resources": {
+        "status": "completed",
+        "exit_status": 0,
+        "raw_returncode": 0,
+        "wall_seconds": 1.16273,
+        "waited_user_seconds": 0.959515,
+        "waited_system_seconds": 0.164084,
+        "waited_max_rss_kib": 140416,
+        "sampled_peak_group_rss_kib": 140416,
+        "sampled_processes": [
+          {
+            "pid": 2360,
+            "executable": "gap",
+            "cpu_seconds": 1.08,
+            "peak_rss_kib": 140416
+          }
+        ]
+      }
+    },
+    {
+      "case": "V4_conjugated",
+      "search_wall_seconds": 0.002204,
+      "independent_check_wall_seconds": 6.9e-05,
+      "fixed_quotient_status": {
+        "certified_targets": [
+          1,
+          2,
+          3
+        ],
+        "proved_nonmembers": [],
+        "spanning": "proved"
+      },
+      "candidate_h2_upper_bound": 3,
+      "known_h2": 3,
+      "original_h2_upper_bound": 3,
+      "fixed_rule_count": 634,
+      "rule_index_builds": 1,
+      "unchanged_gap_command": [
+        "/workspace/.local/bin/gap",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "/workspace/generators-group-homology/benchmarks/results/relation-span-small-2026-10-28/V4_conjugated.control.g"
+      ],
+      "unchanged_gap_control_sha256": "c2e268c1a9e883a87ac362ffec3919996b805b2d73e1066762b53296fbe0929e",
+      "unchanged_gap_resources": {
+        "status": "completed",
+        "exit_status": 0,
+        "raw_returncode": 0,
+        "wall_seconds": 1.048346,
+        "waited_user_seconds": 0.913516,
+        "waited_system_seconds": 0.087711,
+        "waited_max_rss_kib": 140288,
+        "sampled_peak_group_rss_kib": 140288,
+        "sampled_processes": [
+          {
+            "pid": 2368,
+            "executable": "gap",
+            "cpu_seconds": 0.98,
+            "peak_rss_kib": 140288
+          }
+        ]
+      }
+    },
+    {
+      "case": "V4_missing_commutator",
+      "search_wall_seconds": 0.05455,
+      "independent_check_wall_seconds": 9.6e-05,
+      "fixed_quotient_status": {
+        "certified_targets": [
+          1,
+          2
+        ],
+        "proved_nonmembers": [
+          3
+        ],
+        "spanning": "disproved"
+      },
+      "candidate_h2_upper_bound": null,
+      "known_h2": 3,
+      "original_h2_upper_bound": 3,
+      "fixed_rule_count": 590,
+      "rule_index_builds": 1,
+      "unchanged_gap_command": [
+        "/workspace/.local/bin/gap",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "/workspace/generators-group-homology/benchmarks/results/relation-span-small-2026-10-28/V4_missing_commutator.control.g"
+      ],
+      "unchanged_gap_control_sha256": "c2e268c1a9e883a87ac362ffec3919996b805b2d73e1066762b53296fbe0929e",
+      "unchanged_gap_resources": {
+        "status": "completed",
+        "exit_status": 0,
+        "raw_returncode": 0,
+        "wall_seconds": 0.824288,
+        "waited_user_seconds": 0.678122,
+        "waited_system_seconds": 0.110928,
+        "waited_max_rss_kib": 140416,
+        "sampled_peak_group_rss_kib": 140416,
+        "sampled_processes": [
+          {
+            "pid": 2374,
+            "executable": "gap",
+            "cpu_seconds": 0.76,
+            "peak_rss_kib": 140416
+          }
+        ]
+      }
+    },
+    {
+      "case": "free_rank2",
+      "search_wall_seconds": 4.8e-05,
+      "independent_check_wall_seconds": 1.6e-05,
+      "fixed_quotient_status": {
+        "certified_targets": [],
+        "proved_nonmembers": [],
+        "spanning": "proved"
+      },
+      "candidate_h2_upper_bound": 0,
+      "known_h2": 0,
+      "original_h2_upper_bound": 0,
+      "fixed_rule_count": 0,
+      "rule_index_builds": 1,
+      "unchanged_gap_command": [
+        "/workspace/.local/bin/gap",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "/workspace/generators-group-homology/benchmarks/results/relation-span-small-2026-10-28/free_rank2.control.g"
+      ],
+      "unchanged_gap_control_sha256": "02f5a660b6930cd64505332e1141f58674ae818e35a1e2e3ac2c09ae51e82166",
+      "unchanged_gap_resources": {
+        "status": "completed",
+        "exit_status": 0,
+        "raw_returncode": 0,
+        "wall_seconds": 1.099928,
+        "waited_user_seconds": 0.868976,
+        "waited_system_seconds": 0.196628,
+        "waited_max_rss_kib": 140416,
+        "sampled_peak_group_rss_kib": 140416,
+        "sampled_processes": [
+          {
+            "pid": 2384,
+            "executable": "gap",
+            "cpu_seconds": 1.03,
+            "peak_rss_kib": 140416
+          }
+        ]
+      }
+    }
+  ],
+  "producer_runner_peak_rss_kib": 14464,
+  "acceptance_boundary_checks": 4,
+  "source_sha256": {
+    "experiments/relation_span.py": "361b819f3512146b6914038ebac81b798638dd769fc158494082a94228b76d57",
+    "scripts/check-relation-span-certificate.py": "2e031b11e8168a5cbbe173b92440dd03734670d81605ea3dcc4842f7bad5eff9",
+    "scripts/test-relation-span.py": "a0fd31c520ae74306dc8d8c2907aa3323571dc4b51a5965eae6bafb06c0308b5",
+    "tests/fixtures/relation-span-small.json": "12009f0399bced75cda1334baada5d69c40a225d18b7c481ed551d0e8e766f61",
+    "Algorithms.g": "dc95646bc1779d5fc0754b3a4a9aa765d4b1e2b69dc8d9038d68c1bf69918523",
+    "benchmarks/run.py": "393906b2252aeeb82978f60c7bca60f4cea143a5914a6fdae6faaf5f7d840b10"
+  },
+  "limits": {
+    "search_seconds_per_case": 5,
+    "original_gap_wall_limit_seconds": 5,
+    "note": "Existing harness allows termination grace; kills/reaps descendants."
+  },
+  "measurement_notes": "Search/check times are in-process wall times; search memory not isolated; runner peak RSS is cumulative across cases, excluding child processes. GAP wait4 RSS is the max, not aggregate concurrent memory. Startup included. Known-case tests do not predict arithmetic completion costs."
+}

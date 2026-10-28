@@ -46,6 +46,12 @@ claim as a baseline. A separate b0-interpreted list has positively certified
 membership and defines valid classes; its twelve-word spanning premise is
 still unverified. This validation precedes any optimization work.
 
+The [spanning certificate plan](PRIME7-SPANNING-CERTIFICATE-PLAN.md) now
+provides the finite quotient criterion, small positive/negative controls,
+five immediate certificates and a sufficient set of fifteen unproved
+future tests. Its bounded arithmetic pilot is proposed only. Arithmetic
+effectiveness and speedup are unmeasured.
+
 **Small tests:** existing presentation sanity checks, the new independent
 matrix-group multiplier check, cyclic groups, C2 x C2, and SL(2,3).
 **Acceptance:** input word lists, group maps, expected results, and source

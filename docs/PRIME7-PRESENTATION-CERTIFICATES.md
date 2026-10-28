@@ -252,6 +252,12 @@ is certified, the earlier split-kernel argument applies unchanged:
 is invertible, so the six ki span ker(A->V). This is the precise remaining
 computational premise for **spanning** of the new valid list.
 
+The subsequent [spanning preparation report](PRIME7-SPANNING-CERTIFICATE-PLAN.md)
+gives a precise fixed-quotient criterion, small-case tests, explicit
+certificates for five of the 32 required targets, and a verified sufficient
+set of fifteen future tests. Full spanning remains unverified; no arithmetic
+proof search or completion was launched in that preparation.
+
 It is not enough to cite an unspecified old successful run. Its actual
 presentation, coordinate maps, relator list and candidate list need to
 match this b0 interpretation, or new certificates need to establish the
