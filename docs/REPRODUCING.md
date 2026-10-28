@@ -68,6 +68,7 @@ gap -q -b --quitonbreak tests/smoke.g
 gap -q -b --quitonbreak tests/historical-h1.g
 gap -q -b --quitonbreak tests/presentation-sanity.g
 timeout --kill-after=2 5 gap -q -b --quitonbreak tests/paper-provenance.g
+python3 scripts/verify-prime7-corrections.py --gap gap
 ```
 
 The smoke file performs 16 checks: free versus torsion contributions in
@@ -82,6 +83,13 @@ shell rather than leaving an interactive break loop.
 
 They validate a small baseline; they do not certify all rewriting runs,
 arithmetic presentation identities, or the historical H2 table.
+
+The prime-7 correction runner enforces its own five-second limit and checks
+the matrix calculation, explicit words in the original free generators,
+and their exponent sums with GAP and an independent Python count. Its
+[calculation and proof](PRIME7-CORRECTED-REPRESENTATIVES.md) state precisely
+why spanning for the intended H2 remains conditional on the original
+twelve-word certificate. It does not run KBMAG.
 
 ## Inventory and original evidence
 

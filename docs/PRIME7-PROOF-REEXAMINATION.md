@@ -8,6 +8,11 @@ Section 5, pp.9–10. PDF hashes remain in
 [the source manifest](evidence/paper-sources.json). It changes no published
 claim, original presentation, algorithm, or archived result.
 
+The subsequent [explicit correction calculation](PRIME7-CORRECTED-REPRESENTATIVES.md)
+now supplies the coefficient matrix, six specified corrected words, their
+direct exponent verification, and the conditional spanning proof. It does
+not independently establish the twelve-word spanning certificate.
+
 ## What is and is not claimed
 
 The 2009 result is `dim H2(G;F7) <= 6`, not equality. The 2020 goal is six

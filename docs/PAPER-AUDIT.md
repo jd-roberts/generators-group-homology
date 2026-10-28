@@ -214,6 +214,13 @@ printed list. See the reexamination for the exact argument, source passages
 and bounded checks. No arithmetic spanning certificate has been rerun;
 neither the 2009 bound nor the intended spanning method is refuted here.
 
+The subsequent [explicit correction calculation](PRIME7-CORRECTED-REPRESENTATIVES.md)
+constructs six words by subtracting auxiliary combinations, verifies all
+their mod-7 exponent sums directly, and proves conditional spanning. It
+also verifies that all six final printed words literally match the first
+six source words under the named-generator convention; that renaming alone
+does not explain the discrepancy. The twelve-word certificate remains unrun.
+
 ### Reduced arithmetic inputs differ across source descriptions
 
 R09 p.10 reports a reduction from 14 generators/64 relators to 6/34 for
