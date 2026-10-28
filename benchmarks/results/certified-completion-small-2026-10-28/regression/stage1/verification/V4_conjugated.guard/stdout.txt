@@ -1,0 +1,6 @@
+{"kind":"header","tag":"small-verification","input_sha256":"b5c07f65a5926aef2e51561a08cae6ce08192724fecfeab04f98353725be1016","selected_targets":[1,2,3],"effective_os_limits":{"RLIMIT_AS":[536870912,536870912],"RLIMIT_CPU":[6,6],"RLIMIT_FSIZE":[8388608,8388608]},"search_limits":{"shared_seconds":5,"max_rules":20000,"max_states":1000,"word_growth":6},"quotient_relations":12}
+{"kind":"index","rule_instances":634,"rule_budget_reached":false,"elapsed_seconds":0.0016244919999621743}
+{"kind":"target","target":1,"answer":{"status":"certified","factors":[[[-2],10,1]],"states":3,"visited":1,"max_word_length":2},"elapsed_seconds":0.0016917730000045594}
+{"kind":"target","target":2,"answer":{"status":"certified","factors":[[[],11,1]],"states":2,"visited":1,"max_word_length":2},"elapsed_seconds":0.0017155399999637666}
+{"kind":"target","target":3,"answer":{"status":"certified","factors":[[[],12,1]],"states":2,"visited":1,"max_word_length":4},"elapsed_seconds":0.0017305430000078559}
+{"kind":"summary","search_wall_seconds":0.0017418519999523596,"shared_time_limit_reached":false,"rule_instances":634,"rule_budget_reached":false,"index_builds":1}

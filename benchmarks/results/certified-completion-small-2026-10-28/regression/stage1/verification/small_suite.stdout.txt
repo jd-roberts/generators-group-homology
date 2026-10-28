@@ -1,0 +1,11 @@
+C3_full proved search 0.000421s
+C3_power_basis proved search 0.000473s
+C3_missing_p3 disproved search 0.000563s
+C3_missing_p2 disproved search 0.000318s
+C3_power_basis_p2 proved search 0.000595s
+C3_redundant proved search 0.002295s
+V4_full proved search 0.001708s
+V4_conjugated proved search 0.001500s
+V4_missing_commutator disproved search 0.044532s
+free_rank2 proved search 0.000023s
+PASS: ten small cases, unchanged GAP comparisons, four acceptance-boundary checks.

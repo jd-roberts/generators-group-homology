@@ -1,0 +1,363 @@
+{
+  "command": [
+    "python3",
+    "scripts/test-certified-completion.py",
+    "--output",
+    "benchmarks/results/certified-completion-small-2026-10-28/comparison"
+  ],
+  "limits": {
+    "memory_bytes": 536870912,
+    "cpu_seconds": 6,
+    "wall_seconds": 10.0,
+    "output_bytes": 8388608
+  },
+  "termination": "completed",
+  "returncode": 0,
+  "supervisor_signal": null,
+  "supervisor_error": null,
+  "wall_seconds": 3.579711,
+  "worker": {
+    "pid": 1656,
+    "returncode": 0,
+    "user_seconds": 2.949866,
+    "system_seconds": 0.740976,
+    "max_rss_kib": 13184
+  },
+  "sampled_peak_tree_rss_kib": 36480,
+  "adopted_children": [],
+  "observed_processes": [
+    {
+      "pid": 1656,
+      "ppid": 1652,
+      "start_ticks": 42726,
+      "rss_kib": 0,
+      "vsize_bytes": 0
+    },
+    {
+      "pid": 1657,
+      "ppid": 1656,
+      "start_ticks": 42737,
+      "rss_kib": 11264,
+      "vsize_bytes": 38916096
+    },
+    {
+      "pid": 1658,
+      "ppid": 1657,
+      "start_ticks": 42741,
+      "rss_kib": 0,
+      "vsize_bytes": 0
+    },
+    {
+      "pid": 1659,
+      "ppid": 1656,
+      "start_ticks": 42752,
+      "rss_kib": 11264,
+      "vsize_bytes": 38916096
+    },
+    {
+      "pid": 1660,
+      "ppid": 1659,
+      "start_ticks": 42756,
+      "rss_kib": 0,
+      "vsize_bytes": 0
+    },
+    {
+      "pid": 1661,
+      "ppid": 1656,
+      "start_ticks": 42767,
+      "rss_kib": 11264,
+      "vsize_bytes": 38916096
+    },
+    {
+      "pid": 1662,
+      "ppid": 1661,
+      "start_ticks": 42772,
+      "rss_kib": 0,
+      "vsize_bytes": 0
+    },
+    {
+      "pid": 1663,
+      "ppid": 1656,
+      "start_ticks": 42783,
+      "rss_kib": 11264,
+      "vsize_bytes": 38912000
+    },
+    {
+      "pid": 1664,
+      "ppid": 1663,
+      "start_ticks": 42787,
+      "rss_kib": 11776,
+      "vsize_bytes": 39170048
+    },
+    {
+      "pid": 1665,
+      "ppid": 1656,
+      "start_ticks": 42797,
+      "rss_kib": 11264,
+      "vsize_bytes": 38916096
+    },
+    {
+      "pid": 1666,
+      "ppid": 1665,
+      "start_ticks": 42800,
+      "rss_kib": 11904,
+      "vsize_bytes": 39174144
+    },
+    {
+      "pid": 1667,
+      "ppid": 1656,
+      "start_ticks": 42812,
+      "rss_kib": 11264,
+      "vsize_bytes": 38912000
+    },
+    {
+      "pid": 1668,
+      "ppid": 1667,
+      "start_ticks": 42817,
+      "rss_kib": 0,
+      "vsize_bytes": 0
+    },
+    {
+      "pid": 1669,
+      "ppid": 1656,
+      "start_ticks": 42827,
+      "rss_kib": 11264,
+      "vsize_bytes": 38916096
+    },
+    {
+      "pid": 1670,
+      "ppid": 1669,
+      "start_ticks": 42831,
+      "rss_kib": 11904,
+      "vsize_bytes": 39174144
+    },
+    {
+      "pid": 1671,
+      "ppid": 1656,
+      "start_ticks": 42842,
+      "rss_kib": 11264,
+      "vsize_bytes": 38912000
+    },
+    {
+      "pid": 1672,
+      "ppid": 1671,
+      "start_ticks": 42845,
+      "rss_kib": 11776,
+      "vsize_bytes": 39170048
+    },
+    {
+      "pid": 1673,
+      "ppid": 1656,
+      "start_ticks": 42855,
+      "rss_kib": 11264,
+      "vsize_bytes": 38916096
+    },
+    {
+      "pid": 1674,
+      "ppid": 1673,
+      "start_ticks": 42859,
+      "rss_kib": 11776,
+      "vsize_bytes": 39170048
+    },
+    {
+      "pid": 1675,
+      "ppid": 1656,
+      "start_ticks": 42869,
+      "rss_kib": 11264,
+      "vsize_bytes": 38985728
+    },
+    {
+      "pid": 1676,
+      "ppid": 1675,
+      "start_ticks": 42873,
+      "rss_kib": 0,
+      "vsize_bytes": 0
+    },
+    {
+      "pid": 1677,
+      "ppid": 1656,
+      "start_ticks": 42887,
+      "rss_kib": 11264,
+      "vsize_bytes": 38916096
+    },
+    {
+      "pid": 1678,
+      "ppid": 1677,
+      "start_ticks": 42891,
+      "rss_kib": 0,
+      "vsize_bytes": 0
+    },
+    {
+      "pid": 1679,
+      "ppid": 1656,
+      "start_ticks": 42901,
+      "rss_kib": 11264,
+      "vsize_bytes": 38920192
+    },
+    {
+      "pid": 1680,
+      "ppid": 1679,
+      "start_ticks": 42905,
+      "rss_kib": 11776,
+      "vsize_bytes": 39170048
+    },
+    {
+      "pid": 1681,
+      "ppid": 1656,
+      "start_ticks": 42915,
+      "rss_kib": 11264,
+      "vsize_bytes": 38916096
+    },
+    {
+      "pid": 1682,
+      "ppid": 1681,
+      "start_ticks": 42919,
+      "rss_kib": 12032,
+      "vsize_bytes": 38965248
+    },
+    {
+      "pid": 1683,
+      "ppid": 1656,
+      "start_ticks": 42929,
+      "rss_kib": 11264,
+      "vsize_bytes": 38916096
+    },
+    {
+      "pid": 1684,
+      "ppid": 1683,
+      "start_ticks": 42933,
+      "rss_kib": 0,
+      "vsize_bytes": 0
+    },
+    {
+      "pid": 1685,
+      "ppid": 1656,
+      "start_ticks": 42944,
+      "rss_kib": 11264,
+      "vsize_bytes": 38916096
+    },
+    {
+      "pid": 1686,
+      "ppid": 1685,
+      "start_ticks": 42948,
+      "rss_kib": 11776,
+      "vsize_bytes": 39174144
+    },
+    {
+      "pid": 1687,
+      "ppid": 1656,
+      "start_ticks": 42958,
+      "rss_kib": 11264,
+      "vsize_bytes": 38912000
+    },
+    {
+      "pid": 1688,
+      "ppid": 1687,
+      "start_ticks": 42962,
+      "rss_kib": 12032,
+      "vsize_bytes": 39170048
+    },
+    {
+      "pid": 1689,
+      "ppid": 1656,
+      "start_ticks": 42973,
+      "rss_kib": 11264,
+      "vsize_bytes": 38912000
+    },
+    {
+      "pid": 1690,
+      "ppid": 1689,
+      "start_ticks": 42977,
+      "rss_kib": 0,
+      "vsize_bytes": 0
+    },
+    {
+      "pid": 1691,
+      "ppid": 1656,
+      "start_ticks": 42989,
+      "rss_kib": 11264,
+      "vsize_bytes": 38916096
+    },
+    {
+      "pid": 1692,
+      "ppid": 1691,
+      "start_ticks": 42993,
+      "rss_kib": 12032,
+      "vsize_bytes": 39174144
+    },
+    {
+      "pid": 1693,
+      "ppid": 1656,
+      "start_ticks": 43006,
+      "rss_kib": 11264,
+      "vsize_bytes": 38916096
+    },
+    {
+      "pid": 1694,
+      "ppid": 1693,
+      "start_ticks": 43010,
+      "rss_kib": 11776,
+      "vsize_bytes": 39174144
+    },
+    {
+      "pid": 1695,
+      "ppid": 1656,
+      "start_ticks": 43020,
+      "rss_kib": 11264,
+      "vsize_bytes": 38916096
+    },
+    {
+      "pid": 1696,
+      "ppid": 1695,
+      "start_ticks": 43024,
+      "rss_kib": 11776,
+      "vsize_bytes": 39170048
+    },
+    {
+      "pid": 1697,
+      "ppid": 1656,
+      "start_ticks": 43034,
+      "rss_kib": 11264,
+      "vsize_bytes": 38916096
+    },
+    {
+      "pid": 1698,
+      "ppid": 1697,
+      "start_ticks": 43039,
+      "rss_kib": 13056,
+      "vsize_bytes": 40218624
+    },
+    {
+      "pid": 1706,
+      "ppid": 1656,
+      "start_ticks": 43051,
+      "rss_kib": 11264,
+      "vsize_bytes": 38985728
+    },
+    {
+      "pid": 1707,
+      "ppid": 1706,
+      "start_ticks": 43054,
+      "rss_kib": 0,
+      "vsize_bytes": 0
+    },
+    {
+      "pid": 1710,
+      "ppid": 1656,
+      "start_ticks": 43066,
+      "rss_kib": 11264,
+      "vsize_bytes": 38916096
+    },
+    {
+      "pid": 1712,
+      "ppid": 1710,
+      "start_ticks": 43071,
+      "rss_kib": 0,
+      "vsize_bytes": 0
+    }
+  ],
+  "cleanup_verified": true,
+  "stdout_bytes": 957,
+  "stderr_bytes": 0,
+  "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+}
