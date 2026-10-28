@@ -110,7 +110,18 @@ python3 scripts/check-prime7-spanning-inventory.py --gap gap
 ```
 
 The latter only replays existing proofs and checks finite-field witnesses;
-it launches no arithmetic search. The planned arithmetic pilot has not run.
+it launches no arithmetic search. The original preparation did not run
+the proposed arithmetic pilot.
+
+That preparation was followed by [one authorized pilot](PRIME7-PILOT-1-RESULTS.md),
+which found no new certificates. Replay its results without launching search:
+
+```sh
+python3 scripts/check-prime7-pilot-results.py --base benchmarks/results/prime7-pilot-1-2026-10-28
+```
+
+The archived one-shot reservation prevents the controller from automatically
+repeating that run. A new experiment requires further authorization.
 
 ## Inventory and original evidence
 

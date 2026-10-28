@@ -1,5 +1,11 @@
 # Prime-7 relation-module spanning: criterion, small tests, and a bounded pilot
 
+**Subsequent authorized execution:** the [first pilot report](PRIME7-PILOT-1-RESULTS.md)
+records the passing OS safety gate and exactly one bounded run. It found
+no new certificates; the certified total remains five of 32. The text below
+records the earlier preparation and proposal, not authorization for another
+run. Full spanning remains unresolved.
+
 This report prepares a certificate of **spanning**, without asserting
 independence, nontriviality or dimension six. No prime-7 proof search or
 Knuth–Bendix completion was launched. The prime-7 work here consists of

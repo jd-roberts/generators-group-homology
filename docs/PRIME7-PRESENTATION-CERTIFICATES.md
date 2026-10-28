@@ -258,6 +258,10 @@ certificates for five of the 32 required targets, and a verified sufficient
 set of fifteen future tests. Full spanning remains unverified; no arithmetic
 proof search or completion was launched in that preparation.
 
+The later [single authorized pilot](PRIME7-PILOT-1-RESULTS.md) found no new
+certificates. The existing membership/kernel proofs remain valid, while
+full spanning remains unverified.
+
 It is not enough to cite an unspecified old successful run. Its actual
 presentation, coordinate maps, relator list and candidate list need to
 match this b0 interpretation, or new certificates need to establish the

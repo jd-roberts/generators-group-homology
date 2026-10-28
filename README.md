@@ -16,7 +16,8 @@ For a brief discussion of finitely-presented groups and using them in GAP have a
 - [Uploaded-paper audit](docs/PAPER-AUDIT.md): exact versions and page citations, affected finite-table claims, and separate arithmetic reproduction issues.
 - [Earlier prime-7 correction calculation](docs/PRIME7-CORRECTED-REPRESENTATIVES.md): verified matrices and free words; see the subsequent membership findings before interpreting them as homology classes.
 - [Prime-7 presentation and membership certificates](docs/PRIME7-PRESENTATION-CERTIFICATES.md): verified maps, the failed membership premise of the earlier words, and separate valid variants with spanning still unverified.
-- [Prime-7 spanning criterion and pilot plan](docs/PRIME7-SPANNING-CERTIFICATE-PLAN.md): independently checked small tests, five immediate quotient certificates, a sufficient fifteen-target test set, and proposed strict limits; no arithmetic search launched.
+- [Prime-7 spanning criterion and pilot plan](docs/PRIME7-SPANNING-CERTIFICATE-PLAN.md): independently checked small tests, five immediate quotient certificates, a sufficient fifteen-target test set, and the original bounded-pilot proposal.
+- [First authorized prime-7 pilot](docs/PRIME7-PILOT-1-RESULTS.md): safety checks passed; one run found no new certificates; five of 32 targets remain certified and spanning remains unresolved.
 - [Prioritized optimization plan](docs/OPTIMIZATION-PLAN.md): mathematical stop criteria and small-case validation gates before expensive arithmetic experiments.
 
 With GAP and compiled KBMAG installed, run from this directory:

@@ -1,0 +1,1 @@
+{"termination": "supervisor_signal", "returncode": -9, "cleanup_verified": true}

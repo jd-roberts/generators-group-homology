@@ -49,8 +49,15 @@ still unverified. This validation precedes any optimization work.
 The [spanning certificate plan](PRIME7-SPANNING-CERTIFICATE-PLAN.md) now
 provides the finite quotient criterion, small positive/negative controls,
 five immediate certificates and a sufficient set of fifteen unproved
-future tests. Its bounded arithmetic pilot is proposed only. Arithmetic
-effectiveness and speedup are unmeasured.
+future tests and the original bounded-pilot proposal. The first execution
+is recorded below; arithmetic speedup remains unmeasured.
+
+The subsequently authorized [first pilot](PRIME7-PILOT-1-RESULTS.md) has now
+run exactly once after passing its OS safety gate. It reached the rule and
+state caps without a new certificate; five original targets remain certified.
+It provides no measured speedup or nonmembership result. A proof-producing
+critical-pair experiment on the small suite is recommended only, with no
+further trial authorized or executed.
 
 **Small tests:** existing presentation sanity checks, the new independent
 matrix-group multiplier check, cyclic groups, C2 x C2, and SL(2,3).

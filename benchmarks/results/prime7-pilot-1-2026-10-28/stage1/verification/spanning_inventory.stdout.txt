@@ -1,0 +1,3 @@
+PASS: source identities, five explicit quotient certificates, ranks 12/5/17, and conditional completion witnesses.
+FUTURE TARGETS ONLY: 1,2,4,6,7,8,10,11,13,14,18,26,28,29,30
+Full spanning remains UNVERIFIED; none of these future targets was searched here.
