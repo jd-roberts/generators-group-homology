@@ -1,0 +1,46 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "/workspace/generators-group-homology/scripts/test-certified-power.py",
+    "--worker",
+    "--case",
+    "C3_redundant",
+    "--method",
+    "bfs",
+    "--record",
+    "/workspace/generators-group-homology/benchmarks/results/power-conjugation-small-2026-10-28/comparison/C3_redundant.bfs.json"
+  ],
+  "limits": {
+    "memory_bytes": 536870912,
+    "cpu_seconds": 3,
+    "wall_seconds": 5.0,
+    "output_bytes": 8388608
+  },
+  "termination": "completed",
+  "returncode": 0,
+  "supervisor_signal": null,
+  "supervisor_error": null,
+  "wall_seconds": 0.123573,
+  "worker": {
+    "pid": 3131,
+    "returncode": 0,
+    "user_seconds": 0.095371,
+    "system_seconds": 0.016978,
+    "max_rss_kib": 12160
+  },
+  "sampled_peak_tree_rss_kib": 12160,
+  "adopted_children": [],
+  "observed_processes": [
+    {
+      "pid": 3131,
+      "ppid": 3129,
+      "start_ticks": 122922,
+      "rss_kib": 0,
+      "vsize_bytes": 0
+    }
+  ],
+  "cleanup_verified": true,
+  "stdout_bytes": 0,
+  "stderr_bytes": 0,
+  "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+}

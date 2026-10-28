@@ -1,0 +1,29 @@
+{
+  "authorized_control": 1,
+  "no_retry": true,
+  "target": 12,
+  "indices": [
+    225,
+    140,
+    204
+  ],
+  "created_utc": "2026-10-28T21:12:45.887678+00:00",
+  "base_commit": "3d9a0e5c77a71d528235e606c986618b028b2208",
+  "source_sha256": {
+    "experiments/certified_power.py": "4bf4c181eb369e36b3d7bed0d061f75d8e2a3a9f238e8b0399c64240119b39be",
+    "experiments/certified_completion.py": "c554d9829fd1b1dbe3ff2671a4b68963015e9437604d9df5d1789950746a1034",
+    "experiments/restricted_identity.py": "94497cb7293ca3b812186a1e267283afb2f0eca73a68a632c5fea1b1702754cf",
+    "experiments/power_control_worker.py": "31c1e5c0ad0bccb6e4cc50496d264f5fb54106822c02cfe98a3c7f687c39f541",
+    "experiments/relation_span.py": "361b819f3512146b6914038ebac81b798638dd769fc158494082a94228b76d57",
+    "experiments/resource_guard.py": "73358a2d5827b0b7e5070e6fb3b95945a43d3168853bdcea51525388ea6ed21b",
+    "scripts/run-prime7-power-control.py": "644bc69ba4f91bf42bd59e7fe086cc9a3fbe156d120afdf5c100c79418ebbe52",
+    "scripts/check-power-control.py": "1e855bb3d5a2527c0c4377e71bb694b4afd5641ce6919bc734a82798019e8fb9",
+    "scripts/check-power-certificate.py": "2fd0b0ee82703db8ad93599ae313909121c41e1eb789fa10cb112c1dda265aa0",
+    "scripts/check-relation-span-certificate.py": "2e031b11e8168a5cbbe173b92440dd03734670d81605ea3dcc4842f7bad5eff9"
+  },
+  "gate_sha256": {
+    "/workspace/generators-group-homology/benchmarks/results/prime7-power-control-1-2026-10-28/stage1/safety/summary.json": "0cdc23fbacb042b2e8ec83671df052d1f12fb7e37917fc3a8c9cbf5ae0f72c90",
+    "/workspace/generators-group-homology/benchmarks/results/prime7-power-control-1-2026-10-28/stage1/verification-summary.json": "1ed0427e7936210030059d258551af59351bc350d187fcdccd53f76b8db643df",
+    "benchmarks/results/power-conjugation-small-2026-10-28/comparison/summary.json": "d1ed375fd8bd6358e220899952d8d0f2beed2195134f2767c63db8a083b958d2"
+  }
+}

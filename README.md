@@ -19,6 +19,7 @@ For a brief discussion of finitely-presented groups and using them in GAP have a
 - [Prime-7 spanning criterion and pilot plan](docs/PRIME7-SPANNING-CERTIFICATE-PLAN.md): independently checked small tests, five immediate quotient certificates, a sufficient fifteen-target test set, and the original bounded-pilot proposal.
 - [First authorized prime-7 pilot](docs/PRIME7-PILOT-1-RESULTS.md): safety checks passed; one run found no new certificates; five of 32 targets remain certified and spanning remains unresolved.
 - [Certified completion on small cases](docs/CERTIFIED-COMPLETION-SMALL-TESTS.md): proof-producing rewriting, independent rule checking, adversarial tests, measured limitations, and an unrun arithmetic control proposal.
+- [Certified power/conjugation and prime-7 control](docs/CERTIFIED-POWER-CONTROL.md): twenty small cases, independently verified targeted identities, the single successful known-identity control, and remaining research questions.
 - [Prioritized optimization plan](docs/OPTIMIZATION-PLAN.md): mathematical stop criteria and small-case validation gates before expensive arithmetic experiments.
 
 With GAP and compiled KBMAG installed, run from this directory:

@@ -1,0 +1,23 @@
+{
+  "previous_manifests": {
+    "benchmarks/results/prime7-pilot-1-2026-10-28/evidence-manifest.json": {
+      "sha256": "f8bb3a1eb68274e9df743062876422bd15e7ca7a3b51482097e333b91b2b409c",
+      "all_files_unchanged": true,
+      "files": 139
+    },
+    "benchmarks/results/certified-completion-small-2026-10-28/evidence-manifest.json": {
+      "sha256": "57e41f192eff851088b011e33e4ef95008195d56109d10a61ee4b2e8f50e2353",
+      "all_files_unchanged": true,
+      "files": 237
+    }
+  },
+  "original_artifacts_sha256": {
+    "Algorithms.g": "dc95646bc1779d5fc0754b3a4a9aa765d4b1e2b69dc8d9038d68c1bf69918523",
+    "Library-of-groups.g": "dcad77ea0bedc2cadf0418f3f4e9d991d124d735516b73cc96832cdac445c9de",
+    "finitely-presented-groups.ipynb": "394727001ce5e751d1869b257136da4266ed1bdfb0aef832f1b9ea45e17d9658",
+    "finitely-presented-groups.html": "b0613810e4a28ac22c24ada4f2ef145333e8f9e57306fa99660113ef975db8a4",
+    "undergrad-research/Capture.JPG": "2070629934aa270e8bafd5eb208334a721e91485871a199ebf953e6c24f710f5",
+    "undergrad-research/Capture2.JPG": "801d51a4d1f7554b9b093d58ae246d5ad52f88be6f9745731a2e5c8ab4bd21df"
+  },
+  "original_research_tip": "f684175285d780752f56d1baf6d0bf5f7d87ef33"
+}

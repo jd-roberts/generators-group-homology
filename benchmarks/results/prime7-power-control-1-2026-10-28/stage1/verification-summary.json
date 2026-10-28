@@ -1,0 +1,317 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "benchmark_regressions",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "tests/test_benchmark.py"
+      ],
+      "timeout": 12,
+      "returncode": 0
+    },
+    {
+      "name": "formal_corrections",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/verify-prime7-corrections.py",
+        "--gap",
+        "/workspace/.local/bin/gap"
+      ],
+      "timeout": 8,
+      "returncode": 0
+    },
+    {
+      "name": "presentation_certificates",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/verify-prime7-presentation.py",
+        "--gap",
+        "/workspace/.local/bin/gap"
+      ],
+      "timeout": 12,
+      "returncode": 0
+    },
+    {
+      "name": "spanning_inventory",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/check-prime7-spanning-inventory.py",
+        "--gap",
+        "/workspace/.local/bin/gap"
+      ],
+      "timeout": 12,
+      "returncode": 0
+    },
+    {
+      "name": "small_suite",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/test-relation-span.py",
+        "--gap",
+        "/workspace/.local/bin/gap",
+        "--output",
+        "/workspace/generators-group-homology/benchmarks/results/prime7-power-control-1-2026-10-28/stage1/verification/small-suite"
+      ],
+      "timeout": 45,
+      "returncode": 0
+    },
+    {
+      "name": "smoke",
+      "command": [
+        "/workspace/.local/bin/gap",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "tests/smoke.g"
+      ],
+      "timeout": 5,
+      "returncode": 0
+    },
+    {
+      "name": "historical-h1",
+      "command": [
+        "/workspace/.local/bin/gap",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "tests/historical-h1.g"
+      ],
+      "timeout": 5,
+      "returncode": 0
+    },
+    {
+      "name": "presentation-sanity",
+      "command": [
+        "/workspace/.local/bin/gap",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "tests/presentation-sanity.g"
+      ],
+      "timeout": 5,
+      "returncode": 0
+    },
+    {
+      "name": "identification-impact",
+      "command": [
+        "/workspace/.local/bin/gap",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "tests/identification-impact.g"
+      ],
+      "timeout": 5,
+      "returncode": 0
+    },
+    {
+      "name": "paper-provenance",
+      "command": [
+        "/workspace/.local/bin/gap",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "tests/paper-provenance.g"
+      ],
+      "timeout": 5,
+      "returncode": 0
+    },
+    {
+      "name": "prime7-proof-check",
+      "command": [
+        "/workspace/.local/bin/gap",
+        "-q",
+        "-b",
+        "--quitonbreak",
+        "tests/prime7-proof-check.g"
+      ],
+      "timeout": 5,
+      "returncode": 0
+    }
+  ],
+  "small_workers": [
+    {
+      "name": "C3_power_basis",
+      "checked": {
+        "certified_targets": [
+          1
+        ],
+        "proved_nonmembers": [],
+        "spanning": "proved"
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-u",
+          "experiments/spanning_worker.py",
+          "--input",
+          "/workspace/generators-group-homology/benchmarks/results/prime7-power-control-1-2026-10-28/stage1/verification/C3_power_basis.input.json",
+          "--targets",
+          "1",
+          "--tag",
+          "small-verification"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 6,
+          "wall_seconds": 10,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.105554,
+        "worker": {
+          "pid": 3418,
+          "returncode": 0,
+          "user_seconds": 0.09014499999999999,
+          "system_seconds": 0.008745,
+          "max_rss_kib": 11008
+        },
+        "sampled_peak_tree_rss_kib": 10752,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 3418,
+            "ppid": 3417,
+            "start_ticks": 129284,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 816,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      }
+    },
+    {
+      "name": "V4_conjugated",
+      "checked": {
+        "certified_targets": [
+          1,
+          2,
+          3
+        ],
+        "proved_nonmembers": [],
+        "spanning": "proved"
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-u",
+          "experiments/spanning_worker.py",
+          "--input",
+          "/workspace/generators-group-homology/benchmarks/results/prime7-power-control-1-2026-10-28/stage1/verification/V4_conjugated.input.json",
+          "--targets",
+          "1,2,3",
+          "--tag",
+          "small-verification"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 6,
+          "wall_seconds": 10,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.102663,
+        "worker": {
+          "pid": 3420,
+          "returncode": 0,
+          "user_seconds": 0.082818,
+          "system_seconds": 0.012655,
+          "max_rss_kib": 11136
+        },
+        "sampled_peak_tree_rss_kib": 11008,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 3420,
+            "ppid": 3419,
+            "start_ticks": 129300,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 1143,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      }
+    },
+    {
+      "name": "V4_missing_commutator",
+      "checked": {
+        "certified_targets": [
+          1,
+          2
+        ],
+        "proved_nonmembers": [
+          3
+        ],
+        "spanning": "disproved"
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-u",
+          "experiments/spanning_worker.py",
+          "--input",
+          "/workspace/generators-group-homology/benchmarks/results/prime7-power-control-1-2026-10-28/stage1/verification/V4_missing_commutator.input.json",
+          "--targets",
+          "1,2,3",
+          "--tag",
+          "small-verification"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 6,
+          "wall_seconds": 10,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.114805,
+        "worker": {
+          "pid": 3422,
+          "returncode": 0,
+          "user_seconds": 0.079666,
+          "system_seconds": 0.024413999999999998,
+          "max_rss_kib": 11520
+        },
+        "sampled_peak_tree_rss_kib": 11520,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 3422,
+            "ppid": 3421,
+            "start_ticks": 129316,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 1149,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      }
+    }
+  ],
+  "source_sha256": {
+    "experiments/resource_guard.py": "73358a2d5827b0b7e5070e6fb3b95945a43d3168853bdcea51525388ea6ed21b",
+    "tests/resource_probes.py": "b203184e4c1b27f31d4015adb41d5d9f3bface5957814f52822751c9bb7bb04c",
+    "scripts/test-resource-guard.py": "0b556d130dfe6fb90e361d6d62c5acfada736b4d60b0b6ef43fefb06364ee374",
+    "experiments/spanning_worker.py": "8c70c918eb71afa5edc4223e491fd3cad787feaa5369e95092f812adf601d6e7",
+    "experiments/relation_span.py": "361b819f3512146b6914038ebac81b798638dd769fc158494082a94228b76d57",
+    "scripts/verify-pilot-stage1.py": "7823a7d78587f9588b8db3ad672a24f7ab70c5a4852769fcdcf6950c79c85ccc",
+    "scripts/check-relation-span-certificate.py": "2e031b11e8168a5cbbe173b92440dd03734670d81605ea3dcc4842f7bad5eff9"
+  },
+  "safety_summary_sha256": "0cdc23fbacb042b2e8ec83671df052d1f12fb7e37917fc3a8c9cbf5ae0f72c90"
+}
