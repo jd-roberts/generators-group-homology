@@ -1,0 +1,499 @@
+{
+  "coefficient_prime": 7,
+  "coordinate_order_A": [
+    "zeta",
+    "1-zeta",
+    "1-zeta^2",
+    "1-zeta^3"
+  ],
+  "coordinate_order_B": [
+    "zeta",
+    "1-zeta",
+    "1-zeta^2",
+    "1-zeta^3",
+    "1+zeta+zeta^3",
+    "1+zeta^2+zeta^3"
+  ],
+  "equations_A": [
+    {
+      "x": {
+        "sign": 1,
+        "coordinates": [
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "one_minus_x": {
+        "sign": 1,
+        "coordinates": [
+          0,
+          1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "x": {
+        "sign": 1,
+        "coordinates": [
+          2,
+          0,
+          0,
+          0
+        ]
+      },
+      "one_minus_x": {
+        "sign": 1,
+        "coordinates": [
+          0,
+          0,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "x": {
+        "sign": 1,
+        "coordinates": [
+          3,
+          0,
+          0,
+          0
+        ]
+      },
+      "one_minus_x": {
+        "sign": 1,
+        "coordinates": [
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "x": {
+        "sign": -1,
+        "coordinates": [
+          0,
+          -2,
+          -2,
+          2
+        ]
+      },
+      "one_minus_x": {
+        "sign": -1,
+        "coordinates": [
+          5,
+          -2,
+          1,
+          -1
+        ]
+      }
+    },
+    {
+      "x": {
+        "sign": -1,
+        "coordinates": [
+          1,
+          -2,
+          0,
+          0
+        ]
+      },
+      "one_minus_x": {
+        "sign": -1,
+        "coordinates": [
+          6,
+          0,
+          -1,
+          -1
+        ]
+      }
+    },
+    {
+      "x": {
+        "sign": 1,
+        "coordinates": [
+          5,
+          -2,
+          0,
+          2
+        ]
+      },
+      "one_minus_x": {
+        "sign": 1,
+        "coordinates": [
+          2,
+          -2,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "equations_B": [
+    {
+      "x": {
+        "sign": -1,
+        "coordinates": [
+          6,
+          -1,
+          -1,
+          -1,
+          0,
+          1
+        ]
+      },
+      "one_minus_x": {
+        "sign": 1,
+        "coordinates": [
+          4,
+          -1,
+          -1,
+          -1,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "x": {
+        "sign": -1,
+        "coordinates": [
+          1,
+          -1,
+          -1,
+          0,
+          0,
+          0
+        ]
+      },
+      "one_minus_x": {
+        "sign": 1,
+        "coordinates": [
+          5,
+          0,
+          -1,
+          -1,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "x": {
+        "sign": -1,
+        "coordinates": [
+          2,
+          -1,
+          -1,
+          0,
+          0,
+          0
+        ]
+      },
+      "one_minus_x": {
+        "sign": 1,
+        "coordinates": [
+          4,
+          0,
+          -1,
+          -1,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "x": {
+        "sign": -1,
+        "coordinates": [
+          6,
+          -1,
+          -1,
+          0,
+          0,
+          1
+        ]
+      },
+      "one_minus_x": {
+        "sign": 1,
+        "coordinates": [
+          0,
+          -1,
+          0,
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "x": {
+        "sign": -1,
+        "coordinates": [
+          1,
+          -1,
+          -1,
+          0,
+          1,
+          0
+        ]
+      },
+      "one_minus_x": {
+        "sign": 1,
+        "coordinates": [
+          4,
+          -1,
+          0,
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "x": {
+        "sign": 1,
+        "coordinates": [
+          6,
+          -1,
+          -1,
+          1,
+          -1,
+          0
+        ]
+      },
+      "one_minus_x": {
+        "sign": -1,
+        "coordinates": [
+          6,
+          0,
+          0,
+          -1,
+          -1,
+          0
+        ]
+      }
+    },
+    {
+      "x": {
+        "sign": -1,
+        "coordinates": [
+          4,
+          -1,
+          -1,
+          1,
+          0,
+          -1
+        ]
+      },
+      "one_minus_x": {
+        "sign": 1,
+        "coordinates": [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          -1
+        ]
+      }
+    },
+    {
+      "x": {
+        "sign": -1,
+        "coordinates": [
+          1,
+          -1,
+          -1,
+          1,
+          0,
+          0
+        ]
+      },
+      "one_minus_x": {
+        "sign": 1,
+        "coordinates": [
+          0,
+          0,
+          -1,
+          0,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "x": {
+        "sign": -1,
+        "coordinates": [
+          2,
+          -1,
+          -1,
+          1,
+          0,
+          0
+        ]
+      },
+      "one_minus_x": {
+        "sign": 1,
+        "coordinates": [
+          4,
+          0,
+          0,
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "x": {
+        "sign": 1,
+        "coordinates": [
+          5,
+          -1,
+          -1,
+          1,
+          0,
+          0
+        ]
+      },
+      "one_minus_x": {
+        "sign": -1,
+        "coordinates": [
+          6,
+          0,
+          0,
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "x": {
+        "sign": 1,
+        "coordinates": [
+          6,
+          -1,
+          -1,
+          1,
+          0,
+          0
+        ]
+      },
+      "one_minus_x": {
+        "sign": -1,
+        "coordinates": [
+          6,
+          0,
+          -1,
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "x": {
+        "sign": 1,
+        "coordinates": [
+          3,
+          -1,
+          -1,
+          1,
+          0,
+          1
+        ]
+      },
+      "one_minus_x": {
+        "sign": -1,
+        "coordinates": [
+          5,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "x": {
+        "sign": 1,
+        "coordinates": [
+          4,
+          -1,
+          0,
+          -1,
+          0,
+          1
+        ]
+      },
+      "one_minus_x": {
+        "sign": 1,
+        "coordinates": [
+          5,
+          0,
+          -1,
+          -1,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "selected_cycle_witness_A": [
+    6,
+    2,
+    0,
+    4,
+    2,
+    0
+  ],
+  "discovery_record": {
+    "algorithm": "exact cyclotomic S-unit equation enumeration and modular row elimination; no group rewriting",
+    "limits": {
+      "external_wall_seconds": 30,
+      "cpu_seconds": 25,
+      "address_space_bytes": 536870912
+    },
+    "runs": [
+      {
+        "generators": "epsilon_1,epsilon_2,epsilon_3, optionally 2",
+        "exponents": [
+          -2,
+          2
+        ],
+        "base_units": 1750,
+        "base_equations": 168,
+        "base_wedge_rank": 6,
+        "with_2_units": 8750,
+        "with_2_equations": 261,
+        "with_2_wedge_rank": 8,
+        "wall_seconds": 0.2989622529999849,
+        "max_rss_kib": 15232
+      },
+      {
+        "generators": "epsilon_1,epsilon_2,epsilon_3,pi_1,pi_2",
+        "exponents": [
+          -1,
+          1
+        ],
+        "unit_count": 3402,
+        "equation_count": 447,
+        "rank_with_six_previously_verified_A_equations": 13,
+        "wall_seconds": 0.10810991700009254,
+        "max_rss_kib": 12544
+      }
+    ],
+    "note": "The certificates below are checked independently by integer polynomial division; checking them does not rerun the discovery search."
+  }
+}
