@@ -1,0 +1,127 @@
+{
+  "access_date": "2026-10-29",
+  "base_main_commit": "6289b374ae0ac6dc72d65a8cd72a1e75335624c5",
+  "verification_branch_snapshot": "515b306e7cb6a695724497447b85b05d6ab0c2fe",
+  "verification_evidence_status": "reports inspected read-only; full certificate archive not independently replayed here",
+  "papers": [
+    {
+      "label": "R09",
+      "version": "0901.2610v3",
+      "url": "https://arxiv.org/pdf/0901.2610v3",
+      "download_url": "https://arxiv.org/pdf/0901.2610",
+      "sha256": "c679e5c0b9dd1cfb0eb88375fa8ca47365d34f2cd547a1f18e44626730423c04",
+      "bytes": 167425
+    },
+    {
+      "label": "R20",
+      "version": "2009.04069v1",
+      "url": "https://arxiv.org/pdf/2009.04069v1",
+      "download_url": "https://arxiv.org/pdf/2009.04069",
+      "sha256": "f7bea5fd084b047f6335b322ad85f3b97d0243221dbcf42c9686b00380313ee5",
+      "bytes": 335276
+    },
+    {
+      "label": "A08",
+      "version": "0804.3553v1",
+      "url": "https://arxiv.org/pdf/0804.3553v1",
+      "download_url": "https://arxiv.org/pdf/0804.3553",
+      "sha256": "47aa5ce2ac126f52e751992d17aeafab7a8680e6cd92bf62b90293d98569a1b7",
+      "bytes": 308902
+    },
+    {
+      "label": "AR12",
+      "version": "1211.1651v1",
+      "url": "https://arxiv.org/pdf/1211.1651v1",
+      "download_url": "https://arxiv.org/pdf/1211.1651",
+      "sha256": "601ac339be4063f97dc7e884e2e4811a5f315841ff2e36283f393e29758369a8",
+      "bytes": 165469
+    },
+    {
+      "label": "H14",
+      "version": "1412.0953v3",
+      "url": "https://arxiv.org/pdf/1412.0953v3",
+      "download_url": "https://arxiv.org/pdf/1412.0953",
+      "sha256": "524daff4dbe4187ef6452d3c1c7a0f425f9d1aca626ed6d70b71949e88f107ce",
+      "bytes": 318084
+    },
+    {
+      "label": "MT24",
+      "version": "2407.17632v3",
+      "url": "https://arxiv.org/pdf/2407.17632v3",
+      "download_url": "https://arxiv.org/pdf/2407.17632",
+      "sha256": "a88c8e1b05ba4e189f40ca5a8366f9e12c0b43549f81e5201c8d3517340f4471",
+      "bytes": 463475
+    },
+    {
+      "label": "MRV25",
+      "version": "2503.12190v2",
+      "url": "https://arxiv.org/pdf/2503.12190v2",
+      "download_url": "https://arxiv.org/pdf/2503.12190",
+      "sha256": "e6f04d25347bcd2a26bb45e63213856139e4d30fbfe59bf6f87815b95f2cd6d1",
+      "bytes": 482438
+    },
+    {
+      "label": "MR25",
+      "version": "2510.03946v1",
+      "url": "https://arxiv.org/pdf/2510.03946v1",
+      "download_url": "https://arxiv.org/pdf/2510.03946",
+      "sha256": "a595a2ae479b0dc92053a575ce2c09b9f55457a2cdf449a1c63245e744583d6e",
+      "bytes": 575702
+    },
+    {
+      "label": "RW14",
+      "version": "1411.3542v2",
+      "url": "https://arxiv.org/pdf/1411.3542v2",
+      "download_url": "https://arxiv.org/pdf/1411.3542",
+      "sha256": "77774192f8b132e6f0a7885d3e6e88626978c2e2c16be6f32ffc7d6c56b3f1d4",
+      "bytes": 379041
+    },
+    {
+      "label": "APRV26",
+      "version": "2609.28677v2",
+      "url": "https://arxiv.org/pdf/2609.28677v2",
+      "download_url": "https://arxiv.org/pdf/2609.28677",
+      "sha256": "59011834987ea76423a71911dc280dfb22d458f037c47889191e1135a1cff531",
+      "bytes": 395255
+    }
+  ],
+  "original_source_sha256": {
+    "Algorithms.g": "dc95646bc1779d5fc0754b3a4a9aa765d4b1e2b69dc8d9038d68c1bf69918523",
+    "Library-of-groups.g": "dcad77ea0bedc2cadf0418f3f4e9d991d124d735516b73cc96832cdac445c9de"
+  },
+  "rendering_checks": [
+    {
+      "label": "R09",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "label": "R20",
+      "pages": [
+        3,
+        9,
+        10
+      ]
+    },
+    {
+      "label": "H14",
+      "pages": [
+        21,
+        22
+      ]
+    },
+    {
+      "label": "APRV26",
+      "pages": [
+        4
+      ]
+    }
+  ],
+  "additional_consulted_sources": [
+    "https://gap-packages.github.io/idrel/doc/chap1.html",
+    "https://arxiv.org/abs/math/9907082",
+    "https://gap-packages.github.io/hap/doc/chap2.html"
+  ],
+  "note": "Only exploratory code, its finite output, this source manifest, and the research memorandum are new project files. PDFs are reading intermediates, not committed."
+}

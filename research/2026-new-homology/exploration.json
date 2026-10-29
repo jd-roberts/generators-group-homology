@@ -1,0 +1,312 @@
+{
+  "scope": "finite arithmetic and formal modules only; no arithmetic H2 computation",
+  "phi7_mod2_factors_ascending": [
+    [
+      1,
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      1,
+      1
+    ]
+  ],
+  "sigma3_on_torus_H1_columns": [
+    [
+      3,
+      0,
+      6,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ]
+  ],
+  "torus_H1_eigenspace_dimensions": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 0,
+    "6": 0
+  },
+  "sigma3_on_formal_exterior_square": [
+    [
+      0,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      3,
+      0,
+      0,
+      6
+    ],
+    [
+      3,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      6,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      6,
+      0
+    ]
+  ],
+  "formal_exterior_square_eigenspace_dimensions": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1,
+    "6": 1
+  },
+  "sigma3_on_localization_residue_quotient": [
+    [
+      0,
+      3
+    ],
+    [
+      3,
+      0
+    ]
+  ],
+  "localization_residue_eigenspace_dimensions": {
+    "1": 0,
+    "2": 0,
+    "3": 1,
+    "4": 1,
+    "5": 0,
+    "6": 0
+  },
+  "splitting": [
+    {
+      "cyclotomic_prime": 3,
+      "rational_prime": 2,
+      "residue_degree": 2,
+      "number_of_added_prime_ideals": 1,
+      "residue_field_order": 4
+    },
+    {
+      "cyclotomic_prime": 3,
+      "rational_prime": 5,
+      "residue_degree": 2,
+      "number_of_added_prime_ideals": 1,
+      "residue_field_order": 25
+    },
+    {
+      "cyclotomic_prime": 3,
+      "rational_prime": 11,
+      "residue_degree": 2,
+      "number_of_added_prime_ideals": 1,
+      "residue_field_order": 121
+    },
+    {
+      "cyclotomic_prime": 3,
+      "rational_prime": 13,
+      "residue_degree": 1,
+      "number_of_added_prime_ideals": 2,
+      "residue_field_order": 13
+    },
+    {
+      "cyclotomic_prime": 3,
+      "rational_prime": 29,
+      "residue_degree": 2,
+      "number_of_added_prime_ideals": 1,
+      "residue_field_order": 841
+    },
+    {
+      "cyclotomic_prime": 5,
+      "rational_prime": 2,
+      "residue_degree": 4,
+      "number_of_added_prime_ideals": 1,
+      "residue_field_order": 16
+    },
+    {
+      "cyclotomic_prime": 5,
+      "rational_prime": 3,
+      "residue_degree": 4,
+      "number_of_added_prime_ideals": 1,
+      "residue_field_order": 81
+    },
+    {
+      "cyclotomic_prime": 5,
+      "rational_prime": 11,
+      "residue_degree": 1,
+      "number_of_added_prime_ideals": 4,
+      "residue_field_order": 11
+    },
+    {
+      "cyclotomic_prime": 5,
+      "rational_prime": 13,
+      "residue_degree": 4,
+      "number_of_added_prime_ideals": 1,
+      "residue_field_order": 28561
+    },
+    {
+      "cyclotomic_prime": 5,
+      "rational_prime": 29,
+      "residue_degree": 2,
+      "number_of_added_prime_ideals": 2,
+      "residue_field_order": 841
+    },
+    {
+      "cyclotomic_prime": 7,
+      "rational_prime": 2,
+      "residue_degree": 3,
+      "number_of_added_prime_ideals": 2,
+      "residue_field_order": 8
+    },
+    {
+      "cyclotomic_prime": 7,
+      "rational_prime": 3,
+      "residue_degree": 6,
+      "number_of_added_prime_ideals": 1,
+      "residue_field_order": 729
+    },
+    {
+      "cyclotomic_prime": 7,
+      "rational_prime": 5,
+      "residue_degree": 6,
+      "number_of_added_prime_ideals": 1,
+      "residue_field_order": 15625
+    },
+    {
+      "cyclotomic_prime": 7,
+      "rational_prime": 11,
+      "residue_degree": 3,
+      "number_of_added_prime_ideals": 2,
+      "residue_field_order": 1331
+    },
+    {
+      "cyclotomic_prime": 7,
+      "rational_prime": 13,
+      "residue_degree": 2,
+      "number_of_added_prime_ideals": 3,
+      "residue_field_order": 169
+    },
+    {
+      "cyclotomic_prime": 7,
+      "rational_prime": 29,
+      "residue_degree": 1,
+      "number_of_added_prime_ideals": 6,
+      "residue_field_order": 29
+    },
+    {
+      "cyclotomic_prime": 11,
+      "rational_prime": 2,
+      "residue_degree": 10,
+      "number_of_added_prime_ideals": 1,
+      "residue_field_order": 1024
+    },
+    {
+      "cyclotomic_prime": 11,
+      "rational_prime": 3,
+      "residue_degree": 5,
+      "number_of_added_prime_ideals": 2,
+      "residue_field_order": 243
+    },
+    {
+      "cyclotomic_prime": 11,
+      "rational_prime": 5,
+      "residue_degree": 5,
+      "number_of_added_prime_ideals": 2,
+      "residue_field_order": 3125
+    },
+    {
+      "cyclotomic_prime": 11,
+      "rational_prime": 13,
+      "residue_degree": 10,
+      "number_of_added_prime_ideals": 1,
+      "residue_field_order": 137858491849
+    },
+    {
+      "cyclotomic_prime": 11,
+      "rational_prime": 29,
+      "residue_degree": 10,
+      "number_of_added_prime_ideals": 1,
+      "residue_field_order": 420707233300201
+    },
+    {
+      "cyclotomic_prime": 13,
+      "rational_prime": 2,
+      "residue_degree": 12,
+      "number_of_added_prime_ideals": 1,
+      "residue_field_order": 4096
+    },
+    {
+      "cyclotomic_prime": 13,
+      "rational_prime": 3,
+      "residue_degree": 3,
+      "number_of_added_prime_ideals": 4,
+      "residue_field_order": 27
+    },
+    {
+      "cyclotomic_prime": 13,
+      "rational_prime": 5,
+      "residue_degree": 4,
+      "number_of_added_prime_ideals": 3,
+      "residue_field_order": 625
+    },
+    {
+      "cyclotomic_prime": 13,
+      "rational_prime": 11,
+      "residue_degree": 12,
+      "number_of_added_prime_ideals": 1,
+      "residue_field_order": 3138428376721
+    },
+    {
+      "cyclotomic_prime": 13,
+      "rational_prime": 29,
+      "residue_degree": 3,
+      "number_of_added_prime_ideals": 4,
+      "residue_field_order": 24389
+    }
+  ],
+  "checks": "factorization, cubic irreducibility, all 36 Galois products, eigen decompositions, residue orders passed"
+}
