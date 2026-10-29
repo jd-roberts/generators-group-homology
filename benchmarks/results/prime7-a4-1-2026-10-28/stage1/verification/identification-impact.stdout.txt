@@ -1,0 +1,11 @@
+A5 = Alternating Group on 5; S5 = Symmetric Group on 5; G3 = F3/k3 = casep3; G\
+5 = F5/k5 = casep5; G7 = F7/k7 = casep7; G11 = F11/k11; SL2 = S/rels = SL_2(Z)\
+; SL_2Zw = Free1/R1; SL_2Z_2 = Free0/R0;SL_2Z_3 = Free3/R3; SL_2Z_5 = Free5/R5\
+; GL_2Z = Free6/R6; PSL_2Z = Free7/R7;SL_2Zi = Free8/R8; SL_2Zneg5 = Free9/R9
+GAP 4.14.0
+stored Free5/R5: order=5, cyclic=true, H1_integral=[5]
+matrix SL(2,5): order=120, H1_integral=[  ], H2_integral_multiplier=[  ]
+UCT consequence: matrix H1 and H2 over every prime field vanish
+Cyclic-resolution consequence: stored C5 has H1 and H2 dimension 1 at characte\
+ristic 5, otherwise 0
+PASS: identification-impact checks; original presentation preserved

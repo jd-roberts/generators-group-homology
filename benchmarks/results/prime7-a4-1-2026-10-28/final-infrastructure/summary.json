@@ -1,0 +1,3908 @@
+{
+  "all_passed": true,
+  "checks": [
+    "all twenty signed centrality equations verified as formal free identities",
+    "missing centrality factor rejected",
+    "ten small fixtures: counted subclass retains exactly parent rules/proofs",
+    "one pair has exactly four overlap placements; products independently verified"
+  ],
+  "comparisons": [
+    {
+      "case": "C3_full",
+      "rules": [
+        {
+          "id": 0,
+          "lhs": [
+            1,
+            -1
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 1,
+          "lhs": [
+            -1,
+            1
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 2,
+          "lhs": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              2,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 3,
+          "lhs": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "rhs": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              2,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 4,
+          "lhs": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "rhs": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "factors": [
+            [
+              [],
+              2,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 5,
+          "lhs": [
+            1,
+            1,
+            1
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              3,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 6,
+          "lhs": [
+            1,
+            1
+          ],
+          "rhs": [
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              3,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 7,
+          "lhs": [
+            -1,
+            -1
+          ],
+          "rhs": [
+            1
+          ],
+          "factors": [
+            [
+              [],
+              3,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        }
+      ],
+      "accounting": {
+        "rule_pair_jobs_processed": 36,
+        "rule_pair_jobs_queued": 36,
+        "offset_tests": 234,
+        "compatible_overlap_placements": 119,
+        "submitted_overlap_equations": 119,
+        "oversize_overlap_placements": 0,
+        "compatible_placements_not_submitted": 0
+      }
+    },
+    {
+      "case": "C3_power_basis",
+      "rules": [
+        {
+          "id": 0,
+          "lhs": [
+            1,
+            -1
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 1,
+          "lhs": [
+            -1,
+            1
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 2,
+          "lhs": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              2,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 3,
+          "lhs": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "rhs": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              2,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 4,
+          "lhs": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "rhs": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "factors": [
+            [
+              [],
+              2,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 5,
+          "lhs": [
+            -1,
+            -1,
+            -1
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              2,
+              -1
+            ],
+            [
+              [],
+              3,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 6,
+          "lhs": [
+            1,
+            1,
+            1
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              3,
+              1
+            ],
+            [
+              [],
+              2,
+              -1
+            ],
+            [
+              [],
+              3,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 7,
+          "lhs": [
+            -1,
+            -1
+          ],
+          "rhs": [
+            1
+          ],
+          "factors": [
+            [
+              [
+                1
+              ],
+              2,
+              -1
+            ],
+            [
+              [
+                1
+              ],
+              3,
+              1
+            ]
+          ],
+          "origin": "critical_pair"
+        },
+        {
+          "id": 8,
+          "lhs": [
+            1,
+            1
+          ],
+          "rhs": [
+            -1
+          ],
+          "factors": [
+            [
+              [
+                1,
+                1
+              ],
+              3,
+              -1
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              2,
+              1
+            ]
+          ],
+          "origin": "critical_pair"
+        }
+      ],
+      "accounting": {
+        "rule_pair_jobs_processed": 45,
+        "rule_pair_jobs_queued": 45,
+        "offset_tests": 285,
+        "compatible_overlap_placements": 137,
+        "submitted_overlap_equations": 137,
+        "oversize_overlap_placements": 0,
+        "compatible_placements_not_submitted": 0
+      }
+    },
+    {
+      "case": "C3_missing_p3",
+      "rules": [
+        {
+          "id": 0,
+          "lhs": [
+            1,
+            -1
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 1,
+          "lhs": [
+            -1,
+            1
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 2,
+          "lhs": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              2,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 3,
+          "lhs": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "rhs": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              2,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 4,
+          "lhs": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "rhs": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "factors": [
+            [
+              [],
+              2,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        }
+      ],
+      "accounting": {
+        "rule_pair_jobs_processed": 15,
+        "rule_pair_jobs_queued": 15,
+        "offset_tests": 123,
+        "compatible_overlap_placements": 58,
+        "submitted_overlap_equations": 58,
+        "oversize_overlap_placements": 0,
+        "compatible_placements_not_submitted": 0
+      }
+    },
+    {
+      "case": "C3_missing_p2",
+      "rules": [
+        {
+          "id": 0,
+          "lhs": [
+            1,
+            -1
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 1,
+          "lhs": [
+            -1,
+            1
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 2,
+          "lhs": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              2,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 3,
+          "lhs": [
+            1,
+            1,
+            1
+          ],
+          "rhs": [
+            -1,
+            -1,
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              2,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 4,
+          "lhs": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "rhs": [
+            1,
+            1
+          ],
+          "factors": [
+            [
+              [],
+              2,
+              -1
+            ]
+          ],
+          "origin": "critical_pair"
+        }
+      ],
+      "accounting": {
+        "rule_pair_jobs_processed": 15,
+        "rule_pair_jobs_queued": 15,
+        "offset_tests": 87,
+        "compatible_overlap_placements": 41,
+        "submitted_overlap_equations": 41,
+        "oversize_overlap_placements": 0,
+        "compatible_placements_not_submitted": 0
+      }
+    },
+    {
+      "case": "C3_power_basis_p2",
+      "rules": [
+        {
+          "id": 0,
+          "lhs": [
+            1,
+            -1
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 1,
+          "lhs": [
+            -1,
+            1
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 2,
+          "lhs": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              2,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 3,
+          "lhs": [
+            1,
+            1,
+            1
+          ],
+          "rhs": [
+            -1,
+            -1,
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              2,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 4,
+          "lhs": [
+            -1,
+            -1,
+            -1
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              2,
+              -1
+            ],
+            [
+              [],
+              2,
+              -1
+            ],
+            [
+              [],
+              3,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 5,
+          "lhs": [
+            1,
+            1
+          ],
+          "rhs": [
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              2,
+              1
+            ],
+            [
+              [],
+              2,
+              -1
+            ],
+            [
+              [],
+              2,
+              -1
+            ],
+            [
+              [],
+              3,
+              1
+            ]
+          ],
+          "origin": "critical_pair"
+        },
+        {
+          "id": 6,
+          "lhs": [
+            -1,
+            -1
+          ],
+          "rhs": [
+            1
+          ],
+          "factors": [
+            [
+              [],
+              3,
+              -1
+            ],
+            [
+              [],
+              2,
+              1
+            ],
+            [
+              [],
+              2,
+              1
+            ],
+            [
+              [],
+              2,
+              -1
+            ]
+          ],
+          "origin": "critical_pair"
+        }
+      ],
+      "accounting": {
+        "rule_pair_jobs_processed": 28,
+        "rule_pair_jobs_queued": 28,
+        "offset_tests": 132,
+        "compatible_overlap_placements": 64,
+        "submitted_overlap_equations": 64,
+        "oversize_overlap_placements": 0,
+        "compatible_placements_not_submitted": 0
+      }
+    },
+    {
+      "case": "C3_redundant",
+      "rules": [
+        {
+          "id": 0,
+          "lhs": [
+            1,
+            -1
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 1,
+          "lhs": [
+            -1,
+            1
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 2,
+          "lhs": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              3,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 3,
+          "lhs": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "rhs": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              3,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 4,
+          "lhs": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "rhs": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "factors": [
+            [
+              [],
+              3,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 5,
+          "lhs": [
+            1,
+            1,
+            1
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              5,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 6,
+          "lhs": [
+            1,
+            1
+          ],
+          "rhs": [
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              5,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 7,
+          "lhs": [
+            -1,
+            -1
+          ],
+          "rhs": [
+            1
+          ],
+          "factors": [
+            [
+              [],
+              5,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        }
+      ],
+      "accounting": {
+        "rule_pair_jobs_processed": 36,
+        "rule_pair_jobs_queued": 36,
+        "offset_tests": 234,
+        "compatible_overlap_placements": 119,
+        "submitted_overlap_equations": 119,
+        "oversize_overlap_placements": 0,
+        "compatible_placements_not_submitted": 0
+      }
+    },
+    {
+      "case": "V4_full",
+      "rules": [
+        {
+          "id": 0,
+          "lhs": [
+            1,
+            -1
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 1,
+          "lhs": [
+            -1,
+            1
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 2,
+          "lhs": [
+            2,
+            -2
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 3,
+          "lhs": [
+            -2,
+            2
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 4,
+          "lhs": [
+            -1,
+            -2,
+            -2,
+            1,
+            2,
+            2
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              2,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 5,
+          "lhs": [
+            -1,
+            -2,
+            -2
+          ],
+          "rhs": [
+            -2,
+            -2,
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              2,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 6,
+          "lhs": [
+            1,
+            -2,
+            -2
+          ],
+          "rhs": [
+            -2,
+            -2,
+            1
+          ],
+          "factors": [
+            [
+              [
+                1
+              ],
+              2,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 7,
+          "lhs": [
+            2,
+            1,
+            -2
+          ],
+          "rhs": [
+            -2,
+            1,
+            2
+          ],
+          "factors": [
+            [
+              [
+                2,
+                1
+              ],
+              2,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 8,
+          "lhs": [
+            2,
+            2,
+            1
+          ],
+          "rhs": [
+            1,
+            2,
+            2
+          ],
+          "factors": [
+            [
+              [
+                2,
+                2,
+                1
+              ],
+              2,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 9,
+          "lhs": [
+            2,
+            2,
+            -1
+          ],
+          "rhs": [
+            -1,
+            2,
+            2
+          ],
+          "factors": [
+            [
+              [
+                -1,
+                2,
+                2,
+                1
+              ],
+              2,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 10,
+          "lhs": [
+            2,
+            -1,
+            -2
+          ],
+          "rhs": [
+            -2,
+            -1,
+            2
+          ],
+          "factors": [
+            [
+              [
+                -2,
+                -1,
+                2,
+                2,
+                1
+              ],
+              2,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 11,
+          "lhs": [
+            -1,
+            -2,
+            -1,
+            -2,
+            1,
+            2,
+            1,
+            2
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [
+                -1,
+                -2,
+                -1,
+                2,
+                1
+              ],
+              2,
+              1
+            ],
+            [
+              [],
+              3,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 12,
+          "lhs": [
+            -1,
+            -2,
+            -1,
+            2
+          ],
+          "rhs": [
+            -2,
+            -1,
+            2,
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              3,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 13,
+          "lhs": [
+            1,
+            -2,
+            -1,
+            2
+          ],
+          "rhs": [
+            -2,
+            -1,
+            2,
+            1
+          ],
+          "factors": [
+            [
+              [
+                1
+              ],
+              3,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 14,
+          "lhs": [
+            -1,
+            -2,
+            1,
+            2
+          ],
+          "rhs": [
+            -2,
+            1,
+            2,
+            -1
+          ],
+          "factors": [
+            [
+              [
+                -1,
+                2,
+                1
+              ],
+              2,
+              1
+            ],
+            [
+              [
+                2,
+                1
+              ],
+              3,
+              1
+            ],
+            [
+              [
+                2,
+                1
+              ],
+              2,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 15,
+          "lhs": [
+            1,
+            -2,
+            1,
+            2
+          ],
+          "rhs": [
+            -2,
+            1,
+            2,
+            1
+          ],
+          "factors": [
+            [
+              [
+                1,
+                2,
+                1
+              ],
+              2,
+              1
+            ],
+            [
+              [
+                1,
+                2,
+                1
+              ],
+              3,
+              -1
+            ],
+            [
+              [
+                2,
+                1
+              ],
+              2,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 16,
+          "lhs": [
+            -2,
+            -1,
+            -1,
+            2,
+            1,
+            1
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              4,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 17,
+          "lhs": [
+            -1,
+            -1,
+            -2
+          ],
+          "rhs": [
+            -2,
+            -1,
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              4,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 18,
+          "lhs": [
+            2,
+            -1,
+            -1
+          ],
+          "rhs": [
+            -1,
+            -1,
+            2
+          ],
+          "factors": [
+            [
+              [
+                2
+              ],
+              4,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 19,
+          "lhs": [
+            1,
+            2,
+            -1
+          ],
+          "rhs": [
+            -1,
+            2,
+            1
+          ],
+          "factors": [
+            [
+              [
+                1,
+                2
+              ],
+              4,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 20,
+          "lhs": [
+            2,
+            1,
+            1
+          ],
+          "rhs": [
+            1,
+            1,
+            2
+          ],
+          "factors": [
+            [
+              [
+                1,
+                1,
+                2
+              ],
+              4,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 21,
+          "lhs": [
+            1,
+            1,
+            -2
+          ],
+          "rhs": [
+            -2,
+            1,
+            1
+          ],
+          "factors": [
+            [
+              [
+                -2,
+                1,
+                1,
+                2
+              ],
+              4,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 22,
+          "lhs": [
+            1,
+            -2,
+            -1
+          ],
+          "rhs": [
+            -1,
+            -2,
+            1
+          ],
+          "factors": [
+            [
+              [
+                -1,
+                -2,
+                1,
+                1,
+                2
+              ],
+              4,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 23,
+          "lhs": [
+            -2,
+            -1,
+            2,
+            1,
+            2
+          ],
+          "rhs": [
+            -1,
+            2,
+            1
+          ],
+          "factors": [
+            [
+              [
+                2
+              ],
+              6,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 24,
+          "lhs": [
+            -1,
+            2,
+            -1,
+            2,
+            1
+          ],
+          "rhs": [
+            2,
+            -1,
+            2
+          ],
+          "factors": [
+            [
+              [
+                -1,
+                2,
+                1,
+                2
+              ],
+              4,
+              1
+            ],
+            [
+              [
+                2,
+                2
+              ],
+              6,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 25,
+          "lhs": [
+            -2,
+            -2,
+            -1,
+            2,
+            1
+          ],
+          "rhs": [
+            -1,
+            -2,
+            1
+          ],
+          "factors": [
+            [
+              [
+                -2,
+                -2,
+                1,
+                2
+              ],
+              4,
+              1
+            ],
+            [
+              [
+                1
+              ],
+              2,
+              1
+            ],
+            [
+              [
+                1
+              ],
+              3,
+              -1
+            ],
+            [
+              [
+                -2,
+                -1,
+                2,
+                1
+              ],
+              2,
+              -1
+            ],
+            [
+              [
+                -2,
+                -1,
+                -2,
+                1,
+                2,
+                2
+              ],
+              6,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 26,
+          "lhs": [
+            -1,
+            -2,
+            1,
+            -2,
+            1
+          ],
+          "rhs": [
+            -2,
+            1,
+            -2
+          ],
+          "factors": [
+            [
+              [
+                -1,
+                -2,
+                1,
+                1,
+                2
+              ],
+              4,
+              -1
+            ],
+            [
+              [
+                1,
+                -2,
+                -1,
+                -2,
+                1,
+                2,
+                2
+              ],
+              6,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 27,
+          "lhs": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              7,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 28,
+          "lhs": [
+            1,
+            1
+          ],
+          "rhs": [
+            -1,
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              7,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 29,
+          "lhs": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              8,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 30,
+          "lhs": [
+            2,
+            2
+          ],
+          "rhs": [
+            -2,
+            -2
+          ],
+          "factors": [
+            [
+              [],
+              8,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 31,
+          "lhs": [
+            -1,
+            -1
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              7,
+              -1
+            ],
+            [
+              [],
+              10,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 32,
+          "lhs": [
+            1
+          ],
+          "rhs": [
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              10,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 33,
+          "lhs": [
+            -2,
+            -2
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              8,
+              -1
+            ],
+            [
+              [],
+              11,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 34,
+          "lhs": [
+            2
+          ],
+          "rhs": [
+            -2
+          ],
+          "factors": [
+            [
+              [],
+              11,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 35,
+          "lhs": [
+            -2,
+            -1,
+            -2,
+            -1
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [
+                -2,
+                -1,
+                -2
+              ],
+              10,
+              -1
+            ],
+            [
+              [
+                -2,
+                -1
+              ],
+              11,
+              -1
+            ],
+            [
+              [
+                -2,
+                1,
+                2
+              ],
+              4,
+              1
+            ],
+            [
+              [
+                2,
+                1
+              ],
+              2,
+              1
+            ],
+            [
+              [
+                2,
+                1
+              ],
+              3,
+              -1
+            ],
+            [
+              [
+                -1,
+                2,
+                1
+              ],
+              2,
+              -1
+            ],
+            [
+              [],
+              12,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 36,
+          "lhs": [
+            -1,
+            -2
+          ],
+          "rhs": [
+            -2,
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              12,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        }
+      ],
+      "accounting": {
+        "rule_pair_jobs_processed": 703,
+        "rule_pair_jobs_queued": 703,
+        "offset_tests": 4009,
+        "compatible_overlap_placements": 510,
+        "submitted_overlap_equations": 510,
+        "oversize_overlap_placements": 0,
+        "compatible_placements_not_submitted": 0
+      }
+    },
+    {
+      "case": "V4_conjugated",
+      "rules": [
+        {
+          "id": 0,
+          "lhs": [
+            1,
+            -1
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 1,
+          "lhs": [
+            -1,
+            1
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 2,
+          "lhs": [
+            2,
+            -2
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 3,
+          "lhs": [
+            -2,
+            2
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 4,
+          "lhs": [
+            -1,
+            -2,
+            -2,
+            1,
+            2,
+            2
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              2,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 5,
+          "lhs": [
+            -1,
+            -2,
+            -2
+          ],
+          "rhs": [
+            -2,
+            -2,
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              2,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 6,
+          "lhs": [
+            1,
+            -2,
+            -2
+          ],
+          "rhs": [
+            -2,
+            -2,
+            1
+          ],
+          "factors": [
+            [
+              [
+                1
+              ],
+              2,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 7,
+          "lhs": [
+            2,
+            1,
+            -2
+          ],
+          "rhs": [
+            -2,
+            1,
+            2
+          ],
+          "factors": [
+            [
+              [
+                2,
+                1
+              ],
+              2,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 8,
+          "lhs": [
+            2,
+            2,
+            1
+          ],
+          "rhs": [
+            1,
+            2,
+            2
+          ],
+          "factors": [
+            [
+              [
+                2,
+                2,
+                1
+              ],
+              2,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 9,
+          "lhs": [
+            2,
+            2,
+            -1
+          ],
+          "rhs": [
+            -1,
+            2,
+            2
+          ],
+          "factors": [
+            [
+              [
+                -1,
+                2,
+                2,
+                1
+              ],
+              2,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 10,
+          "lhs": [
+            2,
+            -1,
+            -2
+          ],
+          "rhs": [
+            -2,
+            -1,
+            2
+          ],
+          "factors": [
+            [
+              [
+                -2,
+                -1,
+                2,
+                2,
+                1
+              ],
+              2,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 11,
+          "lhs": [
+            -1,
+            -2,
+            -1,
+            -2,
+            1,
+            2,
+            1,
+            2
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [
+                -1,
+                -2,
+                -1,
+                2,
+                1
+              ],
+              2,
+              1
+            ],
+            [
+              [],
+              3,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 12,
+          "lhs": [
+            -1,
+            -2,
+            -1,
+            2
+          ],
+          "rhs": [
+            -2,
+            -1,
+            2,
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              3,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 13,
+          "lhs": [
+            1,
+            -2,
+            -1,
+            2
+          ],
+          "rhs": [
+            -2,
+            -1,
+            2,
+            1
+          ],
+          "factors": [
+            [
+              [
+                1
+              ],
+              3,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 14,
+          "lhs": [
+            -1,
+            -2,
+            1,
+            2
+          ],
+          "rhs": [
+            -2,
+            1,
+            2,
+            -1
+          ],
+          "factors": [
+            [
+              [
+                -1,
+                2,
+                1
+              ],
+              2,
+              1
+            ],
+            [
+              [
+                2,
+                1
+              ],
+              3,
+              1
+            ],
+            [
+              [
+                2,
+                1
+              ],
+              2,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 15,
+          "lhs": [
+            1,
+            -2,
+            1,
+            2
+          ],
+          "rhs": [
+            -2,
+            1,
+            2,
+            1
+          ],
+          "factors": [
+            [
+              [
+                1,
+                2,
+                1
+              ],
+              2,
+              1
+            ],
+            [
+              [
+                1,
+                2,
+                1
+              ],
+              3,
+              -1
+            ],
+            [
+              [
+                2,
+                1
+              ],
+              2,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 16,
+          "lhs": [
+            -2,
+            -1,
+            -1,
+            2,
+            1,
+            1
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              4,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 17,
+          "lhs": [
+            -1,
+            -1,
+            -2
+          ],
+          "rhs": [
+            -2,
+            -1,
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              4,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 18,
+          "lhs": [
+            2,
+            -1,
+            -1
+          ],
+          "rhs": [
+            -1,
+            -1,
+            2
+          ],
+          "factors": [
+            [
+              [
+                2
+              ],
+              4,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 19,
+          "lhs": [
+            1,
+            2,
+            -1
+          ],
+          "rhs": [
+            -1,
+            2,
+            1
+          ],
+          "factors": [
+            [
+              [
+                1,
+                2
+              ],
+              4,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 20,
+          "lhs": [
+            2,
+            1,
+            1
+          ],
+          "rhs": [
+            1,
+            1,
+            2
+          ],
+          "factors": [
+            [
+              [
+                1,
+                1,
+                2
+              ],
+              4,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 21,
+          "lhs": [
+            1,
+            1,
+            -2
+          ],
+          "rhs": [
+            -2,
+            1,
+            1
+          ],
+          "factors": [
+            [
+              [
+                -2,
+                1,
+                1,
+                2
+              ],
+              4,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 22,
+          "lhs": [
+            1,
+            -2,
+            -1
+          ],
+          "rhs": [
+            -1,
+            -2,
+            1
+          ],
+          "factors": [
+            [
+              [
+                -1,
+                -2,
+                1,
+                1,
+                2
+              ],
+              4,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 23,
+          "lhs": [
+            -2,
+            -1,
+            2,
+            1,
+            2
+          ],
+          "rhs": [
+            -1,
+            2,
+            1
+          ],
+          "factors": [
+            [
+              [
+                2
+              ],
+              6,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 24,
+          "lhs": [
+            -1,
+            2,
+            -1,
+            2,
+            1
+          ],
+          "rhs": [
+            2,
+            -1,
+            2
+          ],
+          "factors": [
+            [
+              [
+                -1,
+                2,
+                1,
+                2
+              ],
+              4,
+              1
+            ],
+            [
+              [
+                2,
+                2
+              ],
+              6,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 25,
+          "lhs": [
+            -2,
+            -2,
+            -1,
+            2,
+            1
+          ],
+          "rhs": [
+            -1,
+            -2,
+            1
+          ],
+          "factors": [
+            [
+              [
+                -2,
+                -2,
+                1,
+                2
+              ],
+              4,
+              1
+            ],
+            [
+              [
+                1
+              ],
+              2,
+              1
+            ],
+            [
+              [
+                1
+              ],
+              3,
+              -1
+            ],
+            [
+              [
+                -2,
+                -1,
+                2,
+                1
+              ],
+              2,
+              -1
+            ],
+            [
+              [
+                -2,
+                -1,
+                -2,
+                1,
+                2,
+                2
+              ],
+              6,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 26,
+          "lhs": [
+            -1,
+            -2,
+            1,
+            -2,
+            1
+          ],
+          "rhs": [
+            -2,
+            1,
+            -2
+          ],
+          "factors": [
+            [
+              [
+                -1,
+                -2,
+                1,
+                1,
+                2
+              ],
+              4,
+              -1
+            ],
+            [
+              [
+                1,
+                -2,
+                -1,
+                -2,
+                1,
+                2,
+                2
+              ],
+              6,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 27,
+          "lhs": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              7,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 28,
+          "lhs": [
+            1,
+            1
+          ],
+          "rhs": [
+            -1,
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              7,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 29,
+          "lhs": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              8,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 30,
+          "lhs": [
+            2,
+            2
+          ],
+          "rhs": [
+            -2,
+            -2
+          ],
+          "factors": [
+            [
+              [],
+              8,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 31,
+          "lhs": [
+            -1,
+            -1
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              7,
+              -1
+            ],
+            [
+              [
+                1,
+                1,
+                2
+              ],
+              4,
+              -1
+            ],
+            [
+              [],
+              10,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 32,
+          "lhs": [
+            2,
+            1
+          ],
+          "rhs": [
+            2,
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              10,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 33,
+          "lhs": [
+            1,
+            -2
+          ],
+          "rhs": [
+            -1,
+            -2
+          ],
+          "factors": [
+            [
+              [
+                -1,
+                -2
+              ],
+              10,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 34,
+          "lhs": [
+            -2,
+            -2
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              8,
+              -1
+            ],
+            [
+              [],
+              11,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 35,
+          "lhs": [
+            2
+          ],
+          "rhs": [
+            -2
+          ],
+          "factors": [
+            [
+              [],
+              11,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 36,
+          "lhs": [
+            -2,
+            -1,
+            -2,
+            -1
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [
+                -2,
+                -1
+              ],
+              11,
+              -1
+            ],
+            [
+              [
+                -2,
+                -1
+              ],
+              10,
+              -1
+            ],
+            [
+              [
+                -2,
+                1,
+                2
+              ],
+              4,
+              1
+            ],
+            [
+              [
+                2,
+                1
+              ],
+              2,
+              1
+            ],
+            [
+              [
+                2,
+                1
+              ],
+              3,
+              -1
+            ],
+            [
+              [
+                -1,
+                2,
+                1
+              ],
+              2,
+              -1
+            ],
+            [
+              [],
+              12,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 37,
+          "lhs": [
+            -1,
+            -2
+          ],
+          "rhs": [
+            -2,
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              12,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 38,
+          "lhs": [
+            -2,
+            1
+          ],
+          "rhs": [
+            -2,
+            -1
+          ],
+          "factors": [
+            [
+              [
+                1
+              ],
+              12,
+              1
+            ],
+            [
+              [
+                -1,
+                -2
+              ],
+              10,
+              1
+            ],
+            [
+              [],
+              12,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 39,
+          "lhs": [
+            1
+          ],
+          "rhs": [
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              7,
+              1
+            ],
+            [
+              [],
+              7,
+              -1
+            ],
+            [
+              [
+                1,
+                1,
+                2
+              ],
+              4,
+              -1
+            ],
+            [
+              [],
+              10,
+              1
+            ]
+          ],
+          "origin": "critical_pair"
+        }
+      ],
+      "accounting": {
+        "rule_pair_jobs_processed": 820,
+        "rule_pair_jobs_queued": 820,
+        "offset_tests": 4510,
+        "compatible_overlap_placements": 593,
+        "submitted_overlap_equations": 593,
+        "oversize_overlap_placements": 0,
+        "compatible_placements_not_submitted": 0
+      }
+    },
+    {
+      "case": "V4_missing_commutator",
+      "rules": [
+        {
+          "id": 0,
+          "lhs": [
+            1,
+            -1
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 1,
+          "lhs": [
+            -1,
+            1
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 2,
+          "lhs": [
+            2,
+            -2
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 3,
+          "lhs": [
+            -2,
+            2
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 4,
+          "lhs": [
+            -1,
+            -2,
+            -2,
+            1,
+            2,
+            2
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              2,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 5,
+          "lhs": [
+            -1,
+            -2,
+            -2
+          ],
+          "rhs": [
+            -2,
+            -2,
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              2,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 6,
+          "lhs": [
+            1,
+            -2,
+            -2
+          ],
+          "rhs": [
+            -2,
+            -2,
+            1
+          ],
+          "factors": [
+            [
+              [
+                1
+              ],
+              2,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 7,
+          "lhs": [
+            2,
+            1,
+            -2
+          ],
+          "rhs": [
+            -2,
+            1,
+            2
+          ],
+          "factors": [
+            [
+              [
+                2,
+                1
+              ],
+              2,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 8,
+          "lhs": [
+            2,
+            2,
+            1
+          ],
+          "rhs": [
+            1,
+            2,
+            2
+          ],
+          "factors": [
+            [
+              [
+                2,
+                2,
+                1
+              ],
+              2,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 9,
+          "lhs": [
+            2,
+            2,
+            -1
+          ],
+          "rhs": [
+            -1,
+            2,
+            2
+          ],
+          "factors": [
+            [
+              [
+                -1,
+                2,
+                2,
+                1
+              ],
+              2,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 10,
+          "lhs": [
+            2,
+            -1,
+            -2
+          ],
+          "rhs": [
+            -2,
+            -1,
+            2
+          ],
+          "factors": [
+            [
+              [
+                -2,
+                -1,
+                2,
+                2,
+                1
+              ],
+              2,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 11,
+          "lhs": [
+            -1,
+            -2,
+            -1,
+            -2,
+            1,
+            2,
+            1,
+            2
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [
+                -1,
+                -2,
+                -1,
+                2,
+                1
+              ],
+              2,
+              1
+            ],
+            [
+              [],
+              3,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 12,
+          "lhs": [
+            -1,
+            -2,
+            -1,
+            2
+          ],
+          "rhs": [
+            -2,
+            -1,
+            2,
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              3,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 13,
+          "lhs": [
+            1,
+            -2,
+            -1,
+            2
+          ],
+          "rhs": [
+            -2,
+            -1,
+            2,
+            1
+          ],
+          "factors": [
+            [
+              [
+                1
+              ],
+              3,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 14,
+          "lhs": [
+            -1,
+            -2,
+            1,
+            2
+          ],
+          "rhs": [
+            -2,
+            1,
+            2,
+            -1
+          ],
+          "factors": [
+            [
+              [
+                -1,
+                2,
+                1
+              ],
+              2,
+              1
+            ],
+            [
+              [
+                2,
+                1
+              ],
+              3,
+              1
+            ],
+            [
+              [
+                2,
+                1
+              ],
+              2,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 15,
+          "lhs": [
+            1,
+            -2,
+            1,
+            2
+          ],
+          "rhs": [
+            -2,
+            1,
+            2,
+            1
+          ],
+          "factors": [
+            [
+              [
+                1,
+                2,
+                1
+              ],
+              2,
+              1
+            ],
+            [
+              [
+                1,
+                2,
+                1
+              ],
+              3,
+              -1
+            ],
+            [
+              [
+                2,
+                1
+              ],
+              2,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 16,
+          "lhs": [
+            -2,
+            -1,
+            -1,
+            2,
+            1,
+            1
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              4,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 17,
+          "lhs": [
+            -1,
+            -1,
+            -2
+          ],
+          "rhs": [
+            -2,
+            -1,
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              4,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 18,
+          "lhs": [
+            2,
+            -1,
+            -1
+          ],
+          "rhs": [
+            -1,
+            -1,
+            2
+          ],
+          "factors": [
+            [
+              [
+                2
+              ],
+              4,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 19,
+          "lhs": [
+            1,
+            2,
+            -1
+          ],
+          "rhs": [
+            -1,
+            2,
+            1
+          ],
+          "factors": [
+            [
+              [
+                1,
+                2
+              ],
+              4,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 20,
+          "lhs": [
+            2,
+            1,
+            1
+          ],
+          "rhs": [
+            1,
+            1,
+            2
+          ],
+          "factors": [
+            [
+              [
+                1,
+                1,
+                2
+              ],
+              4,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 21,
+          "lhs": [
+            1,
+            1,
+            -2
+          ],
+          "rhs": [
+            -2,
+            1,
+            1
+          ],
+          "factors": [
+            [
+              [
+                -2,
+                1,
+                1,
+                2
+              ],
+              4,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 22,
+          "lhs": [
+            1,
+            -2,
+            -1
+          ],
+          "rhs": [
+            -1,
+            -2,
+            1
+          ],
+          "factors": [
+            [
+              [
+                -1,
+                -2,
+                1,
+                1,
+                2
+              ],
+              4,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 23,
+          "lhs": [
+            -2,
+            -1,
+            2,
+            1,
+            2
+          ],
+          "rhs": [
+            -1,
+            2,
+            1
+          ],
+          "factors": [
+            [
+              [
+                2
+              ],
+              6,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 24,
+          "lhs": [
+            -1,
+            2,
+            -1,
+            2,
+            1
+          ],
+          "rhs": [
+            2,
+            -1,
+            2
+          ],
+          "factors": [
+            [
+              [
+                -1,
+                2,
+                1,
+                2
+              ],
+              4,
+              1
+            ],
+            [
+              [
+                2,
+                2
+              ],
+              6,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 25,
+          "lhs": [
+            -2,
+            -2,
+            -1,
+            2,
+            1
+          ],
+          "rhs": [
+            -1,
+            -2,
+            1
+          ],
+          "factors": [
+            [
+              [
+                -2,
+                -2,
+                1,
+                2
+              ],
+              4,
+              1
+            ],
+            [
+              [
+                1
+              ],
+              2,
+              1
+            ],
+            [
+              [
+                1
+              ],
+              3,
+              -1
+            ],
+            [
+              [
+                -2,
+                -1,
+                2,
+                1
+              ],
+              2,
+              -1
+            ],
+            [
+              [
+                -2,
+                -1,
+                -2,
+                1,
+                2,
+                2
+              ],
+              6,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 26,
+          "lhs": [
+            -1,
+            -2,
+            1,
+            -2,
+            1
+          ],
+          "rhs": [
+            -2,
+            1,
+            -2
+          ],
+          "factors": [
+            [
+              [
+                -1,
+                -2,
+                1,
+                1,
+                2
+              ],
+              4,
+              -1
+            ],
+            [
+              [
+                1,
+                -2,
+                -1,
+                -2,
+                1,
+                2,
+                2
+              ],
+              6,
+              -1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 27,
+          "lhs": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              7,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 28,
+          "lhs": [
+            1,
+            1
+          ],
+          "rhs": [
+            -1,
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              7,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 29,
+          "lhs": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              8,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 30,
+          "lhs": [
+            2,
+            2
+          ],
+          "rhs": [
+            -2,
+            -2
+          ],
+          "factors": [
+            [
+              [],
+              8,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 31,
+          "lhs": [
+            -1,
+            -1
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              7,
+              -1
+            ],
+            [
+              [],
+              10,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 32,
+          "lhs": [
+            1
+          ],
+          "rhs": [
+            -1
+          ],
+          "factors": [
+            [
+              [],
+              10,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 33,
+          "lhs": [
+            -2,
+            -2
+          ],
+          "rhs": [],
+          "factors": [
+            [
+              [],
+              8,
+              -1
+            ],
+            [
+              [],
+              11,
+              1
+            ]
+          ],
+          "origin": "input"
+        },
+        {
+          "id": 34,
+          "lhs": [
+            2
+          ],
+          "rhs": [
+            -2
+          ],
+          "factors": [
+            [
+              [],
+              11,
+              1
+            ]
+          ],
+          "origin": "cyclic_seed"
+        },
+        {
+          "id": 35,
+          "lhs": [
+            -1,
+            -2,
+            -1,
+            -2
+          ],
+          "rhs": [
+            -2,
+            -1,
+            -2,
+            -1
+          ],
+          "factors": [
+            [
+              [
+                -1,
+                -2,
+                -1
+              ],
+              11,
+              -1
+            ],
+            [
+              [],
+              3,
+              1
+            ],
+            [
+              [
+                -2,
+                -1
+              ],
+              11,
+              1
+            ]
+          ],
+          "origin": "critical_pair"
+        }
+      ],
+      "accounting": {
+        "rule_pair_jobs_processed": 666,
+        "rule_pair_jobs_queued": 666,
+        "offset_tests": 3848,
+        "compatible_overlap_placements": 483,
+        "submitted_overlap_equations": 483,
+        "oversize_overlap_placements": 0,
+        "compatible_placements_not_submitted": 0
+      }
+    },
+    {
+      "case": "free_rank2",
+      "rules": [
+        {
+          "id": 0,
+          "lhs": [
+            1,
+            -1
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 1,
+          "lhs": [
+            -1,
+            1
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 2,
+          "lhs": [
+            2,
+            -2
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        },
+        {
+          "id": 3,
+          "lhs": [
+            -2,
+            2
+          ],
+          "rhs": [],
+          "factors": [],
+          "origin": "free"
+        }
+      ],
+      "accounting": {
+        "rule_pair_jobs_processed": 10,
+        "rule_pair_jobs_queued": 10,
+        "offset_tests": 30,
+        "compatible_overlap_placements": 8,
+        "submitted_overlap_equations": 8,
+        "oversize_overlap_placements": 0,
+        "compatible_placements_not_submitted": 0
+      }
+    }
+  ],
+  "counter_probe": {
+    "rule_pair_jobs_processed": 0,
+    "rule_pair_jobs_queued": 3,
+    "offset_tests": 4,
+    "compatible_overlap_placements": 4,
+    "submitted_overlap_equations": 4,
+    "oversize_overlap_placements": 0,
+    "compatible_placements_not_submitted": 0
+  },
+  "source_sha256": {
+    "experiments/a4_structure.py": "082cd4281e2d91d86ad5be8250bbfb7eece8e7af3d02437bf9e87966f9d30107",
+    "experiments/counted_completion.py": "153d95f1fd07c53ff3273ac65b43674c27b9abfdf1b7d5684e1f95d222415830",
+    "scripts/test-a4-infrastructure.py": "ba01f3869d4a3402e5c02f91dbf34ca5e6202c87721ca2a21437b0d5161b7892",
+    "experiments/certified_completion.py": "c554d9829fd1b1dbe3ff2671a4b68963015e9437604d9df5d1789950746a1034",
+    "experiments/certified_power.py": "4bf4c181eb369e36b3d7bed0d061f75d8e2a3a9f238e8b0399c64240119b39be",
+    "experiments/resource_guard.py": "73358a2d5827b0b7e5070e6fb3b95945a43d3168853bdcea51525388ea6ed21b"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "attempt": 1,
+  "no_retry": true,
+  "only_search_target": 7,
+  "input_sha256": "d33076b1c1b20c9950349645e77c0dbcebe9c8e326ba77dd041b6b696b134a60",
+  "plan_sha256": "07675b36e54132d58e7f377b8f9ffd81793a78e6724a2e4a66cdc96782894fd5",
+  "created_utc": "2026-10-29T04:01:14.096388+00:00",
+  "base_commit": "1016979e22e6591daf0b02ffad6a71e2f64c633c",
+  "source_sha256": {
+    "experiments/a4_structure.py": "082cd4281e2d91d86ad5be8250bbfb7eece8e7af3d02437bf9e87966f9d30107",
+    "experiments/counted_completion.py": "153d95f1fd07c53ff3273ac65b43674c27b9abfdf1b7d5684e1f95d222415830",
+    "experiments/a4_worker.py": "3189ca4d3a360705e25a8ade0ac252439b849ca023e3a7529859b55d0ef83ee1",
+    "experiments/certified_power.py": "4bf4c181eb369e36b3d7bed0d061f75d8e2a3a9f238e8b0399c64240119b39be",
+    "experiments/certified_completion.py": "c554d9829fd1b1dbe3ff2671a4b68963015e9437604d9df5d1789950746a1034",
+    "experiments/restricted_identity.py": "94497cb7293ca3b812186a1e267283afb2f0eca73a68a632c5fea1b1702754cf",
+    "experiments/resource_guard.py": "73358a2d5827b0b7e5070e6fb3b95945a43d3168853bdcea51525388ea6ed21b",
+    "experiments/relation_span.py": "361b819f3512146b6914038ebac81b798638dd769fc158494082a94228b76d57",
+    "scripts/run-a4-experiment.py": "6dcd4ce950c79cbb0f29991f4fb1f5212b5c4d9f27373198783614f96539c6b4",
+    "scripts/check-a4-experiment.py": "f48340c63446afd7823ac38ed3a171ad873a88d290ac8faea00b17e1c92a94e2",
+    "scripts/prepare-a4-experiment.py": "c3f8fa547151898a60715dd76b9ed9fd31870b4b86b53248362257aa7aaca9ef",
+    "scripts/test-a4-infrastructure.py": "ba01f3869d4a3402e5c02f91dbf34ca5e6202c87721ca2a21437b0d5161b7892",
+    "scripts/check-power-certificate.py": "2fd0b0ee82703db8ad93599ae313909121c41e1eb789fa10cb112c1dda265aa0",
+    "scripts/check-relation-span-certificate.py": "2e031b11e8168a5cbbe173b92440dd03734670d81605ea3dcc4842f7bad5eff9",
+    "docs/PRIME7-A4-EXPERIMENT-PLAN.md": "6ff3b022a11e27e1c7bc749135786d4db9a744bd403260c6fc8dd100227bb3a7"
+  },
+  "gate_sha256": {
+    "/workspace/generators-group-homology/benchmarks/results/prime7-a4-1-2026-10-28/stage1/safety/summary.json": "f96d5e93acbb153e26863a8cf8ef48160684c9ebf803c444e2cecaf0270d40a1",
+    "/workspace/generators-group-homology/benchmarks/results/prime7-a4-1-2026-10-28/stage1/verification-summary.json": "2d97c76888df840e05001de03211719509b6243da96f20ee94692b55fa388009",
+    "/workspace/generators-group-homology/benchmarks/results/prime7-a4-1-2026-10-28/final-infrastructure/summary.json": "28a61f370c418d36df893e87b4922aa683e228e22671c5090e1d5e3d914e0183",
+    "/workspace/generators-group-homology/benchmarks/results/prime7-a4-1-2026-10-28/prior-replay-gate.json": "46f0831343ea4fae502470c9fa0bcffddb3637cb52522ff7be02cfb202ce8b44"
+  }
+}

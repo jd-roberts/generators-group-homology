@@ -1,0 +1,3 @@
+PASS: one attempt, Stage 1 gate, exact input/source hashes, all resource bounds, cleanup, free products and linear consequences.
+New certificates: []
+Certified originals: [3, 5, 9, 12, 15] ; full spanning: False

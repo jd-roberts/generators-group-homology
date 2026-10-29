@@ -1,0 +1,1 @@
+{"termination": "completed", "returncode": 0, "cleanup_verified": true}
