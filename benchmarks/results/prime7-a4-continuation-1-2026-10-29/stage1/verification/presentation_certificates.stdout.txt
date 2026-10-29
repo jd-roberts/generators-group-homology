@@ -1,0 +1,4 @@
+PASS: both presentation maps, 14 composites, 8 named memberships, 12 b0 memberships and 6 b0-corrected memberships (1.858233s).
+PASS: 67461 conjugate factors checked by free cancellation; all new corrected exponents vanish mod 7.
+PROVED NONMEMBERS: named twelve 4,10,11,12; previous corrected words 1,3,4,5,6.
+NOT VERIFIED: the twelve-word relation-module spanning certificate.

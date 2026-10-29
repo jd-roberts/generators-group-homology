@@ -21,6 +21,7 @@ For a brief discussion of finitely-presented groups and using them in GAP have a
 - [Certified completion on small cases](docs/CERTIFIED-COMPLETION-SMALL-TESTS.md): proof-producing rewriting, independent rule checking, adversarial tests, measured limitations, and an unrun arithmetic control proposal.
 - [Certified power/conjugation and prime-7 control](docs/CERTIFIED-POWER-CONTROL.md): twenty small cases, independently verified targeted identities, the single successful known-identity control, and remaining research questions.
 - [First unresolved a^4 experiment](docs/PRIME7-A4-EXPERIMENT-RESULTS.md): certified centrality of a^2, the single bounded R7 attempt, its proof-expansion stop before critical-pair processing, and unresolved spanning.
+- [Track A continuation and assessment](docs/TRACK-A-CONTINUATION-ASSESSMENT.md): full-quotient checkpoint equivalence verified; one critical overlap hit the proof-factor cap; R7 remains unresolved and further machinery development is paused.
 - [Prioritized optimization plan](docs/OPTIMIZATION-PLAN.md): mathematical stop criteria and small-case validation gates before expensive arithmetic experiments.
 
 With GAP and compiled KBMAG installed, run from this directory:

@@ -1,0 +1,39 @@
+{
+  "all_passed": true,
+  "checks": [
+    "actual 241-rule loader roundtrip and exact frozen job order verified",
+    "241 forward and 236 reverse products independently checked",
+    "small x2/x3 overlap derives x with independent product; fixed one-job queue stays fixed",
+    "invalid checkpoint orientation rejected",
+    "changed checkpoint product sign rejected independently",
+    "missing reverse quotient-coverage product rejected",
+    "repeated frozen job rejected"
+  ],
+  "input_verification": {
+    "verified_checkpoint_rules": 241,
+    "forward_original_Q_products": 241,
+    "reverse_original_Q_products": 236,
+    "normal_closure_equality_established": true,
+    "jobs": 4000,
+    "long_power_job_counts": {
+      "233": 58,
+      "234": 34,
+      "235": 35,
+      "236": 37,
+      "237": 23,
+      "238": 22,
+      "239": 52,
+      "240": 64
+    },
+    "largest_reverse_certificate": 44
+  },
+  "source_sha256": {
+    "experiments/checkpoint_completion.py": "806e8bca2c2cc25580b010a163012d9e7018b65e41671e8d68ab30aff25c1754",
+    "scripts/prepare-a4-continuation.py": "a927e4efcd2373829f5877a40c00012c3d7976fb9cc745b17b45e9b99365f6b8",
+    "scripts/check-a4-continuation.py": "2e9db61c961e03fe250fd3ec6b14e7b89b20c6cf553ea146e254c9c6fadfa6bb",
+    "scripts/test-a4-checkpoint.py": "49c8b88f95479e925a7f6d5a00bb5c3bb34bdf3b4bd6087183a7d426c54ae9fa",
+    "experiments/counted_completion.py": "153d95f1fd07c53ff3273ac65b43674c27b9abfdf1b7d5684e1f95d222415830",
+    "experiments/certified_completion.py": "c554d9829fd1b1dbe3ff2671a4b68963015e9437604d9df5d1789950746a1034",
+    "experiments/resource_guard.py": "73358a2d5827b0b7e5070e6fb3b95945a43d3168853bdcea51525388ea6ed21b"
+  }
+}

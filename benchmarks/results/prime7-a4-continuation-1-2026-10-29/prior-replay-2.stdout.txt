@@ -1,0 +1,8 @@
+{
+  "records": 22,
+  "verified_rules": 166,
+  "certified_target_occurrences": 27,
+  "nonabelian_probe_rules": 12,
+  "limited_positive": "unresolved",
+  "arithmetic_search_executed": false
+}

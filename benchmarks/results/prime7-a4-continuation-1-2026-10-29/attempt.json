@@ -1,0 +1,33 @@
+{
+  "attempt": 1,
+  "no_retry": true,
+  "only_target": 7,
+  "created_utc": "2026-10-29T04:37:06.083499+00:00",
+  "base_commit": "515b306e7cb6a695724497447b85b05d6ab0c2fe",
+  "source_sha256": {
+    "experiments/checkpoint_completion.py": "806e8bca2c2cc25580b010a163012d9e7018b65e41671e8d68ab30aff25c1754",
+    "experiments/a4_continuation_worker.py": "4617f75acc800c03b2a903e8c51076f6aad937f64cc737cfc9c75f3ca4943e0d",
+    "experiments/counted_completion.py": "153d95f1fd07c53ff3273ac65b43674c27b9abfdf1b7d5684e1f95d222415830",
+    "experiments/certified_completion.py": "c554d9829fd1b1dbe3ff2671a4b68963015e9437604d9df5d1789950746a1034",
+    "experiments/resource_guard.py": "73358a2d5827b0b7e5070e6fb3b95945a43d3168853bdcea51525388ea6ed21b",
+    "scripts/prepare-a4-continuation.py": "a927e4efcd2373829f5877a40c00012c3d7976fb9cc745b17b45e9b99365f6b8",
+    "scripts/test-a4-checkpoint.py": "49c8b88f95479e925a7f6d5a00bb5c3bb34bdf3b4bd6087183a7d426c54ae9fa",
+    "scripts/check-a4-continuation.py": "2e9db61c961e03fe250fd3ec6b14e7b89b20c6cf553ea146e254c9c6fadfa6bb",
+    "scripts/run-a4-continuation.py": "e47fb6d00cd8e16674c2727f732a6086a7f91bd7c2b27e0b85ae7bedc2ea202e",
+    "scripts/check-power-certificate.py": "2fd0b0ee82703db8ad93599ae313909121c41e1eb789fa10cb112c1dda265aa0",
+    "scripts/check-relation-span-certificate.py": "2e031b11e8168a5cbbe173b92440dd03734670d81605ea3dcc4842f7bad5eff9",
+    "docs/PRIME7-A4-CONTINUATION-PLAN.md": "6896eeafd829f55a9434200fe7695a92adab2be7e4003a9f1e557e90fc93da24"
+  },
+  "preparation_sha256": {
+    "checkpoint.json": "64a27868ad5c90aebc4ff135afcd1f9c719a200a47ef4edb07dc2266d6c14444",
+    "schedule.json": "1b128624c1bb51f226c0f077a48c7a43f00fa97e2afbf82cb2398d3cf3034b2a",
+    "prior-trace.jsonl": "66719bc884bcdaf541fc46afdf49d7a71bd598c3b820914976c2eee251e7ba44",
+    "input.json.gz": "d33076b1c1b20c9950349645e77c0dbcebe9c8e326ba77dd041b6b696b134a60"
+  },
+  "gate_sha256": {
+    "/workspace/generators-group-homology/benchmarks/results/prime7-a4-continuation-1-2026-10-29/loader-gate.json": "92d576170acd6cfe146e2ed5bb7e1e1e05bcc65918c2e928a21e8d9334c654e6",
+    "/workspace/generators-group-homology/benchmarks/results/prime7-a4-continuation-1-2026-10-29/stage1/safety/summary.json": "7a0477e59892dd39cde5deaa1a412b50ee5af5e8098514d7bdf1a32c3c0e2836",
+    "/workspace/generators-group-homology/benchmarks/results/prime7-a4-continuation-1-2026-10-29/stage1/verification-summary.json": "c3dd70d743e06dd6a645388b510e569a39bd86d4bfc940d0640c37173959493c",
+    "/workspace/generators-group-homology/benchmarks/results/prime7-a4-continuation-1-2026-10-29/prior-replay-gate.json": "5001765c89409fa63816eef13d4a63285ecb561ac0e0d9160344872798e7af5f"
+  }
+}

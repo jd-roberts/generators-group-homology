@@ -1,0 +1,9 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "base_commit": "515b306e7cb6a695724497447b85b05d6ab0c2fe",
+  "arithmetic_continuations": 1,
+  "only_goal": 7,
+  "further_experiments": 0,
+  "post_run_machinery_development": false
+}
