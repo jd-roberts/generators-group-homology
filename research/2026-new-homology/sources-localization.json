@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-29",
+  "parent_research_commit": "54b8537b5f88158e7d268494e691d11a79fe7ca5",
+  "verification_branch_read_only_snapshot": "515b306e7cb6a695724497447b85b05d6ab0c2fe",
+  "sources": [
+    {
+      "label": "H",
+      "url": "https://arxiv.org/pdf/1412.0953v3",
+      "sha256": "524daff4dbe4187ef6452d3c1c7a0f425f9d1aca626ed6d70b71949e88f107ce",
+      "bytes": 318084,
+      "scope": "Proposition 2.2; Sections 3.1-3.2; Theorem 5.17; Corollary 5.20; Section 6"
+    },
+    {
+      "label": "W",
+      "url": "https://www.sas.rochester.edu/mth/sites/doug-ravenel/otherpapers/weibel-ints.pdf",
+      "sha256": "6c6368a61982eca8b05a44d521088c61d9c890a02454766a0ff5a6c1c6c831fe",
+      "bytes": 787294,
+      "scope": "Theorem 4, (5.6), Example 5, printed p145"
+    },
+    {
+      "label": "A",
+      "url": "https://arxiv.org/pdf/0804.3553v1",
+      "sha256": "47aa5ce2ac126f52e751992d17aeafab7a8680e6cd92bf62b90293d98569a1b7",
+      "bytes": 308902,
+      "scope": "Sections 4.2, 7"
+    },
+    {
+      "label": "AR",
+      "url": "https://arxiv.org/pdf/1211.1651v1",
+      "sha256": "601ac339be4063f97dc7e884e2e4811a5f315841ff2e36283f393e29758369a8",
+      "bytes": 165469,
+      "scope": "Degree-two obstruction discussion, Theorems 12,14"
+    },
+    {
+      "label": "R09",
+      "url": "https://arxiv.org/pdf/0901.2610v3",
+      "sha256": "c679e5c0b9dd1cfb0eb88375fa8ca47365d34f2cd547a1f18e44626730423c04",
+      "bytes": 167425,
+      "scope": "Prime-7 bound, Section 5"
+    },
+    {
+      "label": "R20",
+      "url": "https://arxiv.org/pdf/2009.04069v1",
+      "sha256": "f7bea5fd084b047f6335b322ad85f3b97d0243221dbcf42c9686b00380313ee5",
+      "bytes": 335276,
+      "scope": "Sections 2-3"
+    },
+    {
+      "label": "APRV",
+      "url": "https://arxiv.org/pdf/2609.28677v2",
+      "sha256": "59011834987ea76423a71911dc280dfb22d458f037c47889191e1135a1cff531",
+      "bytes": 395255,
+      "scope": "Theorem 2.7; Theorem 3.13; Remark 3.14; p4 definition"
+    },
+    {
+      "label": "MT",
+      "url": "https://arxiv.org/pdf/2407.17632v3",
+      "sha256": "a88c8e1b05ba4e189f40ca5a8366f9e12c0b43549f81e5201c8d3517340f4471",
+      "bytes": 463475,
+      "scope": "Introduction and semilocal hypotheses"
+    },
+    {
+      "label": "MRV",
+      "url": "https://arxiv.org/pdf/2503.12190v2",
+      "sha256": "e6f04d25347bcd2a26bb45e63213856139e4d30fbfe59bf6f87815b95f2cd6d1",
+      "bytes": 482438,
+      "scope": "Theorem A"
+    }
+  ],
+  "visual_checks": [
+    {
+      "source": "H",
+      "PDF_pages": [
+        6,
+        7,
+        21,
+        22
+      ]
+    },
+    {
+      "source": "W",
+      "PDF_pages": [
+        7
+      ],
+      "printed_page": 145
+    },
+    {
+      "source": "APRV",
+      "PDF_pages": [
+        4
+      ]
+    }
+  ],
+  "notes": [
+    "Tate 1976 original PDF retrieval failed; Tate theorem used via Weibel Theorem 4, whose actual page was inspected.",
+    "No claim of access to MathSciNet/zbMATH or exhaustive priority search.",
+    "Discovery search record is in toral-certificates.json; independent certificate checker does not import or rerun discovery code.",
+    "The bound <=6 is treated as published input, not newly reconstructed evidence."
+  ]
+}
