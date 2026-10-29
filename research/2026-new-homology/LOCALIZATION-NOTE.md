@@ -1,5 +1,7 @@
 # Localization at 2: toral vanishing and an explicit residual summand
 
+**Proof audit:** see [PROOF-AUDIT.md](PROOF-AUDIT.md) for the independent adversarial review of this version. The main conclusions survive, with expanded root-lift and coefficient arguments, counterexamples to broader generation claims, and an unevaluated configuration-homology obstruction. The audit also qualifies the publication status of [MT].
+
 Joshua Roberts research project · 29 October 2026
 
 Let $\zeta=\zeta_7$, $K=\mathbb Q(\zeta)$, $A=\mathbb Z[1/7,\zeta]$, $B=A[1/2]$, $G=\mathrm{SL}_2(A)$, and $G'=\mathrm{SL}_2(B)$. Put $k=\mathbb F_7$. For units $a,b$ write
