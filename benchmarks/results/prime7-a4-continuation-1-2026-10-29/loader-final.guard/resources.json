@@ -1,0 +1,41 @@
+{
+  "command": [
+    "python3",
+    "scripts/test-a4-checkpoint.py",
+    "--base",
+    "benchmarks/results/prime7-a4-continuation-1-2026-10-29"
+  ],
+  "limits": {
+    "memory_bytes": 536870912,
+    "cpu_seconds": 6,
+    "wall_seconds": 10.0,
+    "output_bytes": 8388608
+  },
+  "termination": "completed",
+  "returncode": 0,
+  "supervisor_signal": null,
+  "supervisor_error": null,
+  "wall_seconds": 0.162292,
+  "worker": {
+    "pid": 7912,
+    "returncode": 0,
+    "user_seconds": 0.12794,
+    "system_seconds": 0.028020999999999997,
+    "max_rss_kib": 19576
+  },
+  "sampled_peak_tree_rss_kib": 19488,
+  "adopted_children": [],
+  "observed_processes": [
+    {
+      "pid": 7912,
+      "ppid": 7908,
+      "start_ticks": 455898,
+      "rss_kib": 0,
+      "vsize_bytes": 0
+    }
+  ],
+  "cleanup_verified": true,
+  "stdout_bytes": 108,
+  "stderr_bytes": 0,
+  "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+}

@@ -1,0 +1,9 @@
+A5 = Alternating Group on 5; S5 = Symmetric Group on 5; G3 = F3/k3 = casep3; G\
+5 = F5/k5 = casep5; G7 = F7/k7 = casep7; G11 = F11/k11; SL2 = S/rels = SL_2(Z)\
+; SL_2Zw = Free1/R1; SL_2Z_2 = Free0/R0;SL_2Z_3 = Free3/R3; SL_2Z_5 = Free5/R5\
+; GL_2Z = Free6/R6; PSL_2Z = Free7/R7;SL_2Zi = Free8/R8; SL_2Zneg5 = Free9/R9
+VERIFIED: stored presentation is isomorphic to matrix group of order 6
+VERIFIED: stored presentation is isomorphic to matrix group of order 24
+KNOWN IDENTIFICATION DEFECT: stored SL_2Z_5 is C5, not SL(2,5); original file \
+preserved
+PASS: presentation sanity checks (the known label defect remains unresolved)

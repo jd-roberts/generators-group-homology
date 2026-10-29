@@ -169,7 +169,8 @@ fixed, to preserve the original execution path.
 - Anton, [Homological symbols and the Quillen conjecture](https://arxiv.org/abs/0804.3553).
 - [KBMAG manual, rewriting systems](https://gap-packages.github.io/kbmag/doc/chap2.html): Knuth–Bendix, options, and word reduction. The installed source's `doc/rws.xml` and `gap/rws4.g` were inspected directly.
 
-The mathematical explanation above is reconstructed from the implementation
-and standard Hopf/UCT sequences. The cited papers were linked by the original
-README; PDF retrieval was denied by this environment's network policy, so no
-claim of a paper-by-paper verification or recovered author transcript is made.
+The mathematical explanation above was reconstructed from the implementation
+and standard Hopf/UCT sequences. A subsequent [uploaded-version paper audit](PAPER-AUDIT.md)
+checks the cited sources, distinguishes SE2 from SL2, and records source
+inconsistencies. It does not independently replay the expensive reductions
+or recover original execution transcripts.

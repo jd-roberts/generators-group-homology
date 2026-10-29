@@ -5,12 +5,17 @@ finite-matrix interpretation of its `SL_2Z_5` label is incorrect, and the
 archived H1 row at characteristic 5 is incorrect under that interpretation.
 The arithmetic input `G5=F5/k5` is a different presentation.
 
-**Publication verdict remains pending.** The three cited papers have not yet
-been retrieved: the live proxy rejects arXiv requests, and publication of the
-new allowlist entry has been deferred until this update is ready. This report
-does not attribute the repository's error to a paper or certify the papers'
-arithmetic conclusions as unaffected. It records what the repository and
-bounded independent calculations establish, and what still needs source review.
+**Uploaded-version verdict:** Roberts **2009.04069v1**, Section 4 and
+Tables 1–2 (pp. 10–11), contains the same numerical rows and explicitly says
+unmarked H2 entries are exact dimensions. Thus its characteristic-5 finite
+SL(2,Z5) entries are affected, rather than merely potentially loose bounds.
+Anton **0804.3553v1** proves an arithmetic result using a different, explicitly
+printed presentation; Roberts **0901.2610v3** likewise uses separate arithmetic
+examples. This finite identification error is absent from those cited proof
+paths. Their expensive reductions have not been independently rerun here.
+See [the versioned paper audit](PAPER-AUDIT.md) for page-level evidence and
+separate issues requiring reproduction checks. No verdict about unexamined
+versions or a complete validation of every theorem is implied.
 
 No existing presentation, original algorithm, notebook, HTML, result image,
 or archived baseline measurement is changed by this investigation.
@@ -29,6 +34,7 @@ SL_2Z_5:=Free5/R5;
 
 | Event | Evidence | What it establishes |
 | --- | --- | --- |
+| 2020-09-09: supplied R20 v1 header date | [Section 4 and Tables 1–2, pp.10–11](https://arxiv.org/pdf/2009.04069v1#page=11) | Matching finite case-5 numeric rows and an explicit exactness convention already appear in this supplied version; the exact two-word presentation is not printed there |
 | 2020-11-29: first README | [`f828374`](https://github.com/jd-roberts/generators-group-homology/commit/f828374140c6239e1a4516dfdde4214985b9a2c3) | A generic attribution of the SL presentation to Anton; no per-example source or equation number |
 | 2020-11-29: first library import | [`b01c24f`](https://github.com/jd-roberts/generators-group-homology/blob/b01c24f8cda53b1935f64434f7f16ac35641da56/Library%20of%20groups#L315-L318) | Both the label and exactly the relators above already appear in `Library of groups` |
 | 2021-03-09: library rename | [`5507525`](https://github.com/jd-roberts/generators-group-homology/commit/5507525f21fd2232e251abee5fe767282f47ab27) | Rename only; zero content changes |
@@ -54,7 +60,8 @@ Current documentation provides limited additional provenance:
 - [undergrad-research/projects.md](../undergrad-research/projects.md), lines
   5–10, describes vector spaces and upper bounds and embeds
   [Capture2.JPG](../undergrad-research/Capture2.JPG). The image has no recoverable
-  driver or attribution to a particular paper page in the checkout.
+  driver or attribution to a particular paper page in the checkout. The uploaded
+  Roberts 2020 v1 now identifies matching tables on p. 11.
 - [Algorithms.g](../Algorithms.g), lines 45–54 and 138–151, accepts a free
   group and relator list as arguments. It never selects `R5` or `SL_2Z_5`
   internally. No original checked-in homology driver links this input to a
@@ -129,11 +136,11 @@ it establishes consistency, not proof of which historic commands were run.
 | --- | --- |
 | H1 row interpreted as SL(2,F5) | The characteristic-5 value 1 is incorrect; the genuine group has value 0. The other displayed zeros agree independently. |
 | H2 row interpreted as an exact dimension or nonvanishing statement for SL(2,F5) | The characteristic-5 value 1 is incorrect; the genuine group has value 0. |
-| H2 value 1 interpreted only as an upper bound for SL(2,F5) | `dim <= 1` happens to be true, but the C5 computation does not establish it for a different group. It is not sharp. The original routine returns an upper bound and the project text describes bounds, so an exactness claim must not be attributed without checking its source. |
+| H2 value 1 interpreted only as an upper bound for SL(2,F5) | `dim <= 1` happens to be true, but the C5 computation does not establish it for a different group. It is not sharp. The project text describes bounds, but the uploaded 2020 v1 explicitly treats the unmarked entry as exact; that exact claim is incorrect under the finite-matrix interpretation. |
 | The archived row interpreted as results for the stored `Free5/R5` | Values are correct for C5; its interpretation must be stated explicitly. |
 | The new baseline under legacy runner key `SL2F5` | Remains a valid C5 baseline, explicitly labelled as such. It is not a positive control for the genuine SL(2,F5). |
 | Other rows or generic homology algorithms | No numerical error in those follows logically from this identification issue. Their own inputs and mathematical assumptions still need validation. |
-| Arithmetic case `G5=F5/k5` and the other Anton-labelled cases | No direct code dependency on `Free5/R5` is present. This establishes separation of inputs, not a verdict on the papers' proofs or original experiment transcripts. |
+| Arithmetic case `G5=F5/k5` and the other Anton-labelled cases | No direct code dependency on `Free5/R5` is present. The uploaded arithmetic proofs likewise use separate inputs; the finite table defect does not enter their cited proof paths. Full experiment transcripts remain unavailable. |
 
 Thus this is more than harmless renaming **if the row is asserted for the
 finite matrix group**. It is also insufficient evidence to declare an
@@ -147,7 +154,7 @@ supplies or labels the wrong presentation.
 | C5 | Cyclic group of order 5 | `Free5/R5`, library lines 315–318 |
 | SL(2,F5) | Determinant-one matrices over `Z/5Z`, order 120 | GAP's independent `SL(2,5)` construction; not the stored finite case-5 presentation |
 | SL(2,Z) | Integral determinant-one matrices, infinite | Separate `S/rels` input, library lines 295–298 |
-| Intended arithmetic family | Groups of the form `SL(2,Z[zeta_p,1/p])`, with cyclotomic elements and p inverted | Arithmetic blocks `F3/k3`, `F5/k5`, `F7/k7`, `F11/k11`, the Anton link, and the motivating expression in `Capture.JPG`; precise presentation hypotheses/maps remain to be checked against the paper |
+| Intended arithmetic family | Groups of the form `SL(2,Z[zeta_p,1/p])`, with cyclotomic elements and p inverted | Arithmetic blocks `F3/k3`, `F5/k5`, `F7/k7`, `F11/k11`, the Anton link, and the motivating expression in `Capture.JPG`; Anton v1, Notation 3.4, Theorem 6.2 and Section 7: the presented group is SE2, with an additional identification step to SL2 |
 
 For example, [the arithmetic case-5 block](../Library-of-groups.g), lines
 40–82, has eleven free generators and 39 defining relators; the finite
@@ -175,38 +182,42 @@ independently of the presentation-family index p; the motivating pictured
 problem uses matching coefficients F_p. Testing q=11 on a fixed finite group
 does not construct the arithmetic family member indexed by p=11.
 
-## 5. Cited-paper audit still required
+## 5. Uploaded-paper audit completed within stated limits
 
-The repository links:
+The three supplied versions have now been read. The
+[paper audit](PAPER-AUDIT.md) records source hashes and exact locations:
 
-1. Anton, [Homological symbols and the Quillen conjecture](https://arxiv.org/abs/0804.3553).
-2. Roberts, [An algorithm for low dimensional group homology](https://arxiv.org/abs/0901.2610).
-3. Roberts, [Generators for Group Homology and a Vanishing Conjecture](https://arxiv.org/abs/2009.04069).
+- Roberts 2020 v1, Section 4 and Tables 1–2, pp. 10–11: the finite row and
+  its equality interpretation are present. The source of the exact two-word
+  `Free5/R5` presentation before the Git import remains unestablished; matching
+  table values do not recover an original execution transcript.
+- Anton 2008 v1, Theorem 1.1 and Corollary 7.5: arithmetic prime-5 vanishing,
+  using the eleven-generator presentation and Lemma 7.4. Its 39 relators
+  match the stored arithmetic `k5` literally. No finite two-generator C5
+  input is used in this proof path.
+- Roberts 2009 v3, Examples 4.1–4.4: the finite control is the symmetric
+  group on five letters, followed by arithmetic cases at primes 3,5,7;
+  there is no finite SL(2,F5) example or the 2020 table in this version.
+- Roberts 2020 v1, Section 3.1: the arithmetic prime-7 generator calculation
+  is separate from Section 4's finite table, but the six displayed abelian
+  images on p. 10 have a distinct printed-data inconsistency. The
+  [reexamination](PRIME7-PROOF-REEXAMINATION.md) verifies rank six for the
+  literal auxiliary words and distinguishes this from the still-unresolved
+  identity reductions and explicit homology representatives. The intended
+  spanning argument does not require independent homology classes.
 
-Titles and attribution above come from the README, not a completed reading
-of their contents. No verified paper equation/table number or theorem
-dependency can currently be supplied. In particular, the table-image upload
-date and a generic citation do not prove that the image reproduces a table
-in either Roberts paper. Nor does first appearance in the repository date
-the first use of the presentation outside Git.
+The subsequent [presentation certificates](PRIME7-PRESENTATION-CERTIFICATES.md)
+now verify the maps in both directions, distinguish the b1 and b0 source-word
+conventions by exact normal-closure certificates, and provide separate valid
+kernel words under the b0 interpretation. The expensive spanning premise
+remains unverified; the earlier b1-interpreted corrected list is not valid.
 
-Once source access is live, complete these checks before a publication-level
-verdict:
+The source review identifies a concrete error in the uploaded 2020 finite
+example table and traces separate arithmetic proof inputs. It does not
+independently replay multi-day rewriting runs or establish completeness of
+2020's printed generator list. Those are research-validation tasks, not
+reasons to edit or replace the archived presentations silently.
 
-- Record the exact arXiv versions read, page/table/equation numbers, and
-  file hashes. Compare both Roberts papers' finite examples with the two
-  stored relators and with the two rows of `Capture2.JPG`.
-- Determine whether each numeric entry is an upper bound, equality, or
-  independently proved nonvanishing result. Distinguish a copied table from
-  a freshly recomputed illustrative example.
-- Check Anton's ring, prime hypotheses, generator-to-matrix correspondence,
-  and presentation statement against the arithmetic blocks. The broad README
-  attribution alone does not identify the finite two-generator example's source.
-- Trace any actual use of the finite SL(2,F5) example as a lemma, validation,
-  quotient comparison or input to an arithmetic theorem. If the papers do
-  not expose the run inputs, retain that limitation and seek original input
-  files rather than infer a dependency from matching numbers.
-
-[The prioritized optimization plan](OPTIMIZATION-PLAN.md) starts with this
-source/identity gate. No paper-specific correction or performance optimization
-has been applied by this update.
+[The prioritized optimization plan](OPTIMIZATION-PLAN.md) now includes Anton's
+fixed-quotient batch certificate and source-backed parameter settings. No
+performance optimization or original mathematical source is changed here.

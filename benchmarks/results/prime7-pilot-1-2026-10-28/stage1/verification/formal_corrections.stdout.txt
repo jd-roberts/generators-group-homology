@@ -1,0 +1,3 @@
+PASS: corrected words, matrices, source comparison and 14-coordinate check (0.765164s; 5s limit).
+PASS: independent Python integer exponent check of all six exported words.
+NOT VERIFIED: the original twelve-word relation-module spanning certificate.

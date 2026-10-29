@@ -24,11 +24,40 @@ caching rule may invalidate candidate coverage or a reduction certificate.
 
 ## 0. Verify inputs and paper dependencies before timing comparisons
 
-Complete the paper-source audit and retain explicit group identifications.
+Use the [completed uploaded-version audit](PAPER-AUDIT.md) and retain explicit
+group identifications, source maps, and source-version labels.
 Use the actual matrix SL(2,F5) as an independent homology reference; retain
 C5 as a separate test with nonzero mod-5 homology. Do not relabel a stored
 input or silently substitute a guessed corrected exponent. Resolve the
-G11 presentation's provenance before optimizing it as an arithmetic group.
+G11 mismatch with Anton's perfect SE2 before optimizing it as that group.
+Recover the prime-7 reduced inputs and clarify R20's displayed reductions
+and explicit cycle representatives before using its final six words as a
+certified spanning set. The [proof reexamination](PRIME7-PROOF-REEXAMINATION.md)
+confirms that the literal last-six auxiliary images have rank six; no
+independence of the six homology classes is required.
+The [earlier formal correction calculation](PRIME7-CORRECTED-REPRESENTATIVES.md)
+supplies matrices and a conditional proof. Its failed membership premise
+is resolved below; those earlier words must not be treated as kernel classes.
+
+**Membership gate update:** [exact certificates](PRIME7-PRESENTATION-CERTIFICATES.md)
+now verify the presentation maps, but disprove the earlier list's membership
+premise under `f7=b1`. Use neither that list nor its conditional spanning
+claim as a baseline. A separate b0-interpreted list has positively certified
+membership and defines valid classes; its twelve-word spanning premise is
+still unverified. This validation precedes any optimization work.
+
+The [spanning certificate plan](PRIME7-SPANNING-CERTIFICATE-PLAN.md) now
+provides the finite quotient criterion, small positive/negative controls,
+five immediate certificates and a sufficient set of fifteen unproved
+future tests and the original bounded-pilot proposal. The first execution
+is recorded below; arithmetic speedup remains unmeasured.
+
+The subsequently authorized [first pilot](PRIME7-PILOT-1-RESULTS.md) has now
+run exactly once after passing its OS safety gate. It reached the rule and
+state caps without a new certificate; five original targets remain certified.
+It provides no measured speedup or nonmembership result. A proof-producing
+critical-pair experiment on the small suite is recommended only, with no
+further trial authorized or executed.
 
 **Small tests:** existing presentation sanity checks, the new independent
 matrix-group multiplier check, cyclic groups, C2 x C2, and SL(2,3).
@@ -36,7 +65,34 @@ matrix-group multiplier check, cyclic groups, C2 x C2, and SL(2,3).
 citations are explicit. Claims about a target group never rest on a label
 or matching abelianization alone.
 
-## 1. Avoid completion when an existing mathematical bound already settles the answer
+## 1. Reproduce a published fixed-quotient spanning certificate
+
+Anton v1 Lemma 7.4 (pp.21–22) already supplies a more targeted prime-5
+strategy than independently rebuilding a rewriting system for every relator.
+Choose its eleven-word list e, form the single quotient
+`F/[F,N]N^5<e>`, and reduce the 28 complementary relators in the same system.
+If all reduce to identity, e spans the relation quotient. Its image rank is
+11, giving a matching lower dimension and vanishing of the kernel.
+
+The source comparison verifies the e/n partition and rank 11 without
+completion. The expensive 28 reductions remain unrun. This is a published
+certificate strategy to reproduce, **not a new method or a demonstrated
+speedup**. One fixed completion can be harder than the many stronger
+quotients used by the greedy algorithm; completion-call counts are not
+runtime factors.
+
+**Small tests:** fixed-quotient batch certificates for cyclic examples and
+identified finite groups. Include C2 x C2 with two candidate squares: their
+relation images alone must not be declared to span the full relation quotient
+without reducing the omitted commutator. Use actual SL(2,3), and retain C5
+with its correct name. Compare returned bounds with unchanged controls.
+**Acceptance:** every omitted relator has a positive identity witness; e spans
+by those witnesses, not just by its abelian image rank. Record confluence but
+allow sound positive reductions from a nonconfluent system; unresolved words
+mean the batch certificate is unfinished. Only a later explicitly authorized
+arithmetic pilot should attempt A08's eleven-word case.
+
+## 2. Avoid completion when an existing mathematical bound already settles the answer
 
 If `a+e-t` meets a certified lower bound, the dimension is settled. In
 particular, `e=t` gives the lower bound `a` exactly. An implementation could
@@ -74,7 +130,7 @@ is inferred just from an incomplete normal-form computation.
 **Acceptance:** same justified result, fewer measured completion calls, and
 explicitly marked unexecuted reductions. A timeout remains unfinished.
 
-## 2. Add cheap one-sided linear certificates before hard word tests
+## 3. Add cheap one-sided linear certificates before hard word tests
 
 For a candidate x and the other candidates S, take their exponent-sum vectors
 modulo q. If the vector of x is outside the F_q span of the vectors of S,
@@ -96,11 +152,13 @@ small-group rewriting calculation.
 **Acceptance:** no false nontriviality certificates, preserved spanning, and
 accounted fallback calls. Measure linear-algebra overhead as well as saved work.
 
-## 3. Establish effective KBMAG options, then tune search on small derived quotients
+## 4. Establish effective KBMAG options, then tune search on small derived quotients
 
 The original code writes `tindyint`, while KBMAG reads `tidyint`. Fixing this
 in a separate experiment is necessary before interpreting intended tuning.
-Keep the old execution path as a control. Compare small grids of supported
+Keep the old execution path as a control. A08 supplies a concrete comparison:
+`maxeqns=500000`, `tidyint=1000`, `confnum=100`; R09 Appendix A p.11
+already has the ignored `tindyint` spelling. Compare small grids of supported
 tidy intervals, generator/word orders, and candidate orders under equal
 budgets, with confluence status, rule counts, output bounds and resource use.
 Run each trial independently; record effective serialized options.
@@ -116,7 +174,7 @@ survivor lists or incomplete runs are not automatically mathematical errors.
 Only a later authorized bounded arithmetic pilot could establish transfer
 of any performance benefit.
 
-## 4. Test certified presentation reduction before larger arithmetic pilots
+## 5. Test certified presentation reduction before larger arithmetic pilots
 
 G3/G5/G7 contain explicit definitions of `b_i` and `w`. Tietze elimination
 with retained forward/inverse word maps could reduce the derived presentation
@@ -125,6 +183,12 @@ dramatically. For G7, eliminating those eight definitions would change
 from 1023 to 447 before further simplification. Those are static counts,
 not runtime measurements: substitution may lengthen words and worsen overlaps.
 
+This eight-definition elimination count is only a first static estimate. R09
+p.10 reports a further reduced 6-generator/34-relator presentation, while
+R20 Proposition 3.2 provides a 6-generator/32-relator version and forward
+word maps. Recover and certify those actual source inputs instead of treating
+6/56 as the best known target or mixing their candidate counts.
+
 **Small tests:** genuine identified finite groups with redundant generators,
 then construction-only comparisons of the arithmetic inputs. Verify all
 maps and relator consequences; transport any chosen candidate list correctly.
@@ -132,7 +196,7 @@ maps and relator consequences; transport any chosen candidate list correctly.
 checked in original words, and both word lengths and equation growth recorded.
 Do not apply a presentation pattern inferred from smaller primes to G11.
 
-## 5. Cache safe data; investigate rewriting reuse with explicit support
+## 6. Cache safe data; investigate rewriting reuse with explicit support
 
 Cache exponent/Smith data and static powers/commutators where the inputs are
 identical. Existing measurements put scalar stages at milliseconds, so that
@@ -153,7 +217,7 @@ answers and proof witnesses match fresh controls. Supported checkpointing
 should preserve completed progress and mappings; it must not claim that live
 external processes or temporary files alone constitute a reusable checkpoint.
 
-## 6. Parallelize independent trials, then expand scope by explicit decision
+## 7. Parallelize independent trials, then expand scope by explicit decision
 
 Independent cases, coefficient primes and parameter trials can be scheduled
 in separate bounded processes, with isolated files and memory budgets. The

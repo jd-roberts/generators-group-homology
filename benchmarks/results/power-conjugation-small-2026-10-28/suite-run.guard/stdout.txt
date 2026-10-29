@@ -1,0 +1,61 @@
+C3_full bfs {'certified_targets': [1], 'proved_nonmembers': [], 'spanning': 'proved', 'verified_rules': 0}
+C3_full completion {'certified_targets': [1], 'proved_nonmembers': [], 'spanning': 'proved', 'verified_rules': 8}
+C3_full power {'certified_targets': [1], 'proved_nonmembers': [], 'spanning': 'proved', 'verified_rules': 2}
+C3_power_basis bfs {'certified_targets': [1], 'proved_nonmembers': [], 'spanning': 'proved', 'verified_rules': 0}
+C3_power_basis completion {'certified_targets': [1], 'proved_nonmembers': [], 'spanning': 'proved', 'verified_rules': 7}
+C3_power_basis power {'certified_targets': [1], 'proved_nonmembers': [], 'spanning': 'proved', 'verified_rules': 3}
+C3_missing_p3 bfs {'certified_targets': [], 'proved_nonmembers': [1], 'spanning': 'disproved', 'verified_rules': 0}
+C3_missing_p3 completion {'certified_targets': [], 'proved_nonmembers': [1], 'spanning': 'disproved', 'verified_rules': 5}
+C3_missing_p3 power {'certified_targets': [], 'proved_nonmembers': [1], 'spanning': 'disproved', 'verified_rules': 1}
+C3_missing_p2 bfs {'certified_targets': [], 'proved_nonmembers': [1], 'spanning': 'disproved', 'verified_rules': 0}
+C3_missing_p2 completion {'certified_targets': [], 'proved_nonmembers': [1], 'spanning': 'disproved', 'verified_rules': 5}
+C3_missing_p2 power {'certified_targets': [], 'proved_nonmembers': [1], 'spanning': 'disproved', 'verified_rules': 1}
+C3_power_basis_p2 bfs {'certified_targets': [1], 'proved_nonmembers': [], 'spanning': 'proved', 'verified_rules': 0}
+C3_power_basis_p2 completion {'certified_targets': [1], 'proved_nonmembers': [], 'spanning': 'proved', 'verified_rules': 5}
+C3_power_basis_p2 power {'certified_targets': [1], 'proved_nonmembers': [], 'spanning': 'proved', 'verified_rules': 3}
+C3_redundant bfs {'certified_targets': [1, 2], 'proved_nonmembers': [], 'spanning': 'proved', 'verified_rules': 0}
+C3_redundant completion {'certified_targets': [1, 2], 'proved_nonmembers': [], 'spanning': 'proved', 'verified_rules': 8}
+C3_redundant power {'certified_targets': [1, 2], 'proved_nonmembers': [], 'spanning': 'proved', 'verified_rules': 3}
+V4_full bfs {'certified_targets': [1, 2, 3], 'proved_nonmembers': [], 'spanning': 'proved', 'verified_rules': 0}
+V4_full completion {'certified_targets': [1, 2, 3], 'proved_nonmembers': [], 'spanning': 'proved', 'verified_rules': 37}
+V4_full power {'certified_targets': [1, 2, 3], 'proved_nonmembers': [], 'spanning': 'proved', 'verified_rules': 10}
+V4_conjugated bfs {'certified_targets': [1, 2, 3], 'proved_nonmembers': [], 'spanning': 'proved', 'verified_rules': 0}
+V4_conjugated completion {'certified_targets': [1, 2, 3], 'proved_nonmembers': [], 'spanning': 'proved', 'verified_rules': 39}
+V4_conjugated power {'certified_targets': [1, 2, 3], 'proved_nonmembers': [], 'spanning': 'proved', 'verified_rules': 10}
+V4_missing_commutator bfs {'certified_targets': [1, 2], 'proved_nonmembers': [3], 'spanning': 'disproved', 'verified_rules': 0}
+V4_missing_commutator completion {'certified_targets': [1, 2], 'proved_nonmembers': [3], 'spanning': 'disproved', 'verified_rules': 36}
+V4_missing_commutator power {'certified_targets': [1, 2], 'proved_nonmembers': [3], 'spanning': 'disproved', 'verified_rules': 9}
+free_rank2 bfs {'certified_targets': [], 'proved_nonmembers': [], 'spanning': 'proved', 'verified_rules': 0}
+free_rank2 completion {'certified_targets': [], 'proved_nonmembers': [], 'spanning': 'proved', 'verified_rules': 4}
+free_rank2 power {'certified_targets': [], 'proved_nonmembers': [], 'spanning': 'proved', 'verified_rules': 0}
+cyclic7_long_powers bfs {'certified_targets': [], 'proved_nonmembers': [], 'spanning': 'unresolved', 'verified_rules': 0}
+cyclic7_long_powers completion {'certified_targets': [1], 'proved_nonmembers': [], 'spanning': 'proved', 'verified_rules': 12}
+cyclic7_long_powers power {'certified_targets': [1], 'proved_nonmembers': [], 'spanning': 'proved', 'verified_rules': 3}
+dihedral_power_control bfs {'certified_targets': [], 'proved_nonmembers': [], 'all_targets': 'unresolved', 'verified_rules': 0}
+dihedral_power_control completion {'certified_targets': [1], 'proved_nonmembers': [], 'all_targets': 'proved', 'verified_rules': 26}
+dihedral_power_control power {'certified_targets': [1], 'proved_nonmembers': [], 'all_targets': 'proved', 'verified_rules': 5}
+conjugated_inverse_cyclic_powers bfs {'certified_targets': [], 'proved_nonmembers': [], 'all_targets': 'unresolved', 'verified_rules': 0}
+conjugated_inverse_cyclic_powers completion {'certified_targets': [1], 'proved_nonmembers': [], 'all_targets': 'proved', 'verified_rules': 23}
+conjugated_inverse_cyclic_powers power {'certified_targets': [1], 'proved_nonmembers': [], 'all_targets': 'proved', 'verified_rules': 3}
+negative_conjugator_composite_root bfs {'certified_targets': [], 'proved_nonmembers': [], 'all_targets': 'unresolved', 'verified_rules': 0}
+negative_conjugator_composite_root completion {'certified_targets': [1], 'proved_nonmembers': [], 'all_targets': 'proved', 'verified_rules': 21}
+negative_conjugator_composite_root power {'certified_targets': [1], 'proved_nonmembers': [], 'all_targets': 'proved', 'verified_rules': 5}
+invalid_power_distribution bfs {'certified_targets': [], 'proved_nonmembers': [1], 'all_targets': 'disproved', 'verified_rules': 0}
+invalid_power_distribution completion {'certified_targets': [], 'proved_nonmembers': [1], 'all_targets': 'disproved', 'verified_rules': 9}
+invalid_power_distribution power {'certified_targets': [], 'proved_nonmembers': [1], 'all_targets': 'disproved', 'verified_rules': 1}
+invalid_root_centrality bfs {'certified_targets': [], 'proved_nonmembers': [1], 'all_targets': 'disproved', 'verified_rules': 0}
+invalid_root_centrality completion {'certified_targets': [], 'proved_nonmembers': [1], 'all_targets': 'disproved', 'verified_rules': 132}
+invalid_root_centrality power {'certified_targets': [], 'proved_nonmembers': [1], 'all_targets': 'disproved', 'verified_rules': 2}
+mismatched_conjugators bfs {'certified_targets': [], 'proved_nonmembers': [1], 'all_targets': 'disproved', 'verified_rules': 0}
+mismatched_conjugators completion {'certified_targets': [], 'proved_nonmembers': [1], 'all_targets': 'disproved', 'verified_rules': 256}
+mismatched_conjugators power {'certified_targets': [], 'proved_nonmembers': [1], 'all_targets': 'disproved', 'verified_rules': 3}
+inversion_without_centrality bfs {'certified_targets': [], 'proved_nonmembers': [1], 'all_targets': 'disproved', 'verified_rules': 0}
+inversion_without_centrality completion {'certified_targets': [], 'proved_nonmembers': [1], 'all_targets': 'disproved', 'verified_rules': 32}
+inversion_without_centrality power {'certified_targets': [], 'proved_nonmembers': [1], 'all_targets': 'disproved', 'verified_rules': 2}
+commutation_is_not_inversion bfs {'certified_targets': [], 'proved_nonmembers': [1], 'all_targets': 'disproved', 'verified_rules': 0}
+commutation_is_not_inversion completion {'certified_targets': [], 'proved_nonmembers': [1], 'all_targets': 'disproved', 'verified_rules': 32}
+commutation_is_not_inversion power {'certified_targets': [], 'proved_nonmembers': [1], 'all_targets': 'disproved', 'verified_rules': 2}
+different_roots_do_not_combine bfs {'certified_targets': [], 'proved_nonmembers': [1], 'all_targets': 'disproved', 'verified_rules': 0}
+different_roots_do_not_combine completion {'certified_targets': [], 'proved_nonmembers': [1], 'all_targets': 'disproved', 'verified_rules': 10}
+different_roots_do_not_combine power {'certified_targets': [], 'proved_nonmembers': [1], 'all_targets': 'disproved', 'verified_rules': 2}
+PASS: twenty small cases, three methods, independent rules/targets and adversarial checks.

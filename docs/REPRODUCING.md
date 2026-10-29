@@ -67,6 +67,9 @@ or network service is required for computations once dependencies are installed.
 gap -q -b --quitonbreak tests/smoke.g
 gap -q -b --quitonbreak tests/historical-h1.g
 gap -q -b --quitonbreak tests/presentation-sanity.g
+timeout --kill-after=2 5 gap -q -b --quitonbreak tests/paper-provenance.g
+python3 scripts/verify-prime7-corrections.py --gap gap
+python3 scripts/verify-prime7-presentation.py --gap gap
 ```
 
 The smoke file performs 16 checks: free versus torsion contributions in
@@ -82,6 +85,44 @@ shell rather than leaving an interactive break loop.
 They validate a small baseline; they do not certify all rewriting runs,
 arithmetic presentation identities, or the historical H2 table.
 
+The prime-7 correction runner enforces its own five-second limit and checks
+the matrix calculation, explicit words in the original free generators,
+and their exponent sums with GAP and an independent Python count. Its
+[calculation and proof](PRIME7-CORRECTED-REPRESENTATIVES.md) state precisely
+why spanning for the intended H2 remains conditional on the original
+twelve-word certificate. It does not run KBMAG.
+
+The subsequent presentation verifier establishes the isomorphism by exact
+products of conjugates and checks a finite-matrix nonmembership certificate.
+It proves that five earlier corrected words fail normal-closure membership
+under `f7=b1`; their zero exponent sums do not make them homology classes.
+It also verifies a distinct valid list using `f7=b0=z^-3*b1*z^3`. See the
+[complete status and certificates](PRIME7-PRESENTATION-CERTIFICATES.md).
+The GAP export has a five-second timeout; combined replay is limited to
+ten seconds. No proof search or KBMAG is performed by this verifier.
+
+The [spanning preparation](PRIME7-SPANNING-CERTIFICATE-PLAN.md) adds a
+separate, whitelisted small-group test suite and static prime-7 inventory:
+
+```sh
+python3 scripts/test-relation-span.py --gap gap --output /tmp/new-span-tests
+python3 scripts/check-prime7-spanning-inventory.py --gap gap
+```
+
+The latter only replays existing proofs and checks finite-field witnesses;
+it launches no arithmetic search. The original preparation did not run
+the proposed arithmetic pilot.
+
+That preparation was followed by [one authorized pilot](PRIME7-PILOT-1-RESULTS.md),
+which found no new certificates. Replay its results without launching search:
+
+```sh
+python3 scripts/check-prime7-pilot-results.py --base benchmarks/results/prime7-pilot-1-2026-10-28
+```
+
+The archived one-shot reservation prevents the controller from automatically
+repeating that run. A new experiment requires further authorization.
+
 ## Inventory and original evidence
 
 | Artifact | What it supplies | What it does not supply |
@@ -94,6 +135,10 @@ arithmetic presentation identities, or the historical H2 table.
 | Original README | Links to the Anton and Roberts papers | Complete experimental transcripts |
 
 Exact historical execution cannot be recovered solely from this checkout.
+The subsequent [uploaded-paper audit](PAPER-AUDIT.md) does recover explicit
+arithmetic prime-3/5 source relators and Anton's eleven-word prime-5 list.
+The new source test checks those words and cheap image/partition properties;
+it deliberately does not execute the expensive complement reductions.
 In particular, a table's sharper bound may have used a different presentation,
 a certified smaller spanning list, a different candidate order, or more
 completion time. Do not infer any of these undocumented choices as fact.

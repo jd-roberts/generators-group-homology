@@ -1,0 +1,1 @@
+PASS: load-only full-Q equivalence, exact schedule, small positive completion, and four adversarial checks.

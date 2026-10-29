@@ -1,0 +1,23 @@
+C3_full.bfs proved 0.000510s
+C3_full.completion proved 0.000390s
+C3_power_basis.bfs proved 0.000716s
+C3_power_basis.completion proved 0.000436s
+C3_missing_p3.bfs disproved 0.000456s
+C3_missing_p3.completion disproved 0.001322s
+C3_missing_p2.bfs disproved 0.000341s
+C3_missing_p2.completion disproved 0.000648s
+C3_power_basis_p2.bfs proved 0.000939s
+C3_power_basis_p2.completion proved 0.000522s
+C3_redundant.bfs proved 0.003128s
+C3_redundant.completion proved 0.000792s
+V4_full.bfs proved 0.001747s
+V4_full.completion proved 0.004507s
+V4_conjugated.bfs proved 0.001782s
+V4_conjugated.completion proved 0.005288s
+V4_missing_commutator.bfs disproved 0.018789s
+V4_missing_commutator.completion disproved 0.032021s
+free_rank2.bfs proved 0.000013s
+free_rank2.completion proved 0.000041s
+cyclic7_long_powers.bfs unresolved 0.019315s
+cyclic7_long_powers.completion proved 0.006157s
+PASS: 11 small cases x 2 methods; adversarial and deliberately unresolved checks.

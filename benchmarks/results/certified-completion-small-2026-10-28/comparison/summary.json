@@ -1,0 +1,2173 @@
+{
+  "results": [
+    {
+      "case": "C3_full",
+      "method": "bfs",
+      "verdict": {
+        "certified_targets": [
+          1
+        ],
+        "proved_nonmembers": [],
+        "spanning": "proved"
+      },
+      "search_seconds": 0.0005096649999813962,
+      "check_seconds": 4.625500002930494e-05,
+      "target_factors": 1,
+      "certificate_bytes": 759,
+      "target_certificate_bytes": 56,
+      "rule_certificate_bytes": 2,
+      "bfs_expanded_states": 1,
+      "rule_factors": 0,
+      "metrics": {
+        "rule_count": 144
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+          "--worker",
+          "--case",
+          "C3_full",
+          "--method",
+          "bfs",
+          "--record",
+          "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_full.bfs.json"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 3,
+          "wall_seconds": 5.0,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.102199,
+        "worker": {
+          "pid": 1658,
+          "returncode": 0,
+          "user_seconds": 0.076218,
+          "system_seconds": 0.015754,
+          "max_rss_kib": 11904
+        },
+        "sampled_peak_tree_rss_kib": 11904,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 1658,
+            "ppid": 1657,
+            "start_ticks": 42741,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "experiments/resource_guard.py",
+        "--output",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_full.bfs.guard",
+        "--memory-mib",
+        "512",
+        "--cpu-seconds",
+        "3",
+        "--wall-seconds",
+        "5",
+        "--output-bytes",
+        "8388608",
+        "--",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+        "--worker",
+        "--case",
+        "C3_full",
+        "--method",
+        "bfs",
+        "--record",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_full.bfs.json"
+      ]
+    },
+    {
+      "case": "C3_full",
+      "method": "completion",
+      "verdict": {
+        "certified_targets": [
+          1
+        ],
+        "proved_nonmembers": [],
+        "spanning": "proved",
+        "verified_rules": 8,
+        "quotient_sha256": "c67478b941e0a2af329a700ac5c803314a6ab025a9c3edc951800c48e7e331f3"
+      },
+      "search_seconds": 0.0003902569999922889,
+      "check_seconds": 0.0003592670000216458,
+      "target_factors": 1,
+      "certificate_bytes": 1587,
+      "target_certificate_bytes": 45,
+      "rule_certificate_bytes": 611,
+      "bfs_expanded_states": 0,
+      "rule_factors": 6,
+      "metrics": {
+        "search_wall_seconds": 0.0003821930000071916,
+        "rule_count": 8,
+        "critical_pairs": 0,
+        "reduction_steps": 21,
+        "max_pending_pairs": 36,
+        "max_equation_length": 9,
+        "truncations": [],
+        "stop_reason": "targets_certified_before_completion",
+        "initially_certified": 1
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+          "--worker",
+          "--case",
+          "C3_full",
+          "--method",
+          "completion",
+          "--record",
+          "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_full.completion.json"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 3,
+          "wall_seconds": 5.0,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.094785,
+        "worker": {
+          "pid": 1660,
+          "returncode": 0,
+          "user_seconds": 0.074431,
+          "system_seconds": 0.008048,
+          "max_rss_kib": 11904
+        },
+        "sampled_peak_tree_rss_kib": 11904,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 1660,
+            "ppid": 1659,
+            "start_ticks": 42756,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "experiments/resource_guard.py",
+        "--output",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_full.completion.guard",
+        "--memory-mib",
+        "512",
+        "--cpu-seconds",
+        "3",
+        "--wall-seconds",
+        "5",
+        "--output-bytes",
+        "8388608",
+        "--",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+        "--worker",
+        "--case",
+        "C3_full",
+        "--method",
+        "completion",
+        "--record",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_full.completion.json"
+      ]
+    },
+    {
+      "case": "C3_power_basis",
+      "method": "bfs",
+      "verdict": {
+        "certified_targets": [
+          1
+        ],
+        "proved_nonmembers": [],
+        "spanning": "proved"
+      },
+      "search_seconds": 0.0007156400000098984,
+      "check_seconds": 4.200500001161345e-05,
+      "target_factors": 2,
+      "certificate_bytes": 797,
+      "target_certificate_bytes": 66,
+      "rule_certificate_bytes": 2,
+      "bfs_expanded_states": 3,
+      "rule_factors": 0,
+      "metrics": {
+        "rule_count": 198
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+          "--worker",
+          "--case",
+          "C3_power_basis",
+          "--method",
+          "bfs",
+          "--record",
+          "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_power_basis.bfs.json"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 3,
+          "wall_seconds": 5.0,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.103023,
+        "worker": {
+          "pid": 1662,
+          "returncode": 0,
+          "user_seconds": 0.085963,
+          "system_seconds": 0.008506999999999999,
+          "max_rss_kib": 11904
+        },
+        "sampled_peak_tree_rss_kib": 11776,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 1662,
+            "ppid": 1661,
+            "start_ticks": 42772,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "experiments/resource_guard.py",
+        "--output",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_power_basis.bfs.guard",
+        "--memory-mib",
+        "512",
+        "--cpu-seconds",
+        "3",
+        "--wall-seconds",
+        "5",
+        "--output-bytes",
+        "8388608",
+        "--",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+        "--worker",
+        "--case",
+        "C3_power_basis",
+        "--method",
+        "bfs",
+        "--record",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_power_basis.bfs.json"
+      ]
+    },
+    {
+      "case": "C3_power_basis",
+      "method": "completion",
+      "verdict": {
+        "certified_targets": [
+          1
+        ],
+        "proved_nonmembers": [],
+        "spanning": "proved",
+        "verified_rules": 7,
+        "quotient_sha256": "6f3d86bd0befe097d01dd20ca9b86926e73028dac6a15ba9a814579ab10d10f4"
+      },
+      "search_seconds": 0.00043630599998323305,
+      "check_seconds": 0.00010234100000161561,
+      "target_factors": 3,
+      "certificate_bytes": 1590,
+      "target_certificate_bytes": 64,
+      "rule_certificate_bytes": 565,
+      "bfs_expanded_states": 0,
+      "rule_factors": 8,
+      "metrics": {
+        "search_wall_seconds": 0.00042867700000215336,
+        "rule_count": 7,
+        "critical_pairs": 0,
+        "reduction_steps": 41,
+        "max_pending_pairs": 28,
+        "max_equation_length": 9,
+        "truncations": [],
+        "stop_reason": "targets_certified_before_completion",
+        "initially_certified": 1
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+          "--worker",
+          "--case",
+          "C3_power_basis",
+          "--method",
+          "completion",
+          "--record",
+          "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_power_basis.completion.json"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 3,
+          "wall_seconds": 5.0,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.084616,
+        "worker": {
+          "pid": 1664,
+          "returncode": 0,
+          "user_seconds": 0.058442999999999995,
+          "system_seconds": 0.022806999999999997,
+          "max_rss_kib": 11904
+        },
+        "sampled_peak_tree_rss_kib": 11648,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 1664,
+            "ppid": 1663,
+            "start_ticks": 42787,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "experiments/resource_guard.py",
+        "--output",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_power_basis.completion.guard",
+        "--memory-mib",
+        "512",
+        "--cpu-seconds",
+        "3",
+        "--wall-seconds",
+        "5",
+        "--output-bytes",
+        "8388608",
+        "--",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+        "--worker",
+        "--case",
+        "C3_power_basis",
+        "--method",
+        "completion",
+        "--record",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_power_basis.completion.json"
+      ]
+    },
+    {
+      "case": "C3_missing_p3",
+      "method": "bfs",
+      "verdict": {
+        "certified_targets": [],
+        "proved_nonmembers": [
+          1
+        ],
+        "spanning": "disproved"
+      },
+      "search_seconds": 0.00045568300004106277,
+      "check_seconds": 5.145400001538292e-05,
+      "target_factors": 0,
+      "certificate_bytes": 785,
+      "target_certificate_bytes": 71,
+      "rule_certificate_bytes": 2,
+      "bfs_expanded_states": 2,
+      "rule_factors": 0,
+      "metrics": {
+        "rule_count": 126
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+          "--worker",
+          "--case",
+          "C3_missing_p3",
+          "--method",
+          "bfs",
+          "--record",
+          "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_missing_p3.bfs.json"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 3,
+          "wall_seconds": 5.0,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.095433,
+        "worker": {
+          "pid": 1666,
+          "returncode": 0,
+          "user_seconds": 0.08345899999999999,
+          "system_seconds": 0.009641,
+          "max_rss_kib": 11904
+        },
+        "sampled_peak_tree_rss_kib": 11776,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 1666,
+            "ppid": 1665,
+            "start_ticks": 42800,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "experiments/resource_guard.py",
+        "--output",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_missing_p3.bfs.guard",
+        "--memory-mib",
+        "512",
+        "--cpu-seconds",
+        "3",
+        "--wall-seconds",
+        "5",
+        "--output-bytes",
+        "8388608",
+        "--",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+        "--worker",
+        "--case",
+        "C3_missing_p3",
+        "--method",
+        "bfs",
+        "--record",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_missing_p3.bfs.json"
+      ]
+    },
+    {
+      "case": "C3_missing_p3",
+      "method": "completion",
+      "verdict": {
+        "certified_targets": [],
+        "proved_nonmembers": [
+          1
+        ],
+        "spanning": "disproved",
+        "verified_rules": 5,
+        "quotient_sha256": "7b7ab082167681d261e08dd823f4cbb3065f4f3d323171928283a648613be229"
+      },
+      "search_seconds": 0.0013219659999776923,
+      "check_seconds": 0.00010259300000825533,
+      "target_factors": 0,
+      "certificate_bytes": 1423,
+      "target_certificate_bytes": 87,
+      "rule_certificate_bytes": 387,
+      "bfs_expanded_states": 0,
+      "rule_factors": 3,
+      "metrics": {
+        "search_wall_seconds": 0.0013123040000095898,
+        "rule_count": 5,
+        "critical_pairs": 15,
+        "reduction_steps": 38,
+        "max_pending_pairs": 15,
+        "max_equation_length": 9,
+        "truncations": [],
+        "stop_reason": "pending_exhausted_without_confluence_claim",
+        "initially_certified": 0
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+          "--worker",
+          "--case",
+          "C3_missing_p3",
+          "--method",
+          "completion",
+          "--record",
+          "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_missing_p3.completion.json"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 3,
+          "wall_seconds": 5.0,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.095619,
+        "worker": {
+          "pid": 1668,
+          "returncode": 0,
+          "user_seconds": 0.081469,
+          "system_seconds": 0.008454999999999999,
+          "max_rss_kib": 11904
+        },
+        "sampled_peak_tree_rss_kib": 11776,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 1668,
+            "ppid": 1667,
+            "start_ticks": 42817,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "experiments/resource_guard.py",
+        "--output",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_missing_p3.completion.guard",
+        "--memory-mib",
+        "512",
+        "--cpu-seconds",
+        "3",
+        "--wall-seconds",
+        "5",
+        "--output-bytes",
+        "8388608",
+        "--",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+        "--worker",
+        "--case",
+        "C3_missing_p3",
+        "--method",
+        "completion",
+        "--record",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_missing_p3.completion.json"
+      ]
+    },
+    {
+      "case": "C3_missing_p2",
+      "method": "bfs",
+      "verdict": {
+        "certified_targets": [],
+        "proved_nonmembers": [
+          1
+        ],
+        "spanning": "disproved"
+      },
+      "search_seconds": 0.0003407689999903596,
+      "check_seconds": 4.3365000010453514e-05,
+      "target_factors": 0,
+      "certificate_bytes": 771,
+      "target_certificate_bytes": 71,
+      "rule_certificate_bytes": 2,
+      "bfs_expanded_states": 2,
+      "rule_factors": 0,
+      "metrics": {
+        "rule_count": 72
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+          "--worker",
+          "--case",
+          "C3_missing_p2",
+          "--method",
+          "bfs",
+          "--record",
+          "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_missing_p2.bfs.json"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 3,
+          "wall_seconds": 5.0,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.099583,
+        "worker": {
+          "pid": 1670,
+          "returncode": 0,
+          "user_seconds": 0.08213,
+          "system_seconds": 0.008334,
+          "max_rss_kib": 11904
+        },
+        "sampled_peak_tree_rss_kib": 11776,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 1670,
+            "ppid": 1669,
+            "start_ticks": 42831,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "experiments/resource_guard.py",
+        "--output",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_missing_p2.bfs.guard",
+        "--memory-mib",
+        "512",
+        "--cpu-seconds",
+        "3",
+        "--wall-seconds",
+        "5",
+        "--output-bytes",
+        "8388608",
+        "--",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+        "--worker",
+        "--case",
+        "C3_missing_p2",
+        "--method",
+        "bfs",
+        "--record",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_missing_p2.bfs.json"
+      ]
+    },
+    {
+      "case": "C3_missing_p2",
+      "method": "completion",
+      "verdict": {
+        "certified_targets": [],
+        "proved_nonmembers": [
+          1
+        ],
+        "spanning": "disproved",
+        "verified_rules": 5,
+        "quotient_sha256": "78d86983f354707ecb1bc594cb202224fe8687d919bca01fe8c264b352d2121c"
+      },
+      "search_seconds": 0.0006477620000282514,
+      "check_seconds": 9.253700000044773e-05,
+      "target_factors": 0,
+      "certificate_bytes": 1396,
+      "target_certificate_bytes": 90,
+      "rule_certificate_bytes": 369,
+      "bfs_expanded_states": 0,
+      "rule_factors": 3,
+      "metrics": {
+        "search_wall_seconds": 0.0006406420000075741,
+        "rule_count": 5,
+        "critical_pairs": 15,
+        "reduction_steps": 31,
+        "max_pending_pairs": 11,
+        "max_equation_length": 6,
+        "truncations": [],
+        "stop_reason": "pending_exhausted_without_confluence_claim",
+        "initially_certified": 0
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+          "--worker",
+          "--case",
+          "C3_missing_p2",
+          "--method",
+          "completion",
+          "--record",
+          "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_missing_p2.completion.json"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 3,
+          "wall_seconds": 5.0,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.091088,
+        "worker": {
+          "pid": 1672,
+          "returncode": 0,
+          "user_seconds": 0.068521,
+          "system_seconds": 0.014808,
+          "max_rss_kib": 11904
+        },
+        "sampled_peak_tree_rss_kib": 11776,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 1672,
+            "ppid": 1671,
+            "start_ticks": 42845,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "experiments/resource_guard.py",
+        "--output",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_missing_p2.completion.guard",
+        "--memory-mib",
+        "512",
+        "--cpu-seconds",
+        "3",
+        "--wall-seconds",
+        "5",
+        "--output-bytes",
+        "8388608",
+        "--",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+        "--worker",
+        "--case",
+        "C3_missing_p2",
+        "--method",
+        "completion",
+        "--record",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_missing_p2.completion.json"
+      ]
+    },
+    {
+      "case": "C3_power_basis_p2",
+      "method": "bfs",
+      "verdict": {
+        "certified_targets": [
+          1
+        ],
+        "proved_nonmembers": [],
+        "spanning": "proved"
+      },
+      "search_seconds": 0.0009386360000007699,
+      "check_seconds": 3.871000001254288e-05,
+      "target_factors": 2,
+      "certificate_bytes": 815,
+      "target_certificate_bytes": 66,
+      "rule_certificate_bytes": 2,
+      "bfs_expanded_states": 3,
+      "rule_factors": 0,
+      "metrics": {
+        "rule_count": 198
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+          "--worker",
+          "--case",
+          "C3_power_basis_p2",
+          "--method",
+          "bfs",
+          "--record",
+          "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_power_basis_p2.bfs.json"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 3,
+          "wall_seconds": 5.0,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.091279,
+        "worker": {
+          "pid": 1674,
+          "returncode": 0,
+          "user_seconds": 0.063056,
+          "system_seconds": 0.024435,
+          "max_rss_kib": 11904
+        },
+        "sampled_peak_tree_rss_kib": 11776,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 1674,
+            "ppid": 1673,
+            "start_ticks": 42859,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "experiments/resource_guard.py",
+        "--output",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_power_basis_p2.bfs.guard",
+        "--memory-mib",
+        "512",
+        "--cpu-seconds",
+        "3",
+        "--wall-seconds",
+        "5",
+        "--output-bytes",
+        "8388608",
+        "--",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+        "--worker",
+        "--case",
+        "C3_power_basis_p2",
+        "--method",
+        "bfs",
+        "--record",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_power_basis_p2.bfs.json"
+      ]
+    },
+    {
+      "case": "C3_power_basis_p2",
+      "method": "completion",
+      "verdict": {
+        "certified_targets": [
+          1
+        ],
+        "proved_nonmembers": [],
+        "spanning": "proved",
+        "verified_rules": 5,
+        "quotient_sha256": "e1e38c28d0fcc95c3f67741130e7b7059294641022a47d780ba5853423b2a1c8"
+      },
+      "search_seconds": 0.000522369999998773,
+      "check_seconds": 9.105699996325711e-05,
+      "target_factors": 4,
+      "certificate_bytes": 1424,
+      "target_certificate_bytes": 74,
+      "rule_certificate_bytes": 374,
+      "bfs_expanded_states": 0,
+      "rule_factors": 5,
+      "metrics": {
+        "search_wall_seconds": 0.0005148130000520723,
+        "rule_count": 5,
+        "critical_pairs": 0,
+        "reduction_steps": 51,
+        "max_pending_pairs": 15,
+        "max_equation_length": 9,
+        "truncations": [],
+        "stop_reason": "targets_certified_before_completion",
+        "initially_certified": 1
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+          "--worker",
+          "--case",
+          "C3_power_basis_p2",
+          "--method",
+          "completion",
+          "--record",
+          "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_power_basis_p2.completion.json"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 3,
+          "wall_seconds": 5.0,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.12584,
+        "worker": {
+          "pid": 1676,
+          "returncode": 0,
+          "user_seconds": 0.075761,
+          "system_seconds": 0.03745,
+          "max_rss_kib": 11904
+        },
+        "sampled_peak_tree_rss_kib": 11392,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 1676,
+            "ppid": 1675,
+            "start_ticks": 42873,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "experiments/resource_guard.py",
+        "--output",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_power_basis_p2.completion.guard",
+        "--memory-mib",
+        "512",
+        "--cpu-seconds",
+        "3",
+        "--wall-seconds",
+        "5",
+        "--output-bytes",
+        "8388608",
+        "--",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+        "--worker",
+        "--case",
+        "C3_power_basis_p2",
+        "--method",
+        "completion",
+        "--record",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_power_basis_p2.completion.json"
+      ]
+    },
+    {
+      "case": "C3_redundant",
+      "method": "bfs",
+      "verdict": {
+        "certified_targets": [
+          1,
+          2
+        ],
+        "proved_nonmembers": [],
+        "spanning": "proved"
+      },
+      "search_seconds": 0.0031283010000038303,
+      "check_seconds": 3.9920000006077316e-05,
+      "target_factors": 3,
+      "certificate_bytes": 971,
+      "target_certificate_bytes": 121,
+      "rule_certificate_bytes": 2,
+      "bfs_expanded_states": 3,
+      "rule_factors": 0,
+      "metrics": {
+        "rule_count": 576
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+          "--worker",
+          "--case",
+          "C3_redundant",
+          "--method",
+          "bfs",
+          "--record",
+          "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_redundant.bfs.json"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 3,
+          "wall_seconds": 5.0,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.101168,
+        "worker": {
+          "pid": 1678,
+          "returncode": 0,
+          "user_seconds": 0.07321,
+          "system_seconds": 0.019743999999999998,
+          "max_rss_kib": 12032
+        },
+        "sampled_peak_tree_rss_kib": 11904,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 1678,
+            "ppid": 1677,
+            "start_ticks": 42891,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "experiments/resource_guard.py",
+        "--output",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_redundant.bfs.guard",
+        "--memory-mib",
+        "512",
+        "--cpu-seconds",
+        "3",
+        "--wall-seconds",
+        "5",
+        "--output-bytes",
+        "8388608",
+        "--",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+        "--worker",
+        "--case",
+        "C3_redundant",
+        "--method",
+        "bfs",
+        "--record",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_redundant.bfs.json"
+      ]
+    },
+    {
+      "case": "C3_redundant",
+      "method": "completion",
+      "verdict": {
+        "certified_targets": [
+          1,
+          2
+        ],
+        "proved_nonmembers": [],
+        "spanning": "proved",
+        "verified_rules": 8,
+        "quotient_sha256": "72c3a654d3c908f99273ada6998e293be0b2985c5a5bda921edda1c584455c75"
+      },
+      "search_seconds": 0.0007915039999488727,
+      "check_seconds": 0.00010604500005229056,
+      "target_factors": 3,
+      "certificate_bytes": 1789,
+      "target_certificate_bytes": 99,
+      "rule_certificate_bytes": 611,
+      "bfs_expanded_states": 0,
+      "rule_factors": 6,
+      "metrics": {
+        "search_wall_seconds": 0.0007835229999955118,
+        "rule_count": 8,
+        "critical_pairs": 0,
+        "reduction_steps": 97,
+        "max_pending_pairs": 36,
+        "max_equation_length": 18,
+        "truncations": [],
+        "stop_reason": "targets_certified_before_completion",
+        "initially_certified": 2
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+          "--worker",
+          "--case",
+          "C3_redundant",
+          "--method",
+          "completion",
+          "--record",
+          "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_redundant.completion.json"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 3,
+          "wall_seconds": 5.0,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.092525,
+        "worker": {
+          "pid": 1680,
+          "returncode": 0,
+          "user_seconds": 0.068614,
+          "system_seconds": 0.015512999999999999,
+          "max_rss_kib": 11904
+        },
+        "sampled_peak_tree_rss_kib": 11776,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 1680,
+            "ppid": 1679,
+            "start_ticks": 42905,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "experiments/resource_guard.py",
+        "--output",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_redundant.completion.guard",
+        "--memory-mib",
+        "512",
+        "--cpu-seconds",
+        "3",
+        "--wall-seconds",
+        "5",
+        "--output-bytes",
+        "8388608",
+        "--",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+        "--worker",
+        "--case",
+        "C3_redundant",
+        "--method",
+        "completion",
+        "--record",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/C3_redundant.completion.json"
+      ]
+    },
+    {
+      "case": "V4_full",
+      "method": "bfs",
+      "verdict": {
+        "certified_targets": [
+          1,
+          2,
+          3
+        ],
+        "proved_nonmembers": [],
+        "spanning": "proved"
+      },
+      "search_seconds": 0.0017473130000098536,
+      "check_seconds": 4.5860999989599804e-05,
+      "target_factors": 3,
+      "certificate_bytes": 1438,
+      "target_certificate_bytes": 169,
+      "rule_certificate_bytes": 2,
+      "bfs_expanded_states": 3,
+      "rule_factors": 0,
+      "metrics": {
+        "rule_count": 622
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+          "--worker",
+          "--case",
+          "V4_full",
+          "--method",
+          "bfs",
+          "--record",
+          "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/V4_full.bfs.json"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 3,
+          "wall_seconds": 5.0,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.091297,
+        "worker": {
+          "pid": 1682,
+          "returncode": 0,
+          "user_seconds": 0.06958,
+          "system_seconds": 0.015276999999999999,
+          "max_rss_kib": 12032
+        },
+        "sampled_peak_tree_rss_kib": 11904,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 1682,
+            "ppid": 1681,
+            "start_ticks": 42919,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "experiments/resource_guard.py",
+        "--output",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/V4_full.bfs.guard",
+        "--memory-mib",
+        "512",
+        "--cpu-seconds",
+        "3",
+        "--wall-seconds",
+        "5",
+        "--output-bytes",
+        "8388608",
+        "--",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+        "--worker",
+        "--case",
+        "V4_full",
+        "--method",
+        "bfs",
+        "--record",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/V4_full.bfs.json"
+      ]
+    },
+    {
+      "case": "V4_full",
+      "method": "completion",
+      "verdict": {
+        "certified_targets": [
+          1,
+          2,
+          3
+        ],
+        "proved_nonmembers": [],
+        "spanning": "proved",
+        "verified_rules": 37,
+        "quotient_sha256": "6e2eeeea2fb79b5edbdf54024d971b9f642189a4b7e146a5061b711d39318610"
+      },
+      "search_seconds": 0.004506655999989562,
+      "check_seconds": 0.00023356399998419874,
+      "target_factors": 14,
+      "certificate_bytes": 5141,
+      "target_certificate_bytes": 267,
+      "rule_certificate_bytes": 3375,
+      "bfs_expanded_states": 0,
+      "rule_factors": 52,
+      "metrics": {
+        "search_wall_seconds": 0.004468277999990278,
+        "rule_count": 37,
+        "critical_pairs": 0,
+        "reduction_steps": 228,
+        "max_pending_pairs": 703,
+        "max_equation_length": 10,
+        "truncations": [],
+        "stop_reason": "targets_certified_before_completion",
+        "initially_certified": 3
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+          "--worker",
+          "--case",
+          "V4_full",
+          "--method",
+          "completion",
+          "--record",
+          "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/V4_full.completion.json"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 3,
+          "wall_seconds": 5.0,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.103144,
+        "worker": {
+          "pid": 1684,
+          "returncode": 0,
+          "user_seconds": 0.067715,
+          "system_seconds": 0.023781999999999998,
+          "max_rss_kib": 12032
+        },
+        "sampled_peak_tree_rss_kib": 12032,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 1684,
+            "ppid": 1683,
+            "start_ticks": 42933,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "experiments/resource_guard.py",
+        "--output",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/V4_full.completion.guard",
+        "--memory-mib",
+        "512",
+        "--cpu-seconds",
+        "3",
+        "--wall-seconds",
+        "5",
+        "--output-bytes",
+        "8388608",
+        "--",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+        "--worker",
+        "--case",
+        "V4_full",
+        "--method",
+        "completion",
+        "--record",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/V4_full.completion.json"
+      ]
+    },
+    {
+      "case": "V4_conjugated",
+      "method": "bfs",
+      "verdict": {
+        "certified_targets": [
+          1,
+          2,
+          3
+        ],
+        "proved_nonmembers": [],
+        "spanning": "proved"
+      },
+      "search_seconds": 0.0017820310000047357,
+      "check_seconds": 4.9794000005931593e-05,
+      "target_factors": 3,
+      "certificate_bytes": 1457,
+      "target_certificate_bytes": 171,
+      "rule_certificate_bytes": 2,
+      "bfs_expanded_states": 3,
+      "rule_factors": 0,
+      "metrics": {
+        "rule_count": 634
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+          "--worker",
+          "--case",
+          "V4_conjugated",
+          "--method",
+          "bfs",
+          "--record",
+          "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/V4_conjugated.bfs.json"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 3,
+          "wall_seconds": 5.0,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.092463,
+        "worker": {
+          "pid": 1686,
+          "returncode": 0,
+          "user_seconds": 0.073323,
+          "system_seconds": 0.015182999999999999,
+          "max_rss_kib": 12032
+        },
+        "sampled_peak_tree_rss_kib": 11776,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 1686,
+            "ppid": 1685,
+            "start_ticks": 42948,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "experiments/resource_guard.py",
+        "--output",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/V4_conjugated.bfs.guard",
+        "--memory-mib",
+        "512",
+        "--cpu-seconds",
+        "3",
+        "--wall-seconds",
+        "5",
+        "--output-bytes",
+        "8388608",
+        "--",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+        "--worker",
+        "--case",
+        "V4_conjugated",
+        "--method",
+        "bfs",
+        "--record",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/V4_conjugated.bfs.json"
+      ]
+    },
+    {
+      "case": "V4_conjugated",
+      "method": "completion",
+      "verdict": {
+        "certified_targets": [
+          1,
+          2,
+          3
+        ],
+        "proved_nonmembers": [],
+        "spanning": "proved",
+        "verified_rules": 39,
+        "quotient_sha256": "66f6c759fd4bea257907965f3a8056a960c3cbd2091d607c70d7d320268dfe64"
+      },
+      "search_seconds": 0.005288024000037694,
+      "check_seconds": 0.0002782789999855595,
+      "target_factors": 21,
+      "certificate_bytes": 5470,
+      "target_certificate_bytes": 368,
+      "rule_certificate_bytes": 3586,
+      "bfs_expanded_states": 0,
+      "rule_factors": 57,
+      "metrics": {
+        "search_wall_seconds": 0.005241216000001714,
+        "rule_count": 39,
+        "critical_pairs": 0,
+        "reduction_steps": 232,
+        "max_pending_pairs": 780,
+        "max_equation_length": 10,
+        "truncations": [],
+        "stop_reason": "targets_certified_before_completion",
+        "initially_certified": 3
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+          "--worker",
+          "--case",
+          "V4_conjugated",
+          "--method",
+          "completion",
+          "--record",
+          "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/V4_conjugated.completion.json"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 3,
+          "wall_seconds": 5.0,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.102618,
+        "worker": {
+          "pid": 1688,
+          "returncode": 0,
+          "user_seconds": 0.07409299999999999,
+          "system_seconds": 0.020235,
+          "max_rss_kib": 12032
+        },
+        "sampled_peak_tree_rss_kib": 12032,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 1688,
+            "ppid": 1687,
+            "start_ticks": 42962,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "experiments/resource_guard.py",
+        "--output",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/V4_conjugated.completion.guard",
+        "--memory-mib",
+        "512",
+        "--cpu-seconds",
+        "3",
+        "--wall-seconds",
+        "5",
+        "--output-bytes",
+        "8388608",
+        "--",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+        "--worker",
+        "--case",
+        "V4_conjugated",
+        "--method",
+        "completion",
+        "--record",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/V4_conjugated.completion.json"
+      ]
+    },
+    {
+      "case": "V4_missing_commutator",
+      "method": "bfs",
+      "verdict": {
+        "certified_targets": [
+          1,
+          2
+        ],
+        "proved_nonmembers": [
+          3
+        ],
+        "spanning": "disproved"
+      },
+      "search_seconds": 0.018789398999956575,
+      "check_seconds": 8.818700001711477e-05,
+      "target_factors": 2,
+      "certificate_bytes": 1464,
+      "target_certificate_bytes": 172,
+      "rule_certificate_bytes": 2,
+      "bfs_expanded_states": 50,
+      "rule_factors": 0,
+      "metrics": {
+        "rule_count": 590
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+          "--worker",
+          "--case",
+          "V4_missing_commutator",
+          "--method",
+          "bfs",
+          "--record",
+          "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/V4_missing_commutator.bfs.json"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 3,
+          "wall_seconds": 5.0,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.115667,
+        "worker": {
+          "pid": 1690,
+          "returncode": 0,
+          "user_seconds": 0.08846899999999999,
+          "system_seconds": 0.014674,
+          "max_rss_kib": 12544
+        },
+        "sampled_peak_tree_rss_kib": 12160,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 1690,
+            "ppid": 1689,
+            "start_ticks": 42977,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "experiments/resource_guard.py",
+        "--output",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/V4_missing_commutator.bfs.guard",
+        "--memory-mib",
+        "512",
+        "--cpu-seconds",
+        "3",
+        "--wall-seconds",
+        "5",
+        "--output-bytes",
+        "8388608",
+        "--",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+        "--worker",
+        "--case",
+        "V4_missing_commutator",
+        "--method",
+        "bfs",
+        "--record",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/V4_missing_commutator.bfs.json"
+      ]
+    },
+    {
+      "case": "V4_missing_commutator",
+      "method": "completion",
+      "verdict": {
+        "certified_targets": [
+          1,
+          2
+        ],
+        "proved_nonmembers": [
+          3
+        ],
+        "spanning": "disproved",
+        "verified_rules": 36,
+        "quotient_sha256": "b2eb981a504256ec687476f872e110c7bd69ddaafc23f9ca87520a3fe76138d1"
+      },
+      "search_seconds": 0.0320206970000072,
+      "check_seconds": 0.000261641999998119,
+      "target_factors": 6,
+      "certificate_bytes": 5005,
+      "target_certificate_bytes": 221,
+      "rule_certificate_bytes": 3253,
+      "bfs_expanded_states": 0,
+      "rule_factors": 47,
+      "metrics": {
+        "search_wall_seconds": 0.031997377000038796,
+        "rule_count": 36,
+        "critical_pairs": 666,
+        "reduction_steps": 2290,
+        "max_pending_pairs": 630,
+        "max_equation_length": 10,
+        "truncations": [],
+        "stop_reason": "pending_exhausted_without_confluence_claim",
+        "initially_certified": 2
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+          "--worker",
+          "--case",
+          "V4_missing_commutator",
+          "--method",
+          "completion",
+          "--record",
+          "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/V4_missing_commutator.completion.json"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 3,
+          "wall_seconds": 5.0,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.123097,
+        "worker": {
+          "pid": 1692,
+          "returncode": 0,
+          "user_seconds": 0.120942,
+          "system_seconds": 0.0,
+          "max_rss_kib": 12032
+        },
+        "sampled_peak_tree_rss_kib": 11904,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 1692,
+            "ppid": 1691,
+            "start_ticks": 42993,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "experiments/resource_guard.py",
+        "--output",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/V4_missing_commutator.completion.guard",
+        "--memory-mib",
+        "512",
+        "--cpu-seconds",
+        "3",
+        "--wall-seconds",
+        "5",
+        "--output-bytes",
+        "8388608",
+        "--",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+        "--worker",
+        "--case",
+        "V4_missing_commutator",
+        "--method",
+        "completion",
+        "--record",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/V4_missing_commutator.completion.json"
+      ]
+    },
+    {
+      "case": "free_rank2",
+      "method": "bfs",
+      "verdict": {
+        "certified_targets": [],
+        "proved_nonmembers": [],
+        "spanning": "proved"
+      },
+      "search_seconds": 1.2579000042478583e-05,
+      "check_seconds": 1.8162000003485446e-05,
+      "target_factors": 0,
+      "certificate_bytes": 532,
+      "target_certificate_bytes": 2,
+      "rule_certificate_bytes": 2,
+      "bfs_expanded_states": 0,
+      "rule_factors": 0,
+      "metrics": {
+        "rule_count": 0
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+          "--worker",
+          "--case",
+          "free_rank2",
+          "--method",
+          "bfs",
+          "--record",
+          "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/free_rank2.bfs.json"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 3,
+          "wall_seconds": 5.0,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.092336,
+        "worker": {
+          "pid": 1694,
+          "returncode": 0,
+          "user_seconds": 0.07142699999999999,
+          "system_seconds": 0.016233,
+          "max_rss_kib": 11904
+        },
+        "sampled_peak_tree_rss_kib": 11264,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 1694,
+            "ppid": 1693,
+            "start_ticks": 43010,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "experiments/resource_guard.py",
+        "--output",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/free_rank2.bfs.guard",
+        "--memory-mib",
+        "512",
+        "--cpu-seconds",
+        "3",
+        "--wall-seconds",
+        "5",
+        "--output-bytes",
+        "8388608",
+        "--",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+        "--worker",
+        "--case",
+        "free_rank2",
+        "--method",
+        "bfs",
+        "--record",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/free_rank2.bfs.json"
+      ]
+    },
+    {
+      "case": "free_rank2",
+      "method": "completion",
+      "verdict": {
+        "certified_targets": [],
+        "proved_nonmembers": [],
+        "spanning": "proved",
+        "verified_rules": 4,
+        "quotient_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "search_seconds": 4.0823000006184884e-05,
+      "check_seconds": 5.809799995404319e-05,
+      "target_factors": 0,
+      "certificate_bytes": 1002,
+      "target_certificate_bytes": 2,
+      "rule_certificate_bytes": 241,
+      "bfs_expanded_states": 0,
+      "rule_factors": 0,
+      "metrics": {
+        "search_wall_seconds": 3.445400000146037e-05,
+        "rule_count": 4,
+        "critical_pairs": 0,
+        "reduction_steps": 0,
+        "max_pending_pairs": 10,
+        "max_equation_length": 0,
+        "truncations": [],
+        "stop_reason": "targets_certified_before_completion",
+        "initially_certified": 0
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+          "--worker",
+          "--case",
+          "free_rank2",
+          "--method",
+          "completion",
+          "--record",
+          "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/free_rank2.completion.json"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 3,
+          "wall_seconds": 5.0,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.0908,
+        "worker": {
+          "pid": 1696,
+          "returncode": 0,
+          "user_seconds": 0.06811299999999999,
+          "system_seconds": 0.016405,
+          "max_rss_kib": 11904
+        },
+        "sampled_peak_tree_rss_kib": 11776,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 1696,
+            "ppid": 1695,
+            "start_ticks": 43024,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "experiments/resource_guard.py",
+        "--output",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/free_rank2.completion.guard",
+        "--memory-mib",
+        "512",
+        "--cpu-seconds",
+        "3",
+        "--wall-seconds",
+        "5",
+        "--output-bytes",
+        "8388608",
+        "--",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+        "--worker",
+        "--case",
+        "free_rank2",
+        "--method",
+        "completion",
+        "--record",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/free_rank2.completion.json"
+      ]
+    },
+    {
+      "case": "cyclic7_long_powers",
+      "method": "bfs",
+      "verdict": {
+        "certified_targets": [],
+        "proved_nonmembers": [],
+        "spanning": "unresolved"
+      },
+      "search_seconds": 0.019315355000003365,
+      "check_seconds": 3.9044000004651025e-05,
+      "target_factors": 0,
+      "certificate_bytes": 871,
+      "target_certificate_bytes": 71,
+      "rule_certificate_bytes": 2,
+      "bfs_expanded_states": 2,
+      "rule_factors": 0,
+      "metrics": {
+        "rule_count": 2926
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+          "--worker",
+          "--case",
+          "cyclic7_long_powers",
+          "--method",
+          "bfs",
+          "--record",
+          "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/cyclic7_long_powers.bfs.json"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 3,
+          "wall_seconds": 5.0,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.112916,
+        "worker": {
+          "pid": 1698,
+          "returncode": 0,
+          "user_seconds": 0.08107199999999999,
+          "system_seconds": 0.028443,
+          "max_rss_kib": 13184
+        },
+        "sampled_peak_tree_rss_kib": 12544,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 1698,
+            "ppid": 1697,
+            "start_ticks": 43039,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "experiments/resource_guard.py",
+        "--output",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/cyclic7_long_powers.bfs.guard",
+        "--memory-mib",
+        "512",
+        "--cpu-seconds",
+        "3",
+        "--wall-seconds",
+        "5",
+        "--output-bytes",
+        "8388608",
+        "--",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+        "--worker",
+        "--case",
+        "cyclic7_long_powers",
+        "--method",
+        "bfs",
+        "--record",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/cyclic7_long_powers.bfs.json"
+      ]
+    },
+    {
+      "case": "cyclic7_long_powers",
+      "method": "completion",
+      "verdict": {
+        "certified_targets": [
+          1
+        ],
+        "proved_nonmembers": [],
+        "spanning": "proved",
+        "verified_rules": 12,
+        "quotient_sha256": "e9ef712d08664541a364e60524f1084aa492af0d6d53c2115ef1af16f877ab09"
+      },
+      "search_seconds": 0.00615738300001567,
+      "check_seconds": 0.0002167680000297878,
+      "target_factors": 5,
+      "certificate_bytes": 2581,
+      "target_certificate_bytes": 93,
+      "rule_certificate_bytes": 1477,
+      "bfs_expanded_states": 0,
+      "rule_factors": 25,
+      "metrics": {
+        "search_wall_seconds": 0.006146339999986594,
+        "rule_count": 12,
+        "critical_pairs": 20,
+        "reduction_steps": 292,
+        "max_pending_pairs": 58,
+        "max_equation_length": 49,
+        "truncations": [],
+        "stop_reason": "targets_certified",
+        "initially_certified": 0
+      },
+      "resources": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+          "--worker",
+          "--case",
+          "cyclic7_long_powers",
+          "--method",
+          "completion",
+          "--record",
+          "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/cyclic7_long_powers.completion.json"
+        ],
+        "limits": {
+          "memory_bytes": 536870912,
+          "cpu_seconds": 3,
+          "wall_seconds": 5.0,
+          "output_bytes": 8388608
+        },
+        "termination": "completed",
+        "returncode": 0,
+        "supervisor_signal": null,
+        "supervisor_error": null,
+        "wall_seconds": 0.100285,
+        "worker": {
+          "pid": 1707,
+          "returncode": 0,
+          "user_seconds": 0.07418799999999999,
+          "system_seconds": 0.015462,
+          "max_rss_kib": 12032
+        },
+        "sampled_peak_tree_rss_kib": 11904,
+        "adopted_children": [],
+        "observed_processes": [
+          {
+            "pid": 1707,
+            "ppid": 1706,
+            "start_ticks": 43054,
+            "rss_kib": 0,
+            "vsize_bytes": 0
+          }
+        ],
+        "cleanup_verified": true,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0,
+        "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "experiments/resource_guard.py",
+        "--output",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/cyclic7_long_powers.completion.guard",
+        "--memory-mib",
+        "512",
+        "--cpu-seconds",
+        "3",
+        "--wall-seconds",
+        "5",
+        "--output-bytes",
+        "8388608",
+        "--",
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/generators-group-homology/scripts/test-certified-completion.py",
+        "--worker",
+        "--case",
+        "cyclic7_long_powers",
+        "--method",
+        "completion",
+        "--record",
+        "/workspace/generators-group-homology/benchmarks/results/certified-completion-small-2026-10-28/comparison/cyclic7_long_powers.completion.json"
+      ]
+    }
+  ],
+  "acceptance_checks": [
+    "corrupted rule sign",
+    "reversed orientation without inverse proof",
+    "unsound free simplification",
+    "unsupported short rule",
+    "stronger quotient rule reuse after removing candidate",
+    "raw defining relator added to fixed quotient",
+    "missing candidate membership",
+    "forged target identity",
+    "valid equation with increasing orientation",
+    "corrupted critical-pair conjugator",
+    "corrupted critical-pair derivation",
+    "nonabelian overlapping paths independently cancelled",
+    "rule-limited true positive remains unresolved"
+  ],
+  "source_sha256": {
+    "experiments/certified_completion.py": "c554d9829fd1b1dbe3ff2671a4b68963015e9437604d9df5d1789950746a1034",
+    "scripts/check-completion-certificate.py": "6ccd66aa63d38683ced1cf65adac63482abba039b23f7e8c2ad9ce5e4f63cc55",
+    "scripts/test-certified-completion.py": "8dd4f28ce9b0209331624c72a89e53e83698a013653733e7f4a19ad9aaeb2fff",
+    "experiments/relation_span.py": "361b819f3512146b6914038ebac81b798638dd769fc158494082a94228b76d57",
+    "scripts/check-relation-span-certificate.py": "2e031b11e8168a5cbbe173b92440dd03734670d81605ea3dcc4842f7bad5eff9",
+    "experiments/resource_guard.py": "73358a2d5827b0b7e5070e6fb3b95945a43d3168853bdcea51525388ea6ed21b",
+    "tests/fixtures/relation-span-small.json": "12009f0399bced75cda1334baada5d69c40a225d18b7c481ed551d0e8e766f61"
+  },
+  "notes": "One measurement per method/case; no statistical speedup claim. Per-worker RSS includes Python startup. Negative verdicts come only from independent finite obstructions."
+}

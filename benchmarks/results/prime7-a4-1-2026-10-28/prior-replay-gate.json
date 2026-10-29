@@ -1,0 +1,41 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/replay-completion-tests.py",
+        "--base",
+        "benchmarks/results/certified-completion-small-2026-10-28/comparison"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/replay-power-experiments.py",
+        "--small",
+        "benchmarks/results/power-conjugation-small-2026-10-28/comparison",
+        "--control",
+        "benchmarks/results/prime7-power-control-1-2026-10-28"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-prime7-pilot-results.py",
+        "--base",
+        "benchmarks/results/prime7-pilot-1-2026-10-28"
+      ],
+      "returncode": 0
+    }
+  ],
+  "previous_manifests_unchanged": true,
+  "source_sha256": {
+    "scripts/replay-completion-tests.py": "c05a30485790b231637b35dbc12d4f8806986643f4f9915243a3fe527cc7490d",
+    "scripts/replay-power-experiments.py": "b8ebb3b13abf7cb8b26ea71a0dcd5f127cc750e3b62f0daaaf22b085f8b0b29d",
+    "scripts/check-prime7-pilot-results.py": "44ebdf493bfff0278bdb06ccc3504bb3ec7c33b171aec5187de4b0e6889667f3",
+    "scripts/check-power-control.py": "1e855bb3d5a2527c0c4377e71bb694b4afd5641ce6919bc734a82798019e8fb9"
+  }
+}

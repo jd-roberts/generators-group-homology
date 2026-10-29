@@ -1,0 +1,9 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "previous_commit": "3d9a0e5c77a71d528235e606c986618b028b2208",
+  "authorized_arithmetic_experiments": 1,
+  "arithmetic_search_target": 12,
+  "unresolved_arithmetic_targets_attempted": [],
+  "note": "Small cases and source-code assertions were tested before the one authorized arithmetic control. Afterwards only certificate replay and static documentation were performed."
+}

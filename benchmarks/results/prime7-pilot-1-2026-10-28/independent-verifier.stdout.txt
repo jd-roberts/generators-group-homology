@@ -1,0 +1,11 @@
+{
+  "certified_targets": [
+    3,
+    5,
+    9,
+    12,
+    15
+  ],
+  "proved_nonmembers": [],
+  "spanning": "unresolved"
+}

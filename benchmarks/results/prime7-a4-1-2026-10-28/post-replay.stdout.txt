@@ -1,0 +1,25 @@
+{
+  "one_authorized_attempt": true,
+  "r7_certified": false,
+  "verified_completion_rules": 233,
+  "verified_power_rules": 20,
+  "verified_centrality_equations": 20,
+  "certified_originals": [
+    3,
+    5,
+    9,
+    12,
+    15
+  ],
+  "full_spanning": false,
+  "all_static_witnesses_and_gates_verified": true,
+  "search_executed_by_this_replay": false,
+  "pure_a_powers_in_rule_trace": [
+    {
+      "rule": 51,
+      "origin": "original_Q_199",
+      "exponent": 28,
+      "conjugator": []
+    }
+  ]
+}

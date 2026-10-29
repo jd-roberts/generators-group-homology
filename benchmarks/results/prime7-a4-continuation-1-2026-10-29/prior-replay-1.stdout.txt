@@ -1,0 +1,13 @@
+{
+  "small_records": 61,
+  "small_verified_rules": 778,
+  "small_certified_target_occurrences": 47,
+  "single_control_attempt": true,
+  "control_verified_rules": 47,
+  "control_methods": {
+    "power": "certified",
+    "completion": "certified"
+  },
+  "newly_certified_arithmetic_targets": [],
+  "full_spanning": false
+}

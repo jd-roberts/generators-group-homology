@@ -1,0 +1,4 @@
+{"kind":"header","tag":"small-verification","input_sha256":"5ccfb2d6a42e67284f38329d37b81a0561cf5ce6d21971c40c2f4e6e0b452d4b","selected_targets":[1],"effective_os_limits":{"RLIMIT_AS":[536870912,536870912],"RLIMIT_CPU":[6,6],"RLIMIT_FSIZE":[8388608,8388608]},"search_limits":{"shared_seconds":5,"max_rules":20000,"max_states":1000,"word_growth":6},"quotient_relations":3}
+{"kind":"index","rule_instances":198,"rule_budget_reached":false,"elapsed_seconds":0.00044238200001700534}
+{"kind":"target","target":1,"answer":{"status":"certified","factors":[[[],2,1],[[],3,-1]],"states":5,"visited":3,"max_word_length":6},"elapsed_seconds":0.000555651000013313}
+{"kind":"summary","search_wall_seconds":0.000571557999990091,"shared_time_limit_reached":false,"rule_instances":198,"rule_budget_reached":false,"index_builds":1}

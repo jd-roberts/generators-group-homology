@@ -27,7 +27,9 @@ The affected input is `Free5/R5`; the arithmetic case `G5` uses the distinct
 presentation `F5/k5`.
 The [provenance and impact report](PRESENTATION-PROVENANCE.md) traces the Git
 history and distinguishes an incorrect equality from a merely loose upper
-bound. Its paper-specific dependency verdict remains pending source access.
+bound. The [uploaded-paper audit](PAPER-AUDIT.md) confirms that the finite
+case-5 error appears as an exact claim in Roberts 2020 v1, while tracing
+separate arithmetic proof inputs and additional reproduction concerns.
 
 `G3/G5/G7/G11` are the arithmetic-family labels; the digit in a label and the
 coefficient prime are different inputs. These cases, and the infinite-group

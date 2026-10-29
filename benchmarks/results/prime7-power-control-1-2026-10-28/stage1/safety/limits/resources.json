@@ -1,0 +1,42 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-u",
+    "/workspace/generators-group-homology/tests/resource_probes.py",
+    "limits",
+    "/workspace/generators-group-homology/benchmarks/results/prime7-power-control-1-2026-10-28/stage1/safety/limits.pids.json"
+  ],
+  "limits": {
+    "memory_bytes": 536870912,
+    "cpu_seconds": 6,
+    "wall_seconds": 4.0,
+    "output_bytes": 8388608
+  },
+  "termination": "completed",
+  "returncode": 0,
+  "supervisor_signal": null,
+  "supervisor_error": null,
+  "wall_seconds": 0.13099,
+  "worker": {
+    "pid": 3103,
+    "returncode": 0,
+    "user_seconds": 0.089889,
+    "system_seconds": 0.025713999999999997,
+    "max_rss_kib": 11136
+  },
+  "sampled_peak_tree_rss_kib": 10368,
+  "adopted_children": [],
+  "observed_processes": [
+    {
+      "pid": 3103,
+      "ppid": 3102,
+      "start_ticks": 122743,
+      "rss_kib": 0,
+      "vsize_bytes": 0
+    }
+  ],
+  "cleanup_verified": true,
+  "stdout_bytes": 96,
+  "stderr_bytes": 0,
+  "notes": "RLIMIT_AS/CPU/FSIZE are per-process inherited hard limits; wall limit covers the tree. wait4 RSS is a max; sampled RSS sums can double-count shared pages. Supervisor cleanup may add a short tail after worker termination."
+}
